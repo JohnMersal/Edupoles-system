@@ -23,6 +23,11 @@
       <link type="text/css" rel="stylesheet" href="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
       <!--LOADING STYLESHEET FOR jGrid-->
       <link type="text/css" rel="stylesheet" href="vendors/jplist/html/css/jplist-custom.css">
+      <!--LOADING STYLESHEET FOR datatable-->
+    <link type="text/css" rel="stylesheet" href="vendors/DataTables/media/css/jquery.dataTables.css">
+    <link type="text/css" rel="stylesheet"
+          href="vendors/DataTables/extensions/TableTools/css/dataTables.tableTools.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/DataTables/media/css/dataTables.bootstrap.css">
       <!--Loading style-->
       <link type="text/css" rel="stylesheet" href="css/screen.css">
       <link type="text/css" rel="stylesheet" href="css/custom.css">
@@ -447,7 +452,75 @@
                                  </div>
                               </div>
                               <div id="Sessions" class="tab-pane fade">
-                                 asdasdas
+                                 <div class="row">
+                                  <div class="col-lg-12">
+                                     <div class="panel">
+                                       <div class="panel-body">
+                                         <div class="table-responsive">
+                                            <table id="table_id" class="table table-hover table-striped table-bordered table-advanced tablesorter display">
+                                              <thead>
+                                                <tr>
+                                                    <th width="22%">Name</th>
+                                                    <th width="8%">Start</th>
+                                                    <th width="8%">End</th>
+                                                    <th width="22%">Courses</th>
+                                                    <th width="10%">Type</th>
+                                                    <th width="10%">Enrolled</th>
+                                                    <th width="10%">Actions</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                    <td>Name1</td>
+                                                    <td>20-05-2014</td>
+                                                    <td>20-05-2014</td>
+                                                    <td>Course Name 1</td>
+                                                    <td>
+                                                      <i class="icon ico_webinar"></i> Webinar
+                                                    </td>
+                                                    <td><span class="label label-sm label-success">Approved</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-default btn-xs"><i
+                                                                class="fa fa-group"></i>&nbsp;
+                                                            Edit
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Name2</td>
+                                                    <td>21-09-1999</td>
+                                                    <td>21-09-1999</td>
+                                                    <td>Course Name 2</td>
+                                                    <td><i class="icon fa fa-desktop"></i> e-Learning</label></td>
+                                                    <td><span class="label label-sm label-info">Pending</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-default btn-xs"><i
+                                                                class="fa fa-group"></i>&nbsp;
+                                                            Edit
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Name3</td>
+                                                    <td>21-09-1999</td>
+                                                    <td>21-09-1999</td>
+                                                    <td>Course Name 3</td>
+                                                    <td><i class="icon ico_class"></i> Classroom</td>
+                                                    <td><span class="label label-sm label-warning">Suspended</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-default btn-xs"><i
+                                                                class="fa fa-group"></i>&nbsp;
+                                                            Edit
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                        </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -490,6 +563,11 @@
       <!--LOADING SCRIPTS FOR JPGRID-->
       <script src="vendors/jplist/html/js/jplist.min.js"></script>
       <script src="js/jplist.js"></script>
+      <!--LOADING SCRIPTS FOR Datatables-->
+    <script src="vendors/DataTables/media/js/jquery.dataTables.js"></script>
+    <script src="vendors/DataTables/media/js/dataTables.bootstrap.js"></script>
+    <script src="vendors/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+    <script src="js/table-datatables.js"></script>
       <!-- Ask Expert -->
       <script src="vendors/bootstrap-markdown/js/bootstrap-markdown.js"></script>
       <script src="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
