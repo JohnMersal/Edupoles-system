@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard | Dashboard</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" href="images/icons/favicon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+      <!--Loading bootstrap css-->
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+      <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+      <!--Loading style vendors-->
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <!--LOADING STYLESHEET FOR FORM_COMPONENTS-->
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-colorpicker/css/colorpicker.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-datepicker/css/datepicker.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-daterangepicker/daterangepicker-bs3.css">
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <link type="text/css" rel="stylesheet" href="vendors/iCheck/skins/all.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-clockface/css/clockface.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-switch/css/bootstrap-switch.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+      <!-- Calendar Multiple -->
+      <link type="text/css" rel="stylesheet" href="css/jquery-ui.multidatespicker.css">
+      <!--LOADING STYLESHEET FOR PAGE-->
+      <link type="text/css" rel="stylesheet" href="vendors/select2/select2-madmin.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-select/bootstrap-select.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/multi-select/css/multi-select-madmin.css">
+      <!--Loading style-->
+      <link type="text/css" rel="stylesheet" href="css/screen.css">
+      <link type="text/css" rel="stylesheet" href="css/custom.css">
+      <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+   </head>
+   <body class="sidebar-icons header-fixed shadow-panel">
+      <div>
+      <!--BEGIN BACK TO TOP-->
+      <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+      <!--END BACK TO TOP-->
+      <!--BEGIN TOPBAR-->
+      <div class="page-header-topbar">
+         <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#">
+               <img src="images/logo.png">
+               </a>
+            </div>
+            <div class="topbar-main">
+               <ul class="nav navbar navbar-top-links navbar-right mbn">
+                  <li class="dropdown topbar-user">
+                     <a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                        src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt=""
+                        class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span
+                        class="caret"></span></a>
+                     <ul class="dropdown-menu dropdown-user pull-right">
+                        <li><a href="extra-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                        <li><a href="page-calendar.html"><i class="fa fa-calendar"></i>My Calendar</a></li>
+                        <li><a href="email-inbox.html"><i class="fa fa-envelope"></i>My Inbox<span
+                           class="badge badge-danger">3</span></a></li>
+                        <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                           class="badge badge-success">7</span></a></li>
+                        <li class="divider"></li>
+                        <li><a href="extra-lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                        <li><a href="extra-signin.html"><i class="fa fa-key"></i>Log Out</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <!--END TOPBAR-->
+      <div id="wrapper">
+         <!--BEGIN SIDEBAR MENU-->
+         <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+               <div class="sidebar-collapse menu-scroll">
+                  <ul id="side-menu" class="nav">
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-tachometer fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Dashboard</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="add-training-session.html">
+                           <i class="ico_program">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Create Program</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="course-builder.html">
+                           <i class="fa fa-book fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Course Builder</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="analytics.html">
+                           <i class="fa fa-bar-chart-o fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Analytics</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="news.html">
+                           <i class="fa fa-bullhorn fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">News and Events</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="settings.html">
+                           <i class="fa fa-cogs fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">System Settings</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         <!--END SIDEBAR MENU-->
+         <!--BEGIN PAGE WRAPPER-->
+         <div id="page-wrapper">
+            <!--BEGIN TITLE & BREADCRUMB PAGE-->
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+               <div class="page-header pull-left">
+                  <div class="page-title">Create Program</div>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+            <!--END TITLE & BREADCRUMB PAGE-->
+            <!--BEGIN CONTENT-->
+            <div class="page-content">
+               <div class="row mbn">
+                  <div class="col-md-12">
+                     <div class="panel">
+                        <div class="panel-body">
+                           <form action="#" class="horizontal-form">
+
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="form-group"><label for="inputStreet" class="control-label">Title
+                                       <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="form-group"><label>Total Cost</label><input type="text" placeholder="Readonly" readonly="readonly" class="form-control">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group"><label>Comment</label><textarea rows="4" class="form-control"></textarea>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+                                       <label for="">Availability</label>
+                                       <br>
+                                       <div data-on-label="Open" data-off-label="Close" data-text-label="&nbsp;" class="make-switch"><input type="checkbox" checked="checked" class="switch" /></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mbl">
+                  <div class="col-md-12">
+                     <ul role="tablist" class="custom-wizard">
+                        <li class="active">
+                           <a href="#session_management" role="tab" data-toggle="tab">
+                              <i class="glyphicon glyphicon-user"></i>
+                              <p class="anchor">1. Session</p>
+                              <p class="description">Select the course</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#attendees_management" role="tab" data-toggle="tab">
+                              <i class="glyphicon glyphicon-user"></i>
+                              <p class="anchor">2. Attendees</p>
+                              <p class="description">Select attendees</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#mail_management" role="tab" data-toggle="tab">
+                              <i class="glyphicon glyphicon-send mln"></i>
+                              <p class="anchor">3. Email Forum</p>
+                              <p class="description">COMPOSE EMAIL!</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-12">
+                     <div class="panel">
+                        <div class="panel-body">
+                           <div class="tab-content tab-edit">
+                              <div id="session_management" class="tab-pane fade in active">
+                                 <form action="#" class="horizontal-form">
+                                    <div class="form-body">
+                                       <h3 class="mbl">Course Type</h3>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <div class="form-group venue-place">
+                                                <div class="radio">
+                                                   <label class="radio-inline"><input id="optionsVisa"
+                                                      type="radio"
+                                                      name="optionsRadios"
+                                                      value="Visa"
+                                                      checked="checked"/>&nbsp; <i class="icon fa fa-desktop"></i>
+                                                   e-Learning</label>
+                                                   <label class="radio-inline"><input id="optionsMasterCard"
+                                                      type="radio"
+                                                      name="optionsRadios"
+                                                      value="MasterCard"/>&nbsp; <i class="icon ico_webinar"></i>
+                                                   Webinar</label>
+                                                   <label class="radio-inline">
+                                                   <input id="optionsPayPal" type="radio" name="optionsRadios" value="PayPal"/>&nbsp; <i class="icon ico_class"></i> Classroom
+                                                   </label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       
+                                       <div class="row">
+                                          <div class="col-md-3">
+                                             <div class="form-group">
+                                                <label for="selGender" class="control-label">Module
+                                                <span class='require'>*</span></label>
+                                                <select name="ctl00$MainContent$drp_Modules" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$drp_Modules\',\'\')', 0)" id="MainContent_drp_Modules" class="form-control">
+                                                   <option selected="selected" value="">Select Module</option>
+                                                   <option value="67">Attitude and Mindset</option>
+                                                   <option value="60">Attractive Visual presentation skills</option>
+                                                   <option value="72">Change Management</option>
+                                                   <option value="70">Coaching</option>
+                                                   <option value="84">Cold Calling</option>
+                                                   <option value="58">Communication Skills and Feedback Techniques</option>
+                                                   <option value="71">Conflict Management</option>
+                                                   <option value="76">Creative Thinking</option>
+                                                   <option value="69">Delegation</option>
+                                                   <option value="80">Digital Marketing </option>
+                                                   <option value="62">Emotional Intelligence</option>
+                                                   <option value="75">Finance for Non-financials</option>
+                                                   <option value="66">Goal Setting and Performance Management</option>
+                                                   <option value="64">Introduction to Leadership</option>
+                                                   <option value="65">Know yourself -MBTI Situational Leadership</option>
+                                                   <option value="68">Motivation Skills</option>
+                                                   <option value="61">Persuasive Presentation skills</option>
+                                                   <option value="74">Planning and Time management</option>
+                                                   <option value="73">Problem Solving and Decision Making</option>
+                                                   <option value="79">Sales Sprint</option>
+                                                   <option value="78">Sales Square 1</option>
+                                                   <option value="82">SHIFT Business Training &amp; Consultation</option>
+                                                   <option value="77">Strategic Thinking</option>
+                                                   <option value="83">Streamline</option>
+                                                   <option value="63">Tactical Negotiation Skills</option>
+                                                   <option value="81">Who we are</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                             <div class="form-group">
+                                                <label for="selGender" class="control-label">Provider
+                                                <span class='require'>*</span></label>
+                                                <select name="ctl00$MainContent$drp_Providers" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$drp_Providers\',\'\')', 0)" id="MainContent_drp_Providers" class="form-control">
+                                                   <option selected="selected" value="">Select Provider</option>
+                                                   <option value="2">BLUE Change</option>
+                                                   <option value="3">Global Knowledge </option>
+                                                   <option value="4">Global Knowledge </option>
+                                                   <option value="5">Global Knowledge </option>
+                                                   <option value="1">SHIFT Training</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                             <div class="form-group">
+                                                <label for="selGender" class="control-label">Course
+                                                <span class='require'>*</span></label>
+                                                <select name="ctl00$MainContent$drp_Instructors" id="MainContent_drp_Instructors" class="form-control">
+                                                   <option value="">Select Instructor</option>
+                                                   <option value="7">Basma</option>
+                                                   <option value="3">Dina Samir</option>
+                                                   <option value="2">Hany El Refaee</option>
+                                                   <option value="4">Hesham Bahram</option>
+                                                   <option value="1">Mohamed Haroun</option>
+                                                   <option value="6">Online</option>
+                                                   <option value="5">Samer Bahaa</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                             <div class="form-group">
+                                                <label for="selGender" class="control-label">Instructor
+                                                <span class='require'>*</span></label>
+                                                <select name="ctl00$MainContent$drp_Instructors" id="MainContent_drp_Instructors" class="form-control">
+                                                   <option value="">Select Instructor</option>
+                                                   <option value="7">Basma</option>
+                                                   <option value="3">Dina Samir</option>
+                                                   <option value="2">Hany El Refaee</option>
+                                                   <option value="4">Hesham Bahram</option>
+                                                   <option value="1">Mohamed Haroun</option>
+                                                   <option value="6">Online</option>
+                                                   <option value="5">Samer Bahaa</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-6">
+                                             <div class="form-group">
+                                                <label for="inputEmail" class="control-label">Date
+                                                <span class='require'>*</span></label>
+                                                <div class="input-group">
+                                                   <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                   <input type="text" name="daterangepicker-default"
+                                                      class="form-control"/>
+                                                   <div class="input-group-addon" data-target="#modal-wide-width" data-toggle="modal" style="cursor: pointer;" ><i class="fa fa-calendar"></i></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="form-group"><label for="inputStreet" class="control-label">External Cost
+                                                <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <div class="form-group"><label>Comment</label><textarea rows="4" class="form-control"></textarea>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h3>Values Fixed</h3>
+                                       <div class="row">
+                                          <div class="col-md-6">
+                                             <div class="form-group"><label>Readonly</label><input type="text" placeholder="Readonly" readonly="readonly" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="form-group"><label>Readonly</label><input type="text" placeholder="Readonly" readonly="readonly" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-6">
+                                             <div class="form-group"><label>Readonly</label><input type="text" placeholder="Readonly" readonly="readonly" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="form-group"><label>Readonly</label><input type="text" placeholder="Readonly" readonly="readonly" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row mbl">
+                                          <div class="col-md-12">
+                                             <!-- <button type="submit" class="btn btn-info">Add</button> -->
+                                             <input type="submit" name="ctl00$MainContent$btn_AddCourseToList" value="Add" id="MainContent_btn_AddCourseToList" class="btn btn-primary">
+                                          </div>
+                                       </div>
+                                       <hr>
+                                       <div class="row mbl">
+                                          <div class="col-md-12">
+                                             <div class="row">
+                                                <div class="col-md-9">
+                                                   <h5>Selected courses with instructor</h5>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <input type="submit" name="ctl00$MainContent$btn_RemoveCourseFromList" value="Remove" id="MainContent_btn_RemoveCourseFromList" class="btn btn-xs btn-primary pull-right">
+                                                </div>
+                                                <div id="containerCourses" class="col-md-12">
+                                                   <select class="col-md-12 form-control" size="4" name="ctl00$MainContent$lst_Courses" multiple="multiple" id="MainContent_lst_Courses" class="checkbox_Cover multiSelected" style="height:145px;">
+                                                      <option value="67_4_3">Attitude and Mindset - SHIFT Training - Attitude and mindset - Dina Samir</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div id="attendees_management" class="tab-pane fade">
+                                 <form action="#" class="horizontal-form">
+                                    <div class="form-body">
+                                       <h3>Select your attendees</h3>
+                                       <div class="row mbl">
+                                          <div class="col-md-3">
+                                             <h5>Select Groups</h5>
+                                             <div class="checkbox_Cover" style="height: 145px;">
+                                                <table id="MainContent_chk_Groups" class="checkbox">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_0" type="checkbox" name="ctl00$MainContent$chk_Groups$0" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$0\',\'\')', 0)" value="11"><label for="MainContent_chk_Groups_0">123</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_1" type="checkbox" name="ctl00$MainContent$chk_Groups$1" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$1\',\'\')', 0)" value="3"><label for="MainContent_chk_Groups_1">Administration</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_2" type="checkbox" name="ctl00$MainContent$chk_Groups$2" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$2\',\'\')', 0)" value="7"><label for="MainContent_chk_Groups_2">Hr group</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_3" type="checkbox" name="ctl00$MainContent$chk_Groups$3" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$3\',\'\')', 0)" value="4"><label for="MainContent_chk_Groups_3">IT Department</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_4" type="checkbox" name="ctl00$MainContent$chk_Groups$4" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$4\',\'\')', 0)" value="8"><label for="MainContent_chk_Groups_4">Leadership</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_5" type="checkbox" name="ctl00$MainContent$chk_Groups$5" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$5\',\'\')', 0)" value="1"><label for="MainContent_chk_Groups_5">Marketing</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_6" type="checkbox" name="ctl00$MainContent$chk_Groups$6" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$6\',\'\')', 0)" value="13"><label for="MainContent_chk_Groups_6">online courses</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_7" type="checkbox" name="ctl00$MainContent$chk_Groups$7" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$7\',\'\')', 0)" value="5"><label for="MainContent_chk_Groups_7">Online Sessions</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_8" type="checkbox" name="ctl00$MainContent$chk_Groups$8" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$8\',\'\')', 0)" value="6"><label for="MainContent_chk_Groups_8">Online Trial</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_9" type="checkbox" name="ctl00$MainContent$chk_Groups$9" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$9\',\'\')', 0)" value="2"><label for="MainContent_chk_Groups_9">Sales Management</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_10" type="checkbox" name="ctl00$MainContent$chk_Groups$10" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$10\',\'\')', 0)" value="10"><label for="MainContent_chk_Groups_10">TOT Leadership</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_11" type="checkbox" name="ctl00$MainContent$chk_Groups$11" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$11\',\'\')', 0)" value="12"><label for="MainContent_chk_Groups_11">TOT Leadership 1</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_12" type="checkbox" name="ctl00$MainContent$chk_Groups$12" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$12\',\'\')', 0)" value="9"><label for="MainContent_chk_Groups_12">TOT presentation</label></td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <h5>Session Attendees</h5>
+                                             <div class="checkbox_Cover" style="height: 145px">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                             <div class="row">
+                                                <h5>&nbsp;</h5>
+                                                <div class="col-md-12">
+                                                   <span class="checkbox"><input id="MainContent_chk_Requested" type="checkbox" name="ctl00$MainContent$chk_Requested" checked="checked"><label for="MainContent_chk_Requested">Mark All Requested</label></span>
+                                                </div>
+                                                <div class="col-md-12">
+                                                   <span class="checkbox"><input id="MainContent_chk_Approved" type="checkbox" name="ctl00$MainContent$chk_Approved" checked="checked"><label for="MainContent_chk_Approved">Mark All Approved</label></span>
+                                                </div>
+                                                <div class="col-md-12" style="display: none;">
+                                                   <span class="checkbox"><input id="MainContent_chk_Expired" type="checkbox" name="ctl00$MainContent$chk_Expired"><label for="MainContent_chk_Expired">Check Expiry For Attendees</label></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div id="mail_management" class="tab-pane fade">
+                                 <form action="#" class="horizontal-form">
+                                    <div class="form-body">
+                                       <h3>Compose Mail</h3>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <div class="form-group">
+                                                <div class="input-group"><span class="input-group-addon">To:</span><input
+                                                   id="to" type="text" placeholder="" class="form-control"/></div>
+                                             </div>
+                                             <div class="form-group hidden">
+                                                <div class="input-group"><span class="input-group-addon">Cc:</span><input
+                                                   id="cc" type="text" placeholder="" class="form-control"/></div>
+                                             </div>
+                                             <div class="form-group hidden">
+                                                <div class="input-group"><span class="input-group-addon">Bcc:</span><input
+                                                   id="bcc" type="text" placeholder="" class="form-control"/></div>
+                                             </div>
+                                             <div class="form-group">
+                                                <div class="input-group"><span
+                                                   class="input-group-addon">Subject:</span><input id="subject"
+                                                   type="text"
+                                                   placeholder=""
+                                                   class="form-control"/>
+                                                </div>
+                                             </div>
+                                             <div class="compose-editor mbl"><textarea rows="6"
+                                                class="wysihtml5 form-control">
+                                                   HERE is your first exercise file
+                                                </textarea>
+                                             </div>
+                                             <div class="form-group">
+                                                <input type="file"/>
+                                                <p class="help-block"><i class="fa fa-paperclip"></i>&nbsp;
+                                                   Attachments
+                                                </p>
+                                             </div>
+                                             <hr/>
+                                          </div>
+                                       </div>
+                                       <div class="form-actions text-right pal">
+                                          <button type="submit" class="btn btn-primary">Submit</button> &nbsp;
+                                          <button type="button" class="btn">Cancel</button>
+                                       </div>
+                                 </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--END CONTENT-->
+               <!--Modal Wide Width-->
+                <div id="modal-wide-width" tabindex="-1" role="dialog" aria-labelledby="modal-wide-width-label"
+                     aria-hidden="true" class="modal fade">
+                    <div class="modal-dialog modal-wide-width">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-hidden="true"
+                                        class="close">&times;</button>
+                                <h4 id="modal-wide-width-label" class="modal-title">Session time</h4></div>
+                            <div class="modal-body">
+                              <div class="row">
+                                 <div class="col-md-3">
+                                    <div id="mdp-demo"></div>
+                                 </div>
+                                 <div class="col-md-9">
+                                    <h3><span>1</span> Date, Nov 15 <div class="pull-right">1 Time</div></h3>
+                                    <hr>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <h4>Wed Nov 15, 2017 <span class="pull-right" style="cursor: pointer;"><i class="fa fa-trash-o"></i></span></h4>
+                                       </div>
+                                       <div class="col-md-12 mbm">
+                                          <div class="date_highlight">
+                                             <a href="#">4:00 PM - 5:15 PM</a>
+                                             <a href="#"><i class="fa fa-edit"></i></a>
+                                             <div class="pull-right" style="cursor: pointer;"><i class="fa fa-times"></i></div>
+                                          </div>
+                                          <div class="date_highlight">
+                                             <a href="#">4:00 PM - 5:15 PM</a>
+                                             <a href="#"><i class="fa fa-edit"></i></a>
+                                             <div class="pull-right" style="cursor: pointer;"><i class="fa fa-times"></i></div>
+                                          </div>
+                                          <div class="date_highlight">
+                                             <a href="#">4:00 PM - 5:15 PM</a>
+                                             <a href="#"><i class="fa fa-edit"></i></a>
+                                             <div class="pull-right" style="cursor: pointer;"><i class="fa fa-times"></i></div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <a href="#" class="add_new_time"><i class="fa fa-plus"></i> Add Time</a>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <form action="">
+                                             <div class="input-time">
+                                                <div class="col-md-3">
+                                                   <select data-style="btn-white" class="selectpicker form-control mbn">
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                   </select>
+                                                   <span class="help-block">Start time</span>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <select data-style="btn-white" class="selectpicker form-control mbn">
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                      <option value="">4:00 - 5:15</option>
+                                                   </select>
+                                                   <span class="help-block">End time</span>
+                                                </div>
+                                                <div class="col-md-4 pull-right">
+                                                   <div class="row">
+                                                      <div class="col-md-6">
+                                                         <button type="button" class="btn btn-block btn-default">Cancel</button>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                         <button type="button" class="btn btn-block btn-primary">Add</button>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End modal Wide Width -->
+            </div>
+            <!--END PAGE WRAPPER-->
+         </div>
+      </div>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/jquery-ui.multidatespicker.js"></script>
+      <script>
+         var today = new Date();
+         var y = today.getFullYear();
+         $('#mdp-demo').multiDatesPicker({
+            addDates: ['10/14/'+y, '02/19/'+y, '01/14/'+y, '11/16/'+y],
+            numberOfMonths: [3,1],
+            defaultDate: '1/1/'+y
+         });
+      </script>
+      <!--loading bootstrap js-->
+      <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="vendors/metisMenu/jquery.metisMenu.js"></script>
+      <script src="vendors/slimScroll/jquery.slimscroll.js"></script>
+      <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+      <script src="vendors/iCheck/icheck.min.js"></script>
+      <script src="vendors/iCheck/custom.min.js"></script>
+      <script src="vendors/jquery-notific8/jquery.notific8.min.js"></script>
+      <script src="vendors/jquery-highcharts/highcharts.js"></script>
+      <script src="js/jquery.menu.js"></script>
+      <script src="vendors/jquery-pace/pace.min.js"></script>
+      <script src="vendors/holder/holder.js"></script>
+      <script src="vendors/responsive-tabs/responsive-tabs.js"></script>
+      <script src="vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+      <!--CORE JAVASCRIPT-->
+      <script src="js/main.js"></script>
+      <!--LOADING STYLESHEET FOR FORM_COMPONENTS-->
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+      <script src="vendors/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+      <script src="vendors/bootstrap-clockface/js/clockface.js"></script>
+      <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+      <script src="vendors/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+      <script src="vendors/jquery-maskedinput/jquery-maskedinput.js"></script>
+      <script src="vendors/charCount.js"></script>
+      <script src="js/form-components.js"></script>
+      <script src="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+      <script src="js/email-compose-mail.js"></script>    
+      <!--LOADING SCRIPTS FOR PAGE-->
+      <script src="vendors/bootstrap-select/bootstrap-select.min.js"></script>
+      <script>
+         $(function () {
+             //BEGIN PLUGINS BOOTSTRAP SELECT
+             $('.selectpicker').selectpicker();
+             //END PLUGINS BOOTSTRAP SELECT
+         });
+
+         
+      </script> 
+   </body>
+</html>

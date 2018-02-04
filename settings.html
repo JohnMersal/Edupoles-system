@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard | Dashboard</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" href="images/icons/favicon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+      <!--Loading bootstrap css-->
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+      <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+      <!--Loading style vendors-->
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <link type="text/css" rel="stylesheet" href="vendors/iCheck/skins/all.css">
+      <!--LOADING STYLESHEET FOR tree-->
+      <link type="text/css" rel="stylesheet" href="vendors/jstree/dist/themes/default/style.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-colorpicker/css/colorpicker.css">
+      <link type="text/css" rel="stylesheet" href="vendors/jquery-treetable/stylesheets/jquery.treetable.css">
+      <link type="text/css" rel="stylesheet" href="vendors/jquery-treetable/stylesheets/jquery.treetable.theme.custom.css">
+      <!--LOADING STYLESHEET FOR jGrid-->
+      <link type="text/css" rel="stylesheet" href="vendors/jplist/html/css/jplist-custom.css">
+      <!--LOADING STYLESHEET FOR PAGE-->
+      <link type="text/css" rel="stylesheet" href="vendors/DataTables/media/css/jquery.dataTables.css">
+      <link type="text/css" rel="stylesheet"
+         href="vendors/DataTables/extensions/TableTools/css/dataTables.tableTools.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/DataTables/media/css/dataTables.bootstrap.css">
+      <!--Loading style-->
+      <link type="text/css" rel="stylesheet" href="css/screen.css">
+      <link type="text/css" rel="stylesheet" href="css/custom.css">
+      <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+   </head>
+   <body class="sidebar-icons header-fixed shadow-panel">
+      <div>
+         <!--BEGIN BACK TO TOP-->
+         <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+         <!--END BACK TO TOP-->
+         <!--BEGIN TOPBAR-->
+         <div class="page-header-topbar">
+            <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                  <img src="images/logo.png">
+                  </a>
+               </div>
+               <div class="topbar-main">
+                  <ul class="nav navbar navbar-top-links navbar-right mbn">
+                     <li class="dropdown topbar-user">
+                        <a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                           src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt=""
+                           class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span
+                           class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-user pull-right">
+                           <li><a href="extra-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                           <li><a href="page-calendar.html"><i class="fa fa-calendar"></i>My Calendar</a></li>
+                           <li><a href="email-inbox.html"><i class="fa fa-envelope"></i>My Inbox<span
+                              class="badge badge-danger">3</span></a></li>
+                           <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                              class="badge badge-success">7</span></a></li>
+                           <li class="divider"></li>
+                           <li><a href="extra-lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                           <li><a href="extra-signin.html"><i class="fa fa-key"></i>Log Out</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!--END TOPBAR-->
+         <div id="wrapper">
+            <!--BEGIN SIDEBAR MENU-->
+            <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+               <div class="sidebar-collapse menu-scroll">
+                  <ul id="side-menu" class="nav">
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-tachometer fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Dashboard</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="add-training-session.html">
+                           <i class="ico_program">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Create Program</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="course-builder.html">
+                           <i class="fa fa-book fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Course Builder</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="analytics.html">
+                           <i class="fa fa-bar-chart-o fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Analytics</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="news.html">
+                           <i class="fa fa-bullhorn fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">News and Events</span>
+                        </a>
+                     </li>
+                     <li class="active">
+                        <a href="settings.html">
+                           <i class="fa fa-cogs fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">System Settings</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <!--END SIDEBAR MENU-->
+            <!--BEGIN PAGE WRAPPER-->
+            <div id="page-wrapper">
+               <!--BEGIN TITLE & BREADCRUMB PAGE-->
+               <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+                  <div class="page-header pull-left">
+                     <div class="page-title">System Settings</div>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <!--END TITLE & BREADCRUMB PAGE-->
+               <!--BEGIN CONTENT-->
+               <div class="page-content">
+                  <div id="tab-general">
+                     <div class="row mbl">
+                        <div class="col-md-12">
+                           <ul role="tablist" class="ul-edit align-center nav nav-tabs">
+                              <li class="settings-list  col-md-2 active">
+                                 <a href="#content_management" role="tab" data-toggle="tab">
+                                    <div class="panel mbm">
+                                       <div class="panel-body">
+                                          <i class="fa fa-folder-open-o fa-fw"></i>
+                                          <br /> Content Management
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="settings-list  col-md-2">
+                                 <a href="#training_providers" role="tab" data-toggle="tab">
+                                    <div class="panel mbm">
+                                       <div class="panel-body">
+                                          <i class="fa fa-globe fa-fw"></i>
+                                          <br /> Training Providers
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="settings-list  col-md-2">
+                                 <a href="#user_admin" role="tab" data-toggle="tab">
+                                    <div class="panel mbm">
+                                       <div class="panel-body">
+                                          <i class="fa fa-user fa-fw"></i>
+                                          <br /> User Administration
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <!-- <li class="settings-list  col-md-2">
+                                 <a href="#approval_settings" role="tab" data-toggle="tab">
+                                    <div class="panel mbm">
+                                       <div class="panel-body">
+                                          <i class="fa fa-gear fa-fw"></i>
+                                          <br /> Approval Settings
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li> -->
+                              <li class="settings-list  col-md-2">
+                                 <a href="#training_venue" role="tab" data-toggle="tab">
+                                    <div class="panel mbm">
+                                       <div class="panel-body">
+                                          <i class="fa fa-building-o fa-fw"></i>
+                                          <br /> Training Venue
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="settings-list  col-md-2">
+                                 <a href="#expert" role="tab" data-toggle="tab">
+                                    <div class="panel mbm">
+                                       <div class="panel-body">
+                                          <i class="fa fa-male fa-fw"></i>
+                                          <br /> Expert
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="settings-list  col-md-2">
+                                 <a href="#system-branding" role="tab" data-toggle="tab">
+                                    <div class="panel mbm">
+                                       <div class="panel-body">
+                                          <i class="ico_brand"></i>
+                                          <br /> Branding
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                           <div class="tab-content tab-edit">
+                              <div id="content_management" class="tab-pane fade in active">
+                                 <div class="row">
+                                    <div class="col-lg-4">
+                                       <div class="row">
+                                          <div class="col-md-12 mbm">
+                                             <span>Area</span>
+                                             <div class="btn-group btn-edit-group pull-right">
+                                                <a href="#"><i class="fa fa-edit"></i> Edit</a>
+                                                <a href="#"><i class="fa fa-plus"></i> New</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row tree">
+                                          <div class="col-md-12">
+                                             <div class="panel">
+                                                <div class="panel-body" >
+                                                   <table class="table table-hover ">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td>
+                                                               <a href="#">Think</a>
+                                                            </td>
+                                                            <td>
+                                                               <div class="pull-right transparent-btns">                                   
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-times"></i>
+                                                                  </button>
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-edit"></i>
+                                                                  </button>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>
+                                                               <a href="#">Think</a>
+                                                            </td>
+                                                            <td>
+                                                               <div class="pull-right transparent-btns">                                   
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-times"></i>
+                                                                  </button>
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-edit"></i>
+                                                                  </button>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>
+                                                               <a href="#">Think</a>
+                                                            </td>
+                                                            <td>
+                                                               <div class="pull-right transparent-btns">                                   
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-times"></i>
+                                                                  </button>
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-edit"></i>
+                                                                  </button>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>
+                                                               <a href="#">Think</a>
+                                                            </td>
+                                                            <td>
+                                                               <div class="pull-right transparent-btns">                                   
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-times"></i>
+                                                                  </button>
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-edit"></i>
+                                                                  </button>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>
+                                                               <a href="#">Think</a>
+                                                            </td>
+                                                            <td>
+                                                               <div class="pull-right transparent-btns">                                   
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-times"></i>
+                                                                  </button>
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-edit"></i>
+                                                                  </button>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>
+                                                               <a href="#">Think</a>
+                                                            </td>
+                                                            <td>
+                                                               <div class="pull-right transparent-btns">                                   
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-times"></i>
+                                                                  </button>
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-edit"></i>
+                                                                  </button>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>
+                                                               <a href="#">Think</a>
+                                                            </td>
+                                                            <td>
+                                                               <div class="pull-right transparent-btns">                                   
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-times"></i>
+                                                                  </button>
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-edit"></i>
+                                                                  </button>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>
+                                                               <a href="#">Think</a>
+                                                            </td>
+                                                            <td>
+                                                               <div class="pull-right transparent-btns">                                   
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-times"></i>
+                                                                  </button>
+                                                                  <button type="button" class="btn "><i
+                                                                     class="fa fa-edit"></i>
+                                                                  </button>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                       <div class="row">
+                                          <div class="col-md-12 mbm">
+                                             <span>Track</span>
+                                             <div class="btn-group btn-edit-group pull-right">
+                                                <a href="#"><i class="fa fa-edit"></i> Edit</a>
+                                                <a href="#"><i class="fa fa-plus"></i> New</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row tree">
+                                          <div class="col-md-12">
+                                             <div class="panel">
+                                                <div class="panel-body" >
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                       <div class="row">
+                                          <div class="col-md-12 mbm">
+                                             <span>Module</span>
+                                             <div class="btn-group btn-edit-group pull-right">
+                                                <a href="#"><i class="fa fa-edit"></i> Edit</a>
+                                                <a href="#"><i class="fa fa-plus"></i> New</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row tree">
+                                          <div class="col-md-12">
+                                             <div class="panel">
+                                                <div class="panel-body" >
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <div class="panel">
+                                          <div class="panel-body">
+                                             <div id="grid-layout-table-2" class="box jplist table-layout-2">
+                                                <div class="box text-shadow">
+                                                   <table class="data-tbl">
+                                                      <thead>
+                                                         <tr>
+                                                            <th>Module</th>
+                                                            <th>Overview</th>
+                                                         </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                         <!--<item>1</item>-->
+                                                         <tr class="tbl-item">
+                                                            <!--<img/>-->
+                                                            <td class="img">
+                                                               <img src="vendors/jplist/html/img/thumbs/arch-1.jpg" alt="" title="" />
+                                                               <h5 class="module-name">Module Name</h5>
+                                                            </td>
+                                                            <!--<data></data>-->
+                                                            <td class="td-block">
+                                                               <p class="title">Arch</p>
+                                                               <p class="desc">An arch is a structure that spans a space and supports a load. Arches appeared as early as the 2nd millennium BC in Mesopotamian brick architecture and their systematic use started with the Ancient Romans who were the first to apply the technique to a wide range of structures.</p>
+                                                            </td>
+                                                         </tr>
+                                                         <!--<item>2</item>-->
+                                                         <tr class="tbl-item">
+                                                            <!--<img/>-->
+                                                            <td class="img"><img src="vendors/jplist/html/img/thumbs/arch-2.jpg" alt="" title="" /></td>
+                                                            <!--<data></data>-->
+                                                            <td class="td-block">
+                                                               <p class="title">Architecture</p>
+                                                               <p class="desc">Architecture is both the process and product of planning, designing and construction. Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art. Historical civilizations are often identified with their surviving architectural achievements.</p>
+                                                            </td>
+                                                            
+                                                         </tr>
+                                                         <!--<item>3</item>-->
+                                                         <tr class="tbl-item">
+                                                            <!--<img/>-->
+                                                            <td class="img"><img src="vendors/jplist/html/img/thumbs/autumn-1.jpg" alt="" title="" /></td>
+                                                            <!--<data></data>-->
+                                                            <td class="td-block">
+                                                               <p class="title">Autumn</p>
+                                                               <p class="desc">Autumn or Fall is one of the four temperate seasons. Autumn marks the transition from summer into winter, in September (Northern Hemisphere) or March (Southern Hemisphere) when the arrival of night becomes noticeably earlier. The equinoxes might be expected to be in the middle of their respective seasons, but temperature lag (caused by the thermal latency of the ground and sea) means that seasons appear later than dates calculated from a purely astronomical perspective.
+                                                               </p>
+                                                            </td>
+                                                            
+                                                         </tr>
+                                                         <!--<item>4</item>-->
+                                                         <tr class="tbl-item">
+                                                            <!--<img/>-->
+                                                            <td class="img"><img src="vendors/jplist/html/img/thumbs/boats-1.jpg" alt="" title="" /></td>
+                                                            <!--<data></data>-->
+                                                            <td class="td-block">
+                                                               <p class="title">Boats</p>
+                                                               <p class="desc">A boat is a watercraft of any size designed to float or plane, to provide passage across water. Usually this water will be inland (lakes) or in protected coastal areas. However, boats such as the whaleboat were designed to be operated from a ship in an offshore environment. In naval terms, a boat is a vessel small enough to be carried aboard another vessel (a ship).
+                                                               </p>
+                                                            </td>
+                                                            
+                                                         </tr>
+                                                         <!--<item>5</item>-->
+                                                         <tr class="tbl-item">
+                                                            <!--<img/>-->
+                                                            <td class="img"><img src="vendors/jplist/html/img/thumbs/book-1.jpg" alt="" title="" /></td>
+                                                            <!--<data></data>-->
+                                                            <td class="td-block">
+                                                               <p class="title">Books</p>
+                                                               <p class="desc">A book is a set of written, printed, illustrated, or blank sheets, made of ink, paper, parchment, or other materials, usually fastened together to hinge at one side. A single sheet within a book is called a leaf, and each side of a leaf is called a page. A book produced in electronic format is known as an electronic book (e-book).</p>
+                                                            </td>
+                                                            
+                                                         </tr>
+                                                         <!--<item>6</item>-->
+                                                         <tr class="tbl-item">
+                                                            <!--<img/>-->
+                                                            <td class="img"><img src="vendors/jplist/html/img/thumbs/business-1.jpg" alt="" title="" /></td>
+                                                            <!--<data></data>-->
+                                                            <td class="td-block">
+                                                               <p class="title">Business</p>
+                                                               <p class="desc">A business (also known as enterprise or firm) is an organization engaged in the trade of goods, services, or both to consumers. Businesses are predominant in capitalist economies, where most of them are privately owned and administered to earn profit to increase the wealth of their owners. Businesses may also be not-for-profit or state-owned. A business owned by multiple individuals may be referred to as a company, although that term also has a more precise meaning.</p>
+                                                            </td>
+                                                            
+                                                         </tr>
+                                                         <!--<item>6</item>-->
+                                                      </tbody>
+                                                   </table>
+                                                </div>
+                                                <div class="jplist-ios-button"><i class="fa fa-sort"></i>jPList Actions</div>
+                                                <div class="jplist-panel box panel-bottom">
+                                                   <div data-control-type="drop-down" data-control-name="paging" data-control-action="paging" data-control-animate-to-top="true" class="jplist-drop-down form-control">
+                                                      <ul class="dropdown-menu">
+                                                         <li><span data-number="5"> 5 per page</span></li>
+                                                         <li><span data-number="10" data-default="true"> 10 per page</span></li>
+                                                         <li><span data-number="all"> view all</span></li>
+                                                      </ul>
+                                                   </div>
+                                                   <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" data-control-animate-to-top="true" data-datetime-format="{month}/{day}/{year}" class="jplist-drop-down form-control">
+                                                      <ul class="dropdown-menu">
+                                                         <li><span data-path="default">Sort by</span></li>
+                                                         <li><span data-path=".title" data-order="asc" data-type="text">Title A-Z</span></li>
+                                                         <li><span data-path=".title" data-order="desc" data-type="text">Title Z-A</span>
+                                                         </li>
+                                                         <li><span data-path=".desc" data-order="asc" data-type="text">Description A-Z</span>
+                                                         </li>
+                                                         <li><span data-path=".desc" data-order="desc" data-type="text">Description Z-A</span>
+                                                         </li>
+                                                         <li><span data-path=".like" data-order="asc" data-type="number" data-default="true">Likes asc</span></li>
+                                                         <li><span data-path=".like" data-order="desc" data-type="number">Likes desc</span>
+                                                         </li>
+                                                         <li><span data-path=".date" data-order="asc" data-type="datetime">Date asc</span>
+                                                         </li>
+                                                         <li><span data-path=".date" data-order="desc" data-type="datetime">Date desc</span>
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                   <div data-type="{start} - {end} of {all}" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging" class="jplist-label btn btn-default"></div>
+                                                   <div data-control-type="pagination" data-control-name="paging" data-control-action="paging" data-control-animate-to-top="true" class="jplist-pagination"></div>
+                                                </div>
+                                                <div class="box jplist-no-results text-shadow align-center">
+                                                   <p>No results found</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="training_providers" class="tab-pane fade">
+                                 <div class="panel">
+                                    <div class="panel-body">
+                                       <div class="row">
+                                          <div class="col-md-12 col-xs-12">
+                                             <div class="row">
+                                                <div class="col-md-3">
+                                                   <div class="row">
+                                                      <div class="col-md-12 mbm">
+                                                         <span>Providers</span>
+                                                         <div class="btn-group btn-edit-group pull-right">
+                                                            <a href="#"><i class="fa fa-edit"></i> Edit</a>
+                                                            <a href="#"><i class="fa fa-plus"></i> New</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="checkbox_Cover tree" style="height: 400px;">
+                                                      <table class="table table-hover ">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                  <a href="#">Think</a>
+                                                               </td>
+                                                               <td>
+                                                                  <div class="transparent-btns pull-right">                                   
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-times"></i>
+                                                                     </button>
+                                                                     <button type="button" class="btn "><i
+                                                                        class="fa fa-edit"></i>
+                                                                     </button>
+                                                                  </div>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </div>
+                                                   <a id="MainContent_tree_provider_SkipLink"></a>
+                                                </div>
+                                                <div class="col-md-9">
+                                                   <div id="MainContent_updateCourses">
+                                                      <h4>Provider Details</h4>
+                                                      <div>
+                                                         <table class="table table-hover" cellspacing="0" id="MainContent_grid_provider" style="border-collapse:collapse;">
+                                                            <tbody>
+                                                               <tr class="alert alert-warning">
+                                                                  <td colspan="5">No Data Found ..</td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                      <input type="hidden" name="ctl00$MainContent$hid_ProviderId" id="MainContent_hid_ProviderId">
+                                                      <h4>Provider Courses</h4>
+                                                      <div style="max-height: 290px; overflow-y: scroll;">
+                                                         <div>
+                                                            <table class="table table-hover" cellspacing="0" id="MainContent_grid_course" style="border-collapse:collapse;">
+                                                               <tbody>
+                                                                  <tr style="background-color:WhiteSmoke;">
+                                                                     <th scope="col">&nbsp;</th>
+                                                                     <th scope="col">Course Name</th>
+                                                                     <th scope="col">Cost</th>
+                                                                     <th scope="col">Duration (days)</th>
+                                                                     <th scope="col">Attendees</th>
+                                                                     <th scope="col">Expiry (months)</th>
+                                                                     <th scope="col">Type</th>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td><img src="../../../Images/636210061151728750.jpg" style="height:50px;width:50px;"></td>
+                                                                     <td>Art of Delegation</td>
+                                                                     <td>360 EGP Per Attendee</td>
+                                                                     <td>1</td>
+                                                                     <td>20</td>
+                                                                     <td>12</td>
+                                                                     <td>
+                                                                        <i class="icon ico_webinar"></i> Webinar
+                                                                     </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td><img src="../../../Images/636272589568500000.jpg" style="height:50px;width:50px;"></td>
+                                                                     <td>Attitude and mindset</td>
+                                                                     <td>320 EGP Per Attendee</td>
+                                                                     <td>1</td>
+                                                                     <td>20</td>
+                                                                     <td>12</td>
+                                                                     <td>
+                                                                        <i class="icon ico_webinar"></i> Webinar
+                                                                     </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td><img src="../../../Images/636197874799948750.png" style="height:50px;width:50px;"></td>
+                                                                     <td>Attractive Visual Presentation</td>
+                                                                     <td>360 EGP Per Attendee</td>
+                                                                     <td>1</td>
+                                                                     <td>20</td>
+                                                                     <td>12</td>
+                                                                     <td>
+                                                                        <a href="#" onclick="ViewCourseHistory('10','Attractive Visual Presentation')" title="History"><i class="glyphicon glyphicon-briefcase"></i></a>
+                                                                     </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td><img src="../../../Images/no_image.png" style="height:50px;width:50px;"></td>
+                                                                     <td>Basics of Marketing </td>
+                                                                     <td>200 EGP Per Course</td>
+                                                                     <td>12</td>
+                                                                     <td>12</td>
+                                                                     <td>12</td>
+                                                                     <td>
+                                                                        <a href="#" onclick="ViewCourseHistory('26','Basics of Marketing ')" title="History"><i class="glyphicon glyphicon-briefcase"></i></a>
+                                                                     </td>
+                                                                  </tr>
+                                                               </tbody>
+                                                            </table>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="user_admin" class="tab-pane fade">
+                                 <div class="panel">
+                                    <div class="panel-body">
+                                       <div class="col-md-12">
+                                          <ul role="tablist" class="ul-edit type2 align-center nav nav-tabs">
+                                             <li class="active">
+                                                <a href="#user-management" role="tab" data-toggle="tab">User</a>
+                                             </li>
+                                             <li>
+                                                <a href="#manage-group" role="tab" data-toggle="tab">Group</a>
+                                             </li>
+                                             <li>
+                                                <a href="#access-rights" role="tab" data-toggle="tab">Access Rights</a>
+                                             </li>
+                                          </ul>
+                                          <div class="tab-content tab-edit">
+                                             <div id="user-management" class="tab-pane fade in active">
+                                                <div class="row mbl">
+                                                   <div class="col-md-4 pull-right">
+                                                      <div class="btn-group btn-edit-group pull-right">
+                                                         <a href="#"><i class="fa fa-plus "></i> Import</a>
+                                                         <a href="#"><i class="fa fa-plus "></i> Export</a>
+                                                         <a href="#"><i class="fa fa-plus "></i><i class="fa fa-user "></i> New User</a>
+                                                      </div>
+                                                   </div>
+
+                                                </div>
+                                                <div class="table-responsive">
+                                                   <table id="table_id"
+                                                      class="table table-hover table-striped table-bordered table-advanced tablesorter display">
+                                                      <thead>
+                                                         <tr>
+                                                            <th width="2%">Rec #</th>
+                                                            <th width="10%">Username</th>
+                                                            <th width="10%">Country</th>
+                                                            <th width="10%">Gender</th>
+                                                            <th width="7%">Order</th>
+                                                            <th width="12%">Date</th>
+                                                            <th width="10%">Price</th>
+                                                            <th width="9%">Status</th>
+                                                            <th width="12%">Actions</th>
+                                                         </tr>
+                                                      <tbody>
+                                                         <tr>
+                                                            <td>1</td>
+                                                            <td>Henry</td>
+                                                            <td>England</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$112.40</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>2</td>
+                                                            <td>Melinda</td>
+                                                            <td>Germany</td>
+                                                            <td>Female</td>
+                                                            <td>45</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-info">Pending</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>18</td>
+                                                            <td>Joh Doe</td>
+                                                            <td>England</td>
+                                                            <td>Male</td>
+                                                            <td>40</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-warning">Suspended</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>19</td>
+                                                            <td>Lahm</td>
+                                                            <td>United States</td>
+                                                            <td>Female</td>
+                                                            <td>15</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-danger">Blocked</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>20</td>
+                                                            <td>Henry</td>
+                                                            <td>France</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>20</td>
+                                                            <td>Henry</td>
+                                                            <td>France</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>20</td>
+                                                            <td>Jane</td>
+                                                            <td>England</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>21-09-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>3</td>
+                                                            <td>Larry</td>
+                                                            <td>England</td>
+                                                            <td>Female</td>
+                                                            <td>40</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$112.40</td>
+                                                            <td><span class="label label-sm label-warning">Suspended</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>4</td>
+                                                            <td>Melinda</td>
+                                                            <td>United States</td>
+                                                            <td>Female</td>
+                                                            <td>15</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$123.40</td>
+                                                            <td><span class="label label-sm label-danger">Blocked</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>5</td>
+                                                            <td>Henry</td>
+                                                            <td>United States</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>6</td>
+                                                            <td>Melinda</td>
+                                                            <td>Brazil</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>7</td>
+                                                            <td>John</td>
+                                                            <td>England</td>
+                                                            <td>Female</td>
+                                                            <td>45</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-info">Pending</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>8</td>
+                                                            <td>Larry</td>
+                                                            <td>United States</td>
+                                                            <td>Female</td>
+                                                            <td>40</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-warning">Suspended</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>9</td>
+                                                            <td>Lahm</td>
+                                                            <td>United States</td>
+                                                            <td>Female</td>
+                                                            <td>15</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-danger">Blocked</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>10</td>
+                                                            <td>Melinda</td>
+                                                            <td>Germany</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>11</td>
+                                                            <td>Henry</td>
+                                                            <td>England</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>12</td>
+                                                            <td>John</td>
+                                                            <td>United States</td>
+                                                            <td>Female</td>
+                                                            <td>45</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-info">Pending</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>13</td>
+                                                            <td>Larry</td>
+                                                            <td>United States</td>
+                                                            <td>Female</td>
+                                                            <td>40</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-warning">Suspended</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>14</td>
+                                                            <td>Lahm</td>
+                                                            <td>Germany</td>
+                                                            <td>Female</td>
+                                                            <td>15</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-danger">Blocked</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>15</td>
+                                                            <td>Henry</td>
+                                                            <td>Japan</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>16</td>
+                                                            <td>Henry</td>
+                                                            <td>United States</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>17</td>
+                                                            <td>Melinda</td>
+                                                            <td>United States</td>
+                                                            <td>Female</td>
+                                                            <td>45</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-info">Pending</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>18</td>
+                                                            <td>Luan</td>
+                                                            <td>VietNam</td>
+                                                            <td>Male</td>
+                                                            <td>40</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-warning">Suspended</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>19</td>
+                                                            <td>Lahm</td>
+                                                            <td>United States</td>
+                                                            <td>Female</td>
+                                                            <td>15</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-danger">Blocked</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>20</td>
+                                                            <td>Henry</td>
+                                                            <td>France</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>21-09-1999</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>20</td>
+                                                            <td>Henry</td>
+                                                            <td>France</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>20-05-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>20</td>
+                                                            <td>Jane</td>
+                                                            <td>England</td>
+                                                            <td>Male</td>
+                                                            <td>32</td>
+                                                            <td>21-09-2014</td>
+                                                            <td>$240.50</td>
+                                                            <td><span class="label label-sm label-success">Approved</span></td>
+                                                            <td>
+                                                               <button type="button" class="btn btn-default btn-xs"><i
+                                                                  class="fa fa-edit"></i>&nbsp;
+                                                               Edit
+                                                               </button>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                      </thead>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                             <div id="manage-group" class="tab-pane fade">
+                                                <table class="table table-hover">
+                                                   <thead>
+                                                      <tr>
+                                                         <th>Group Name</th>
+                                                         <th> 
+                                                            <button type="button" class="btn btn-yellow pull-right"><i
+                                                               class="fa fa-plus"></i> <i
+                                                               class="fa fa-group"></i>&nbsp;New group
+                                                            </button>
+                                                         </th>
+                                                      </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                      <tr>
+                                                         <td>Marketing</td>
+                                                         <td>
+                                                            <button type="button" class="btn btn-default pull-right"><i
+                                                               class="fa fa-edit"></i>&nbsp;
+                                                            Edit
+                                                            </button>
+                                                         </td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Sales</td>
+                                                         <td>
+                                                            <button type="button" class="btn btn-default pull-right"><i
+                                                               class="fa fa-edit"></i>&nbsp;
+                                                            Edit
+                                                            </button>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                             <div id="access-rights" class="tab-pane fade">
+                                                <table class="table table-hover">
+                                                   <thead>
+                                                      <tr>
+                                                         <th>Access Role</th>
+                                                         <th>&nbsp;</th>
+                                                      </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                      <tr>
+                                                         <td>Admin</td>
+                                                         <td>
+                                                            <button type="button" class="btn btn-default pull-right"><i
+                                                               class="fa fa-key"></i>&nbsp;
+                                                            </button>
+                                                         </td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Member</td>
+                                                         <td>
+                                                            <button type="button" class="btn btn-default pull-right"><i
+                                                               class="fa fa-key"></i>&nbsp;
+                                                            </button>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                 </div>
+                              </div>
+                              <!-- <div id="approval_settings" class="tab-pane fade">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="row mbl">
+                                          <div class="col-md-12">
+                                             <h4>Select Approver</h4>
+                                             <select name="ctl00$MainContent$drp_Approver" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$drp_Approver\',\'\')', 0)" id="MainContent_drp_Approver" class="form-control">
+                                                <option selected="selected" value="">Select </option>
+                                                <option value="40">abdelrahman.elgohary</option>
+                                                <option value="43">afatouh</option>
+                                                <option value="29">amansour</option>
+                                                <option value="42">amrabdulkader</option>
+                                                <option value="27">basma</option>
+                                                <option value="28">basma.tawakol</option>
+                                                <option value="23">Demo-Account</option>
+                                                <option value="25">Demo-Account7456</option>
+                                                <option value="24">Demo-Sales</option>
+                                                <option value="26">harounzz</option>
+                                                <option value="36">heba.nassar85</option>
+                                                <option value="37">john.mersal</option>
+                                                <option value="3">khaled.hosny</option>
+                                                <option value="48">Khalid.m.elkhayat</option>
+                                                <option value="46">m.westafrica</option>
+                                                <option value="38">madonna.yousry</option>
+                                                <option value="44">marwa.fathi.logic</option>
+                                                <option value="39">mina.adel</option>
+                                                <option value="14">radwan.bawadekji</option>
+                                                <option value="30">sallynabil1977</option>
+                                                <option value="41">samaa.elsadat.au</option>
+                                                <option value="32">samar.aglan</option>
+                                                <option value="47">samar.samir</option>
+                                                <option value="45">Soliman-a</option>
+                                                <option value="31">tony.alfred</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <h4>Employees</h4>
+                                             <div class="panel">
+                                                <div class="panel-body">
+                                                   <div class="mbm" id="MainContent_updateemps">
+                                                      <div class="checkbox_Cover checkbox" style="height: 240px">
+                                                         <table class="table table-hover" id="MainContent_chk_Employee">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_0" type="checkbox" name="ctl00$MainContent$chk_Employee$0" value="40"><label for="MainContent_chk_Employee_0">abdelrahman.elgohary</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_9" type="checkbox" name="ctl00$MainContent$chk_Employee$9" value="26"><label for="MainContent_chk_Employee_9">harounzz</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_17" type="checkbox" name="ctl00$MainContent$chk_Employee$17" value="39"><label for="MainContent_chk_Employee_17">mina.adel</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_1" type="checkbox" name="ctl00$MainContent$chk_Employee$1" value="43"><label for="MainContent_chk_Employee_1">afatouh</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_10" type="checkbox" name="ctl00$MainContent$chk_Employee$10" value="36"><label for="MainContent_chk_Employee_10">heba.nassar85</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_18" type="checkbox" name="ctl00$MainContent$chk_Employee$18" value="14"><label for="MainContent_chk_Employee_18">radwan.bawadekji</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_2" type="checkbox" name="ctl00$MainContent$chk_Employee$2" value="29"><label for="MainContent_chk_Employee_2">amansour</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_11" type="checkbox" name="ctl00$MainContent$chk_Employee$11" value="37"><label for="MainContent_chk_Employee_11">john.mersal</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_19" type="checkbox" name="ctl00$MainContent$chk_Employee$19" value="30"><label for="MainContent_chk_Employee_19">sallynabil1977</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_3" type="checkbox" name="ctl00$MainContent$chk_Employee$3" value="42"><label for="MainContent_chk_Employee_3">amrabdulkader</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_12" type="checkbox" name="ctl00$MainContent$chk_Employee$12" value="3"><label for="MainContent_chk_Employee_12">khaled.hosny</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_20" type="checkbox" name="ctl00$MainContent$chk_Employee$20" value="41"><label for="MainContent_chk_Employee_20">samaa.elsadat.au</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_4" type="checkbox" name="ctl00$MainContent$chk_Employee$4" value="27"><label for="MainContent_chk_Employee_4">basma</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_13" type="checkbox" name="ctl00$MainContent$chk_Employee$13" value="48"><label for="MainContent_chk_Employee_13">Khalid.m.elkhayat</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_21" type="checkbox" name="ctl00$MainContent$chk_Employee$21" value="32"><label for="MainContent_chk_Employee_21">samar.aglan</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_5" type="checkbox" name="ctl00$MainContent$chk_Employee$5" value="28"><label for="MainContent_chk_Employee_5">basma.tawakol</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_14" type="checkbox" name="ctl00$MainContent$chk_Employee$14" value="46"><label for="MainContent_chk_Employee_14">m.westafrica</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_22" type="checkbox" name="ctl00$MainContent$chk_Employee$22" value="47"><label for="MainContent_chk_Employee_22">samar.samir</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_6" type="checkbox" name="ctl00$MainContent$chk_Employee$6" value="23"><label for="MainContent_chk_Employee_6">Demo-Account</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_15" type="checkbox" name="ctl00$MainContent$chk_Employee$15" value="38"><label for="MainContent_chk_Employee_15">madonna.yousry</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_23" type="checkbox" name="ctl00$MainContent$chk_Employee$23" value="45"><label for="MainContent_chk_Employee_23">Soliman-a</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_7" type="checkbox" name="ctl00$MainContent$chk_Employee$7" value="25"><label for="MainContent_chk_Employee_7">Demo-Account7456</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_16" type="checkbox" name="ctl00$MainContent$chk_Employee$16" value="44"><label for="MainContent_chk_Employee_16">marwa.fathi.logic</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_24" type="checkbox" name="ctl00$MainContent$chk_Employee$24" value="31"><label for="MainContent_chk_Employee_24">tony.alfred</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_8" type="checkbox" name="ctl00$MainContent$chk_Employee$8" value="24"><label for="MainContent_chk_Employee_8">Demo-Sales</label></td>
+                                                                  <td></td>
+                                                                  <td></td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <input type="submit" name="ctl00$MainContent$btn_UpdateEmployees" value="Update Employees" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btn_UpdateEmployees&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_btn_UpdateEmployees" class="btn btn-primary pull-right">
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="row mbl">
+                                          <div class="col-md-12">
+                                             <h4>Select Approver</h4>
+                                             <select name="ctl00$MainContent$drp_Approver" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$drp_Approver\',\'\')', 0)" id="MainContent_drp_Approver" class="form-control">
+                                                <option selected="selected" value="">Select </option>
+                                                <option value="40">abdelrahman.elgohary</option>
+                                                <option value="43">afatouh</option>
+                                                <option value="29">amansour</option>
+                                                <option value="42">amrabdulkader</option>
+                                                <option value="27">basma</option>
+                                                <option value="28">basma.tawakol</option>
+                                                <option value="23">Demo-Account</option>
+                                                <option value="25">Demo-Account7456</option>
+                                                <option value="24">Demo-Sales</option>
+                                                <option value="26">harounzz</option>
+                                                <option value="36">heba.nassar85</option>
+                                                <option value="37">john.mersal</option>
+                                                <option value="3">khaled.hosny</option>
+                                                <option value="48">Khalid.m.elkhayat</option>
+                                                <option value="46">m.westafrica</option>
+                                                <option value="38">madonna.yousry</option>
+                                                <option value="44">marwa.fathi.logic</option>
+                                                <option value="39">mina.adel</option>
+                                                <option value="14">radwan.bawadekji</option>
+                                                <option value="30">sallynabil1977</option>
+                                                <option value="41">samaa.elsadat.au</option>
+                                                <option value="32">samar.aglan</option>
+                                                <option value="47">samar.samir</option>
+                                                <option value="45">Soliman-a</option>
+                                                <option value="31">tony.alfred</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <h4>Employees</h4>
+                                             <div class="panel">
+                                                <div class="panel-body">
+                                                   <div class="mbm" id="MainContent_updateemps">
+                                                      <div class="checkbox_Cover checkbox" style="height: 240px">
+                                                         <table class="table table-hover" id="MainContent_chk_Employee">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_0" type="checkbox" name="ctl00$MainContent$chk_Employee$0" value="40"><label for="MainContent_chk_Employee_0">abdelrahman.elgohary</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_9" type="checkbox" name="ctl00$MainContent$chk_Employee$9" value="26"><label for="MainContent_chk_Employee_9">harounzz</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_17" type="checkbox" name="ctl00$MainContent$chk_Employee$17" value="39"><label for="MainContent_chk_Employee_17">mina.adel</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_1" type="checkbox" name="ctl00$MainContent$chk_Employee$1" value="43"><label for="MainContent_chk_Employee_1">afatouh</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_10" type="checkbox" name="ctl00$MainContent$chk_Employee$10" value="36"><label for="MainContent_chk_Employee_10">heba.nassar85</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_18" type="checkbox" name="ctl00$MainContent$chk_Employee$18" value="14"><label for="MainContent_chk_Employee_18">radwan.bawadekji</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_2" type="checkbox" name="ctl00$MainContent$chk_Employee$2" value="29"><label for="MainContent_chk_Employee_2">amansour</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_11" type="checkbox" name="ctl00$MainContent$chk_Employee$11" value="37"><label for="MainContent_chk_Employee_11">john.mersal</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_19" type="checkbox" name="ctl00$MainContent$chk_Employee$19" value="30"><label for="MainContent_chk_Employee_19">sallynabil1977</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_3" type="checkbox" name="ctl00$MainContent$chk_Employee$3" value="42"><label for="MainContent_chk_Employee_3">amrabdulkader</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_12" type="checkbox" name="ctl00$MainContent$chk_Employee$12" value="3"><label for="MainContent_chk_Employee_12">khaled.hosny</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_20" type="checkbox" name="ctl00$MainContent$chk_Employee$20" value="41"><label for="MainContent_chk_Employee_20">samaa.elsadat.au</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_4" type="checkbox" name="ctl00$MainContent$chk_Employee$4" value="27"><label for="MainContent_chk_Employee_4">basma</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_13" type="checkbox" name="ctl00$MainContent$chk_Employee$13" value="48"><label for="MainContent_chk_Employee_13">Khalid.m.elkhayat</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_21" type="checkbox" name="ctl00$MainContent$chk_Employee$21" value="32"><label for="MainContent_chk_Employee_21">samar.aglan</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_5" type="checkbox" name="ctl00$MainContent$chk_Employee$5" value="28"><label for="MainContent_chk_Employee_5">basma.tawakol</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_14" type="checkbox" name="ctl00$MainContent$chk_Employee$14" value="46"><label for="MainContent_chk_Employee_14">m.westafrica</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_22" type="checkbox" name="ctl00$MainContent$chk_Employee$22" value="47"><label for="MainContent_chk_Employee_22">samar.samir</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_6" type="checkbox" name="ctl00$MainContent$chk_Employee$6" value="23"><label for="MainContent_chk_Employee_6">Demo-Account</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_15" type="checkbox" name="ctl00$MainContent$chk_Employee$15" value="38"><label for="MainContent_chk_Employee_15">madonna.yousry</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_23" type="checkbox" name="ctl00$MainContent$chk_Employee$23" value="45"><label for="MainContent_chk_Employee_23">Soliman-a</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_7" type="checkbox" name="ctl00$MainContent$chk_Employee$7" value="25"><label for="MainContent_chk_Employee_7">Demo-Account7456</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_16" type="checkbox" name="ctl00$MainContent$chk_Employee$16" value="44"><label for="MainContent_chk_Employee_16">marwa.fathi.logic</label></td>
+                                                                  <td><input id="MainContent_chk_Employee_24" type="checkbox" name="ctl00$MainContent$chk_Employee$24" value="31"><label for="MainContent_chk_Employee_24">tony.alfred</label></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input id="MainContent_chk_Employee_8" type="checkbox" name="ctl00$MainContent$chk_Employee$8" value="24"><label for="MainContent_chk_Employee_8">Demo-Sales</label></td>
+                                                                  <td></td>
+                                                                  <td></td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <input type="submit" name="ctl00$MainContent$btn_UpdateEmployees" value="Update Employees" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btn_UpdateEmployees&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_btn_UpdateEmployees" class="btn btn-primary pull-right">
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div> -->
+                              <div id="training_venue" class="tab-pane fade">
+                                 <div class="panel">
+                                    <div class="panel-body">
+                                       <div class="row">
+                                          <div class="col-md-4 pull-right mbl mtm">
+                                             <div class="btn-group btn-edit-group pull-right">
+                                                <a href="#"><i class="fa fa-plus "></i> New </a>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <table class="table table-hover" cellspacing="0" id="MainContent_grid_venue" style="border-collapse:collapse;">
+                                                <tbody>
+                                                   <tr style="background-color:WhiteSmoke;">
+                                                      <th scope="col">&nbsp;</th>
+                                                      <th scope="col">Venue Name</th>
+                                                      <th scope="col">Country</th>
+                                                      <th scope="col">Address</th>
+                                                      <th scope="col">&nbsp;</th>
+                                                   </tr>
+                                                   <tr>
+                                                      <td><img src="../../../Images/no_image.png" style="height:50px;width:50px;"></td>
+                                                      <td>Hilton Hotel</td>
+                                                      <td>Egypt</td>
+                                                      <td>Abd El monaem Square, Ramses</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td><img src="../../../Images/no_image.png" style="height:50px;width:50px;"></td>
+                                                      <td>Shift Venue</td>
+                                                      <td>Egypt</td>
+                                                      <td>5th District, New Cairo</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td><img src="../../../Images/no_image.png" style="height:50px;width:50px;"></td>
+                                                      <td>Fairmont Heliopolis </td>
+                                                      <td>Egypt</td>
+                                                      <td>Heliopolis, Close to Cairo Airport</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td><img src="../../../Images/no_image.png" style="height:50px;width:50px;"></td>
+                                                      <td>ABB  </td>
+                                                      <td>Egypt</td>
+                                                      <td>New Nozha</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td><img src="../../../Images/no_image.png" style="height:50px;width:50px;"></td>
+                                                      <td>Online Sessions</td>
+                                                      <td>Egypt</td>
+                                                      <td>NONE</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="expert" class="tab-pane fade">
+                                 <div class="panel">
+                                    <div class="panel-body">
+                                       <div class="row">
+                                          <div class="col-md-4 pull-right mbl mtm">
+                                             <div class="btn-group btn-edit-group pull-right">
+                                                <a href="#"><i class="fa fa-plus "></i> New </a>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <table class="table table-hover" cellspacing="0" id="MainContent_grid_trainers" style="border-collapse:collapse;">
+                                                <tbody>
+                                                   <tr style="background-color:WhiteSmoke;">
+                                                      <th scope="col">Instructor Name</th>
+                                                      <th scope="col">&nbsp;</th>
+                                                   </tr>
+                                                   <tr>
+                                                      <td>Mohamed Haroun</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td>Hany El Refaee</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>                                                                
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td>Dina Samir</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>                                                                
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td>Hesham Bahram</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>                                                                
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td>Samer Bahaa</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>                                                                
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td>Online</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>                                                                
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td>Basma</td>
+                                                      <td>
+                                                         <div class="transparent-btns">
+                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
+                                                         </div>                                                                
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="system-branding" class="tab-pane fade">
+                                 <div class="panel">
+                                    <div class="panel-body">
+                                       <div class="row">
+                                          <div class="col-md-4">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <div class="row">
+                                                      <div class="col-md-12 mbl">
+                                                         <div class="radio">
+                                                            <label for="">Logo background color </label>
+                                                            <label>
+                                                               <input id="optionsRadios4" type="radio" name="optionsRadios" value="option1" checked="checked"/>&nbsp; Black
+                                                            </label>
+                                                            <label>
+                                                               <input id="optionsRadios5" type="radio" name="optionsRadios" value="option2"/>&nbsp; White
+                                                            </label>
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-md-12 mbl">
+                                                         <label for="">Main Color</label>
+                                                         <input type="text" class="colorpicker-brand form-control mbs"/>
+                                                         <p class="text-default">Insert your HEX code or choose color through the color picker </p>
+                                                      </div>
+                                                      <div class="col-md-12 logo-upload">
+                                                         <img id="blah" src="http://placehold.it/180" alt="your image" />
+                                                         <br />
+                                                         <input type='file' onchange="readURL(this);" />
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-8">
+                                             <img src="images/coloringsample.jpg" alt="" class="main-sample" />
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--END CONTENT-->
+               <div id="modal-header-primary" tabindex="-1" role="dialog" aria-labelledby="modal-header-primary-label"
+                  aria-hidden="true" class="modal fade">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header modal-header-primary">
+                           <button type="button" data-dismiss="modal" aria-hidden="true"
+                              class="close">&times;</button>
+                           <h4 id="modal-header-primary-label" class="modal-title">Modal Header Primary</h4>
+                        </div>
+                        <div class="modal-body">Modal body goes here</div>
+                        <div class="modal-footer">
+                           <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                           <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--END PAGE WRAPPER-->
+         </div>
+      </div>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <!--loading bootstrap js-->
+      <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="vendors/metisMenu/jquery.metisMenu.js"></script>
+      <script src="vendors/slimScroll/jquery.slimscroll.js"></script>
+      <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+      <script src="vendors/iCheck/icheck.min.js"></script>
+      <script src="vendors/iCheck/custom.min.js"></script>
+      <script src="vendors/jquery-notific8/jquery.notific8.min.js"></script>
+      <script src="vendors/jquery-highcharts/highcharts.js"></script>
+      <script src="js/jquery.menu.js"></script>
+      <script src="vendors/jquery-pace/pace.min.js"></script>
+      <script src="vendors/holder/holder.js"></script>
+      <script src="vendors/responsive-tabs/responsive-tabs.js"></script>
+      <script src="vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+      <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+      <!--CORE JAVASCRIPT-->
+      <script src="js/main.js"></script>
+      <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+      <!--LOADING SCRIPTS FOR tree-->
+      <script src="vendors/jstree/dist/jstree.min.js"></script>
+      <script src="vendors/jquery-treetable/javascripts/src/jquery.treetable.js"></script>
+      <script src="js/ui-treeview.js"></script>
+      <!--LOADING SCRIPTS FOR JPGRID-->
+      <script src="vendors/jplist/html/js/jplist.min.js"></script>
+      <script src="js/jplist.js"></script>
+      <!--LOADING SCRIPTS FOR DATATABLE-->
+      <script src="vendors/DataTables/media/js/jquery.dataTables.js"></script>
+      <script src="vendors/DataTables/media/js/dataTables.bootstrap.js"></script>
+      <script src="vendors/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+      <script src="js/table-datatables.js"></script>
+      <script>
+         $('a[data-toggle="tab"]').on( 'shown.bs.tab', function (e) {
+             $.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();
+         } );      
+       //BEGIN PLUGINS COLOR PICKER
+       $('.colorpicker-login').colorpicker();
+       $('.colorpicker-brand').colorpicker();
+       //END PLUGINS COLOR PICKER
+        function readURL(input) {
+               if (input.files && input.files[0]) {
+                   var reader = new FileReader();
+
+                   reader.onload = function (e) {
+                       $('#blah')
+                           .attr('src', e.target.result);
+                   };
+
+                   reader.readAsDataURL(input.files[0]);
+               }
+           }
+      </script>
+   </body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard | Dashboard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+    <!--Loading bootstrap css-->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+    <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!--Loading style vendors-->
+    <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+    <!--LOADING STYLESHEET FOR PAGE-->
+    <link type="text/css" rel="stylesheet" href="vendors/jstree/dist/themes/default/style.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/jquery-treetable/stylesheets/jquery.treetable.css">
+    <link type="text/css" rel="stylesheet"
+          href="vendors/jquery-treetable/stylesheets/jquery.treetable.theme.custom.css">
+    <!--LOADING STYLESHEET FOR jGrid-->
+    <link type="text/css" rel="stylesheet" href="vendors/jplist/html/css/jplist-custom.css">
+    <!--Loading style-->
+    <link type="text/css" rel="stylesheet" href="css/screen.css">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+  </head>
+  <body class="sidebar-icons header-fixed shadow-panel">
+    <div>
+      <!--BEGIN BACK TO TOP-->
+      <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+      <!--END BACK TO TOP-->
+      <!--BEGIN TOPBAR-->
+      <div class="page-header-topbar">
+        <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+            <img src="images/logo.png">
+            </a>
+          </div>
+          <div class="topbar-main">
+            <ul class="nav navbar navbar-top-links navbar-right mbn">
+              <li class="dropdown topbar-user">
+                <a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                  src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt=""
+                  class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span
+                  class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-user pull-right">
+                  <li><a href="extra-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                  <li><a href="page-calendar.html"><i class="fa fa-calendar"></i>My Calendar</a></li>
+                  <li><a href="email-inbox.html"><i class="fa fa-envelope"></i>My Inbox<span
+                    class="badge badge-danger">3</span></a></li>
+                  <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                    class="badge badge-success">7</span></a></li>
+                  <li class="divider"></li>
+                  <li><a href="extra-lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                  <li><a href="extra-signin.html"><i class="fa fa-key"></i>Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--END TOPBAR-->
+      <div id="wrapper">
+        <!--BEGIN SIDEBAR MENU-->
+        <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+               <div class="sidebar-collapse menu-scroll">
+                  <ul id="side-menu" class="nav">
+                     <li class="active">
+                        <a href="user-index.html">
+                           <i class="fa fa-home fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Home</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="user-my-course.html">
+                           <i class="fa fa-book fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">My Courses</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="user-my-progress2.html">
+                           <i class="fa fa-bar-chart-o fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">My Progress</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-shopping-cart fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Course Market Place</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+        <!--END SIDEBAR MENU-->
+        <!--BEGIN PAGE WRAPPER-->
+        <div id="page-wrapper">
+          <!--BEGIN TITLE & BREADCRUMB PAGE-->
+          <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+            <div class="page-header pull-left">
+              <div class="page-title">My Courses</div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <!--END TITLE & BREADCRUMB PAGE-->
+          <!--BEGIN CONTENT-->
+          <div class="page-content">
+            <div id="tab-general">
+              <div class="row mbl">
+                <div class="col-md-12">
+                 <div id="home" class="tab-pane fade in active">
+                   <div class="row">
+                    <div class="col-lg-4">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="panel">
+                            <div class="panel-body">
+                              <h3 class="mtn mbm">Courses</h3>
+                              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                              <ul id="myUL">
+                                <li><a href="#/australia/">Australia</a></li>
+                                <li><a href="#/austria/">Austria</a></li>
+                                <li><a href="#/belgium/">Belgium</a></li>
+                                <li><a href="#/brazil/">Brazil</a></li>
+                                <li><a href="#/canada/">Canada</a></li>
+                                <li><a href="#/denmark/">Denmark</a></li>
+                                <li><a href="#/finland/">Finland</a></li>
+                                <li><a href="#/france/">France</a></li>
+                                <li><a href="#/germany/">Germany</a></li>
+                                <li><a href="#/greece/">Greece</a></li>
+                                <li><a href="#/ireland/">Ireland</a></li>
+                                <li><a href="#/israel/">Israel</a></li>
+                                <li><a href="#/italy/">Italy</a></li>
+                                <li><a href="#/japan/">Japan</a></li>
+                                <li><a href="#/luxembourg/">Luxembourg</a></li>
+                                <li><a href="#/mexico/">Mexico</a></li>
+                                <li><a href="#/netherlands/">Netherlands</a></li>
+                                <li><a href="#/norway/">Norway</a></li>
+                                <li><a href="#/poland/">Poland</a></li>
+                                <li><a href="#/portugal/">Portugal</a></li>
+                                <li><a href="#/russia/">Russia</a></li>
+                                <li><a href="#/spain/">Spain</a></li>
+                                <li><a href="#/sweden/">Sweden</a></li>
+                                <li><a href="#/switzerland/">Switzerland</a></li>
+                                <li><a href="#/turkey/">Turkey</a></li>
+                                <li><a href="#/united-kingdom/">United Kingdom</a></li>
+                                <li><a href="#/united-states/">United States</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="panel">
+                            <div class="panel-body">
+                              <h3 class="mtn mbm">Programs</h3>
+                              <div id="tree12">
+                                  <ul>
+                                      <li data-jstree="{&quot;opened&quot;:true}">
+                                          Root node
+                                          <ul>
+                                              <li>
+                                                  2
+                                              </li>
+                                              <li>
+                                                  1
+                                              </li>
+                                              <li>
+                                                  3 qwe[oriu jw;ldn wqpeorfqw d'fpijsad ;fiwequ r[opwqefij a;dkfja df09 i]]
+                                              </li>
+                                              <li>
+                                                  0
+                                              </li>
+                                          </ul>
+                                      <li>Root
+                                          node 2
+                                      </li>
+                                      </li></ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                     <div class="col-lg-8">
+                       <div class="panel">
+                         <div class="panel-body">
+                           <div id="grid-layout-ul-li" class="box jplist">
+                            
+                             <ul class="box text-shadow ul-li-list mtn mbn ptn pbn">
+                               <!--<item>1</item>-->
+                               <li class="list-item">
+                                
+                                   <div class="list-box">
+                                     <!--<img/>-->
+                                     <div class="img"><img
+                                       src="vendors/jplist/html/img/thumbs-450/arch-1.jpg" alt=""
+                                       title=""/></div>
+                                     <!--<data></data>-->
+                                     <div class="block">
+                                       <p class="date">Start: <strong>03/15/2012</strong> -  End: <strong>03/15/2012</strong></p>
+                                       
+                                        <a href="./user-view-course.html#"><p class="title">Arch</p></a>
+                                       <p class="desc">An arch is a structure that spans a space and
+                                         supports a load. Arches appeared as early as the 2nd millennium
+                                         BC in Mesopotamian brick architecture and their systematic use
+                                         started with the Ancient Romans who were the first to apply the
+                                         technique to a wide range of structures.
+                                       </p>
+                                      <div class="type"><i class="icon ico_class"></i> Classroom</div>
+                                      <!-- <div class="type"><i class="icon ico_webinar"></i> Webinar</div> -->
+                                      <!-- <div class="type"><i class="fa fa-desktop"></i> e-Learning</div> -->
+                                     </div>
+                                   </div>
+                                 
+                               </li>
+                                <li class="list-item">
+                                
+                                   <div class="list-box">
+                                     <!--<img/>-->
+                                     <div class="img"><img
+                                       src="vendors/jplist/html/img/thumbs-450/arch-1.jpg" alt=""
+                                       title=""/></div>
+                                     <!--<data></data>-->
+                                     <div class="block">
+                                       <p class="date">Start: <strong>03/15/2012</strong> -  End: <strong>03/15/2012</strong></p>
+                                       
+                                        <a href="./user-view-course.html#"><p class="title">Arch</p></a>
+                                       <p class="desc">An arch is a structure that spans a space and
+                                         supports a load. Arches appeared as early as the 2nd millennium
+                                         BC in Mesopotamian brick architecture and their systematic use
+                                         started with the Ancient Romans who were the first to apply the
+                                         technique to a wide range of structures.
+                                       </p>
+                                      <div class="type"><i class="icon ico_class"></i> Classroom</div>
+                                      <!-- <div class="type"><i class="icon ico_webinar"></i> Webinar</div> -->
+                                      <!-- <div class="type"><i class="fa fa-desktop"></i> e-Learning</div> -->
+                                     </div>
+                                   </div>
+                                 
+                               </li>
+                                <li class="list-item">
+                                
+                                   <div class="list-box">
+                                     <!--<img/>-->
+                                     <div class="img"><img
+                                       src="vendors/jplist/html/img/thumbs-450/arch-1.jpg" alt=""
+                                       title=""/></div>
+                                     <!--<data></data>-->
+                                     <div class="block">
+                                       <p class="date">Start: <strong>03/15/2012</strong> -  End: <strong>03/15/2012</strong></p>
+                                       
+                                        <a href="./user-view-course.html#"><p class="title">Arch</p></a>
+                                       <p class="desc">An arch is a structure that spans a space and
+                                         supports a load. Arches appeared as early as the 2nd millennium
+                                         BC in Mesopotamian brick architecture and their systematic use
+                                         started with the Ancient Romans who were the first to apply the
+                                         technique to a wide range of structures.
+                                       </p>
+                                      <div class="type"><i class="icon ico_class"></i> Classroom</div>
+                                      <!-- <div class="type"><i class="icon ico_webinar"></i> Webinar</div> -->
+                                      <!-- <div class="type"><i class="fa fa-desktop"></i> e-Learning</div> -->
+                                     </div>
+                                   </div>
+                                 
+                               </li>
+                                <li class="list-item">
+                                
+                                   <div class="list-box">
+                                     <!--<img/>-->
+                                     <div class="img"><img
+                                       src="vendors/jplist/html/img/thumbs-450/arch-1.jpg" alt=""
+                                       title=""/></div>
+                                     <!--<data></data>-->
+                                     <div class="block">
+                                       <p class="date">Start: <strong>03/15/2012</strong> -  End: <strong>03/15/2012</strong></p>
+                                       
+                                        <a href="./user-view-course.html#"><p class="title">Arch</p></a>
+                                       <p class="desc">An arch is a structure that spans a space and
+                                         supports a load. Arches appeared as early as the 2nd millennium
+                                         BC in Mesopotamian brick architecture and their systematic use
+                                         started with the Ancient Romans who were the first to apply the
+                                         technique to a wide range of structures.
+                                       </p>
+                                      <div class="type"><i class="icon ico_class"></i> Classroom</div>
+                                      <!-- <div class="type"><i class="icon ico_webinar"></i> Webinar</div> -->
+                                      <!-- <div class="type"><i class="fa fa-desktop"></i> e-Learning</div> -->
+                                     </div>
+                                   </div>
+                                 
+                               </li>
+                             </ul>
+                             <div class="jplist-ios-button"><i class="fa fa-sort"></i>jPList Actions</div>
+                             <div class="jplist-panel box panel-bottom">
+                               <div data-control-type="drop-down" data-control-name="paging"
+                                 data-control-action="paging" data-control-animate-to-top="true"
+                                 class="jplist-drop-down form-control">
+                                 <ul class="dropdown-menu">
+                                   <li><span data-number="5"> 5 per page</span></li>
+                                   <li><span data-number="10" data-default="true"> 10 per page</span></li>
+                                   <li><span data-number="all"> view all</span></li>
+                                 </ul>
+                               </div>
+                               <div data-control-type="drop-down" data-control-name="sort"
+                                 data-control-action="sort" data-control-animate-to-top="true"
+                                 data-datetime-format="{month}/{day}/{year}"
+                                 class="jplist-drop-down form-control">
+                                 <ul class="dropdown-menu">
+                                   <li><span data-path="default">Sort by</span></li>
+                                   <li><span data-path=".title" data-order="asc"
+                                     data-type="text">Title A-Z</span></li>
+                                   <li><span data-path=".title" data-order="desc" data-type="text">Title Z-A</span>
+                                   </li>
+                                   <li><span data-path=".desc" data-order="asc" data-type="text">Description A-Z</span>
+                                   </li>
+                                   <li><span data-path=".desc" data-order="desc" data-type="text">Description Z-A</span>
+                                   </li>
+                                   <li><span data-path=".like" data-order="asc" data-type="number"
+                                     data-default="true">Likes asc</span></li>
+                                   <li><span data-path=".like" data-order="desc" data-type="number">Likes desc</span>
+                                   </li>
+                                   <li><span data-path=".date" data-order="asc" data-type="datetime">Date asc</span>
+                                   </li>
+                                   <li><span data-path=".date" data-order="desc" data-type="datetime">Date desc</span>
+                                   </li>
+                                 </ul>
+                               </div>
+                               <div data-type="{start} - {end} of {all}" data-control-type="pagination-info"
+                                 data-control-name="paging" data-control-action="paging"
+                                 class="jplist-label btn btn-default"></div>
+                               <div data-control-type="pagination" data-control-name="paging"
+                                 data-control-action="paging" data-control-animate-to-top="true"
+                                 class="jplist-pagination"></div>
+                             </div>
+                             <div class="box jplist-no-results text-shadow align-center">
+                               <p>No results found</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END CONTENT-->
+        </div>
+        <!--END PAGE WRAPPER-->
+      </div>
+    </div>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!--loading bootstrap js-->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="vendors/metisMenu/jquery.metisMenu.js"></script>
+    <script src="vendors/slimScroll/jquery.slimscroll.js"></script>
+    <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <script src="vendors/iCheck/custom.min.js"></script>
+    <script src="vendors/jquery-notific8/jquery.notific8.min.js"></script>
+    <script src="vendors/jquery-highcharts/highcharts.js"></script>
+    <script src="js/jquery.menu.js"></script>
+    <script src="vendors/jquery-pace/pace.min.js"></script>
+    <script src="vendors/holder/holder.js"></script>
+    <script src="vendors/responsive-tabs/responsive-tabs.js"></script>
+    <script src="vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+    <script src="vendors/moment/moment.js"></script>
+    <script src="vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!--CORE JAVASCRIPT-->
+    <script src="js/main.js"></script>
+    <!--LOADING SCRIPTS FOR PAGE-->
+    <script src="vendors/jstree/dist/jstree.min.js"></script>
+    <script src="vendors/jquery-treetable/javascripts/src/jquery.treetable.js"></script>
+    <script src="js/ui-treeview.js"></script>
+    <!--LOADING SCRIPTS FOR JPGRID-->
+    <script src="vendors/jplist/html/js/jplist.min.js"></script>
+    <script src="js/jplist.js"></script>
+    <script>
+      // For Rendering Calendar
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+          $('#calendar').fullCalendar('render');
+          if ($('#wrapper').height() < $('#page-wrapper').height()) {
+              $('#wrapper').css('height', $('#page-wrapper').height());
+          } else {
+              $('#wrapper').css('height', $('body').height());
+          }
+      });
+    </script>
+    <script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+  </body>
+</html>

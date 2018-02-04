@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard | Dashboard</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" href="images/icons/favicon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+      <!--Loading bootstrap css-->
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+      <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+      <!--Loading style vendors-->
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <link type="text/css" rel="stylesheet" href="vendors/iCheck/skins/all.css">
+      <!--LOADING STYLESHEET FOR tree-->
+      <link type="text/css" rel="stylesheet" href="vendors/jstree/dist/themes/default/style.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/jquery-treetable/stylesheets/jquery.treetable.css">
+      <link type="text/css" rel="stylesheet" href="vendors/jquery-treetable/stylesheets/jquery.treetable.theme.custom.css">
+      <!--LOADING STYLESHEET FOR jGrid-->
+      <link type="text/css" rel="stylesheet" href="vendors/jplist/html/css/jplist-custom.css">
+      <!--LOADING STYLESHEET FOR PAGE-->
+      <link type="text/css" rel="stylesheet" href="vendors/DataTables/media/css/jquery.dataTables.css">
+      <link type="text/css" rel="stylesheet"
+         href="vendors/DataTables/extensions/TableTools/css/dataTables.tableTools.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/DataTables/media/css/dataTables.bootstrap.css">
+      <!--Loading style-->
+      <link type="text/css" rel="stylesheet" href="css/screen.css">
+      <link type="text/css" rel="stylesheet" href="css/custom.css">
+      <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+   </head>
+   <body class="sidebar-icons header-fixed shadow-panel">
+      <div>
+         <!--BEGIN BACK TO TOP-->
+         <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+         <!--END BACK TO TOP-->
+         <!--BEGIN TOPBAR-->
+         <div class="page-header-topbar">
+            <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                  <img src="images/logo.png">
+                  </a>
+               </div>
+               <div class="topbar-main">
+                  <ul class="nav navbar navbar-top-links navbar-right mbn">
+                     <li class="dropdown topbar-user">
+                        <a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                           src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt=""
+                           class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span
+                           class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-user pull-right">
+                           <li><a href="extra-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                           <li><a href="page-calendar.html"><i class="fa fa-calendar"></i>My Calendar</a></li>
+                           <li><a href="email-inbox.html"><i class="fa fa-envelope"></i>My Inbox<span
+                              class="badge badge-danger">3</span></a></li>
+                           <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                              class="badge badge-success">7</span></a></li>
+                           <li class="divider"></li>
+                           <li><a href="extra-lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                           <li><a href="extra-signin.html"><i class="fa fa-key"></i>Log Out</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!--END TOPBAR-->
+         <div id="wrapper">
+            <!--BEGIN SIDEBAR MENU-->
+            <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+               <div class="sidebar-collapse menu-scroll">
+                  <ul id="side-menu" class="nav">
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-tachometer fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Dashboard</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="add-training-session.html">
+                           <i class="ico_program">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Create Program</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="course-builder.html">
+                           <i class="fa fa-book fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Course Builder</span>
+                        </a>
+                     </li>
+                     <li class="active">
+                        <a href="analytics.html">
+                           <i class="fa fa-bar-chart-o fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Analytics</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="news.html">
+                           <i class="fa fa-bullhorn fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">News and Events</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="settings.html">
+                           <i class="fa fa-cogs fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">System Settings</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <!--END SIDEBAR MENU-->
+            <!--BEGIN PAGE WRAPPER-->
+            <div id="page-wrapper">
+               <!--BEGIN TITLE & BREADCRUMB PAGE-->
+               <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+                  <div class="page-header pull-left">
+                     <div class="page-title">System Settings</div>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <!--END TITLE & BREADCRUMB PAGE-->
+               <!--BEGIN CONTENT-->
+               <div class="page-content">
+                  <div class="row">
+                     <div class="col-md-12" id="myTabContent">
+                        <div class="tab-pane fade active in" role="tabpanel" id="content" aria-labelledby="content-tab">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <h4>Select Group</h4>
+                                 <select id="selectGroup" class="form-control">
+                                    <option>Select ... </option>
+                                    <option value="1">Marketing</option>
+                                    <option value="2">Sales Management</option>
+                                    <option value="3">Administration</option>
+                                    <option value="4">IT Department</option>
+                                    <option value="5">Online Sessions</option>
+                                    <option value="6">Online Trial</option>
+                                    <option value="7">Hr group</option>
+                                    <option value="8">Leadership</option>
+                                    <option value="9">TOT presentation</option>
+                                    <option value="10">TOT Leadership</option>
+                                    <option value="11">123</option>
+                                    <option value="12">TOT Leadership 1</option>
+                                    <option value="13">online courses</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-6">
+                                 <h4>Select User</h4>
+                                 <select id="selectUser" class="form-control">
+                                    <option>Select ...</option>
+                                    <option value="26">harounzz</option>
+                                    <option value="28">basma.tawakol</option>
+                                    <option value="32">samar.aglan</option>
+                                    <option value="38">madonna.yousry</option>
+                                    <option value="47">samar.samir</option>
+                                    <option value="27">basma</option>
+                                    <option value="37">john.mersal</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="row" style="margin-top:15px;">
+                              <div class="col-md-12">
+                                 <div class="panel">
+                                    <div class="panel-body">
+                                       <div class="col-md-12">
+                                          <div id="top_x_div" style="width: 100%; height: 500px;">
+                                             <div style="position: relative; width: 900px; height: 500px;">
+                                                <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                                                   <svg width="900" height="500">
+                                                      <defs>
+                                                         <clipPath id="rablfilter6">
+                                                            <rect x="333.5" y="128.5" width="556" height="371"></rect>
+                                                         </clipPath>
+                                                      </defs>
+                                                      <g>
+                                                         <rect x="0" y="0" width="900" height="500" fill="white" stroke="black" stroke-width="0"></rect>
+                                                         <text x="0" y="15" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 16px;" fill="#757575" dx="0px">Session Completion Percentage</text>
+                                                         <text x="0" y="36" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 14px;" fill="#BDBDBD" dx="0px">progress by percentage</text>
+                                                         <rect x="333.5" y="128.5" width="556" height="371" fill="none"></rect>
+                                                      </g>
+                                                      <g>
+                                                         <line x1="333.5" x2="333.5" y1="128.5" y2="499.5" stroke="#9E9E9E" stroke-width="1"></line>
+                                                         <line x1="444.7" x2="444.7" y1="128.5" y2="499.5" stroke="#E0E0E0" stroke-width="1"></line>
+                                                         <line x1="555.9" x2="555.9" y1="128.5" y2="499.5" stroke="#E0E0E0" stroke-width="1"></line>
+                                                         <line x1="667.0999999999999" x2="667.0999999999999" y1="128.5" y2="499.5" stroke="#E0E0E0" stroke-width="1"></line>
+                                                         <line x1="778.3" x2="778.3" y1="128.5" y2="499.5" stroke="#E0E0E0" stroke-width="1"></line>
+                                                         <line x1="889.5" x2="889.5" y1="128.5" y2="499.5" stroke="#E0E0E0" stroke-width="1"></line>
+                                                      </g>
+                                                      <g>
+                                                         <path d="M 342.12 129 A 2 2 0 0 1 344.12 131 L 344.12 140.01501501501502 A 2 2 0 0 1 342.12 142.01501501501502 L 334 142.01501501501502 A 0 0 0 0 1 334 142.01501501501502 L 334 129 A 0 0 0 0 1 334 129 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 333.5 150.56156156156158 A 0 0 0 0 1 333.5 150.56156156156158 L 333.5 163.57657657657657 A 0 0 0 0 1 333.5 163.57657657657657 L 333.5 163.57657657657657 A 0 0 0 0 1 333.5 163.57657657657657 L 333.5 150.56156156156158 A 0 0 0 0 1 333.5 150.56156156156158 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 333.5 172.12312312312312 A 0 0 0 0 1 333.5 172.12312312312312 L 333.5 185.13813813813815 A 0 0 0 0 1 333.5 185.13813813813815 L 333.5 185.13813813813815 A 0 0 0 0 1 333.5 185.13813813813815 L 333.5 172.12312312312312 A 0 0 0 0 1 333.5 172.12312312312312 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 340.73 193.6846846846847 A 2 2 0 0 1 342.73 195.6846846846847 L 342.73 204.6996996996997 A 2 2 0 0 1 340.73 206.6996996996997 L 334 206.6996996996997 A 0 0 0 0 1 334 206.6996996996997 L 334 193.6846846846847 A 0 0 0 0 1 334 193.6846846846847 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 365.055 215.24624624624624 A 2 2 0 0 1 367.055 217.24624624624624 L 367.055 226.26126126126127 A 2 2 0 0 1 365.055 228.26126126126127 L 334 228.26126126126127 A 0 0 0 0 1 334 228.26126126126127 L 334 215.24624624624624 A 0 0 0 0 1 334 215.24624624624624 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 370.8466666666667 236.80780780780782 A 2 2 0 0 1 372.8466666666667 238.80780780780782 L 372.8466666666667 247.82282282282284 A 2 2 0 0 1 370.8466666666667 249.82282282282284 L 334 249.82282282282284 A 0 0 0 0 1 334 249.82282282282284 L 334 236.80780780780782 A 0 0 0 0 1 334 236.80780780780782 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 359.21185185185186 258.3693693693694 A 2 2 0 0 1 361.21185185185186 260.3693693693694 L 361.21185185185186 269.38438438438436 A 2 2 0 0 1 359.21185185185186 271.38438438438436 L 334 271.38438438438436 A 0 0 0 0 1 334 271.38438438438436 L 334 258.3693693693694 A 0 0 0 0 1 334 258.3693693693694 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 353.24 279.9309309309309 A 2 2 0 0 1 355.24 281.9309309309309 L 355.24 290.94594594594594 A 2 2 0 0 1 353.24 292.94594594594594 L 334 292.94594594594594 A 0 0 0 0 1 334 292.94594594594594 L 334 279.9309309309309 A 0 0 0 0 1 334 279.9309309309309 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 412.5466666666667 301.4924924924925 A 2 2 0 0 1 414.5466666666667 303.4924924924925 L 414.5466666666667 312.5075075075075 A 2 2 0 0 1 412.5466666666667 314.5075075075075 L 334 314.5075075075075 A 0 0 0 0 1 334 314.5075075075075 L 334 301.4924924924925 A 0 0 0 0 1 334 301.4924924924925 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 340.26666666666665 323.05405405405406 A 2 2 0 0 1 342.26666666666665 325.05405405405406 L 342.26666666666665 334.06906906906903 A 2 2 0 0 1 340.26666666666665 336.06906906906903 L 334 336.06906906906903 A 0 0 0 0 1 334 336.06906906906903 L 334 323.05405405405406 A 0 0 0 0 1 334 323.05405405405406 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 442.2 344.61561561561564 A 2 2 0 0 1 444.2 346.61561561561564 L 444.2 355.63063063063066 A 2 2 0 0 1 442.2 357.63063063063066 L 334 357.63063063063066 A 0 0 0 0 1 334 357.63063063063066 L 334 344.61561561561564 A 0 0 0 0 1 334 344.61561561561564 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 358.8 366.1771771771772 A 2 2 0 0 1 360.8 368.1771771771772 L 360.8 377.1921921921922 A 2 2 0 0 1 358.8 379.1921921921922 L 334 379.1921921921922 A 0 0 0 0 1 334 379.1921921921922 L 334 366.1771771771772 A 0 0 0 0 1 334 366.1771771771772 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 364.36 387.7387387387388 A 2 2 0 0 1 366.36 389.7387387387388 L 366.36 398.75375375375376 A 2 2 0 0 1 364.36 400.75375375375376 L 334 400.75375375375376 A 0 0 0 0 1 334 400.75375375375376 L 334 387.7387387387388 A 0 0 0 0 1 334 387.7387387387388 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 347.68 409.3003003003003 A 2 2 0 0 1 349.68 411.3003003003003 L 349.68 420.3153153153153 A 2 2 0 0 1 347.68 422.3153153153153 L 334 422.3153153153153 A 0 0 0 0 1 334 422.3153153153153 L 334 409.3003003003003 A 0 0 0 0 1 334 409.3003003003003 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 396.33 430.8618618618619 A 2 2 0 0 1 398.33 432.8618618618619 L 398.33 441.8768768768769 A 2 2 0 0 1 396.33 443.8768768768769 L 334 443.8768768768769 A 0 0 0 0 1 334 443.8768768768769 L 334 430.8618618618619 A 0 0 0 0 1 334 430.8618618618619 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 343.232 452.42342342342346 A 2 2 0 0 1 345.232 454.42342342342346 L 345.232 463.4384384384384 A 2 2 0 0 1 343.232 465.4384384384384 L 334 465.4384384384384 A 0 0 0 0 1 334 465.4384384384384 L 334 452.42342342342346 A 0 0 0 0 1 334 452.42342342342346 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                         <path d="M 458.88 473.98498498498503 A 2 2 0 0 1 460.88 475.98498498498503 L 460.88 485 A 2 2 0 0 1 458.88 487 L 334 487 A 0 0 0 0 1 334 487 L 334 473.98498498498503 A 0 0 0 0 1 334 473.98498498498503 Z" fill="#4285f4" clip-path="url(#rablfilter6)"></path>
+                                                      </g>
+                                                      <g></g>
+                                                      <g>
+                                                         <text x="333.5" y="119.5" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-3.369140625px">0</text>
+                                                         <text x="444.7" y="119.5" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-6.73828125px">20</text>
+                                                         <text x="555.9" y="119.5" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-6.73828125px">40</text>
+                                                         <text x="667.0999999999999" y="119.5" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-6.73828125px">60</text>
+                                                         <text x="778.3" y="119.5" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-6.73828125px">80</text>
+                                                         <text x="889.5" y="119.5" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-10.107421875px">100</text>
+                                                         <text x="614.8671875" y="87.5" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#424242" dx="-30.298828125px">Percentage</text>
+                                                         <text x="327.5" y="139.51501501501502" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-56.7421875px">motivation</text>
+                                                         <text x="327.5" y="161.07563813813817" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-58.96875px">Leadership</text>
+                                                         <text x="327.5" y="182.63626126126127" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-58.96875px">Leadership</text>
+                                                         <text x="327.5" y="204.19688438438436" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-99.896484375px">test course demo1</text>
+                                                         <text x="327.5" y="225.7575075075075" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-114.076171875px">Demo Online Training</text>
+                                                         <text x="327.5" y="247.31813063063066" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-144.052734375px">General management track</text>
+                                                         <text x="327.5" y="268.8787537537538" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-122.701171875px">NEW COMERS Training</text>
+                                                         <text x="327.5" y="290.43937687687685" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-62.5078125px">Sales sprint</text>
+                                                         <text x="327.5" y="312" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-68.53125px">Sales square </text>
+                                                         <text x="327.5" y="333.57624812312315" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-58.96875px">Leadership</text>
+                                                         <text x="327.5" y="355.1368712462462" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-98.8828125px">Presentation Skills</text>
+                                                         <text x="327.5" y="376.69749436936945" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-294.322265625px">Keep you talented staff- The core concept of leadership</text>
+                                                         <text x="327.5" y="398.2581174924925" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-97.951171875px">Presentation skills</text>
+                                                         <text x="327.5" y="419.81874061561564" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-66.94921875px">presentation</text>
+                                                         <text x="327.5" y="441.3793637387387" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-55.423828125px">leadership</text>
+                                                         <text x="327.5" y="462.93998686186194" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-58.96875px">Leadership</text>
+                                                         <text x="327.5" y="484.500609984985" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#757575" dx="-58.96875px">Leadership</text>
+                                                         <text x="15.1875" y="305" style="cursor: default; user-select: none; -webkit-font-smoothing: antialiased; font-family: Roboto; font-size: 12px;" fill="#424242" dx="-39.158203125px" transform="rotate(-90 15.1875 308)">Administration</text>
+                                                      </g>
+                                                      <g></g>
+                                                      <g></g>
+                                                      <g></g>
+                                                   </svg>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--END CONTENT-->
+            </div>
+            <!--END PAGE WRAPPER-->
+         </div>
+      </div>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <!--loading bootstrap js-->
+      <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="vendors/metisMenu/jquery.metisMenu.js"></script>
+      <script src="vendors/slimScroll/jquery.slimscroll.js"></script>
+      <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+      <script src="vendors/iCheck/icheck.min.js"></script>
+      <script src="vendors/iCheck/custom.min.js"></script>
+      <script src="vendors/jquery-notific8/jquery.notific8.min.js"></script>
+      <script src="vendors/jquery-highcharts/highcharts.js"></script>
+      <script src="js/jquery.menu.js"></script>
+      <script src="vendors/jquery-pace/pace.min.js"></script>
+      <script src="vendors/holder/holder.js"></script>
+      <script src="vendors/responsive-tabs/responsive-tabs.js"></script>
+      <script src="vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+      <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+      <!--CORE JAVASCRIPT-->
+      <script src="js/main.js"></script>
+      <!--LOADING SCRIPTS FOR tree-->
+      <script src="vendors/jstree/dist/jstree.min.js"></script>
+      <script src="vendors/jquery-treetable/javascripts/src/jquery.treetable.js"></script>
+      <script src="js/ui-treeview.js"></script>
+      <!--LOADING SCRIPTS FOR JPGRID-->
+      <script src="vendors/jplist/html/js/jplist.min.js"></script>
+      <script src="js/jplist.js"></script>
+      <!--LOADING SCRIPTS FOR DATATABLE-->
+      <script src="vendors/DataTables/media/js/jquery.dataTables.js"></script>
+      <script src="vendors/DataTables/media/js/dataTables.bootstrap.js"></script>
+      <script src="vendors/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+      <script src="js/table-datatables.js"></script>
+      <script>
+         $('a[data-toggle="tab"]').on( 'shown.bs.tab', function (e) {
+             $.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();
+         } );
+      </script>
+   </body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard | Dashboard</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" href="images/icons/favicon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+      <!--Loading bootstrap css-->
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+      <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+      <!--Loading style vendors-->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <!--LOADING STYLESHEET FOR jGrid-->
+      <link type="text/css" rel="stylesheet" href="vendors/jplist/html/css/jplist-custom.css">
+      <!--Loading style-->
+      <link type="text/css" rel="stylesheet" href="css/screen.css">
+      <link type="text/css" rel="stylesheet" href="css/custom.css">
+      <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+   </head>
+   <body class="sidebar-icons header-fixed shadow-panel">
+      <div>
+         <!--BEGIN BACK TO TOP-->
+         <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+         <!--END BACK TO TOP-->
+         <!--BEGIN TOPBAR-->
+         <div class="page-header-topbar">
+            <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                  <img src="images/logo.png">
+                  </a>
+               </div>
+               <div class="topbar-main">
+                  <ul class="nav navbar navbar-top-links navbar-right mbn">
+                     <li class="dropdown topbar-user">
+                        <a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                           src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt=""
+                           class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span
+                           class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-user pull-right">
+                           <li><a href="extra-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                           <li><a href="page-calendar.html"><i class="fa fa-calendar"></i>My Calendar</a></li>
+                           <li><a href="email-inbox.html"><i class="fa fa-envelope"></i>My Inbox<span
+                              class="badge badge-danger">3</span></a></li>
+                           <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                              class="badge badge-success">7</span></a></li>
+                           <li class="divider"></li>
+                           <li><a href="extra-lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                           <li><a href="extra-signin.html"><i class="fa fa-key"></i>Log Out</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!--END TOPBAR-->
+         <div id="wrapper">
+            <!--BEGIN SIDEBAR MENU-->
+            <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+               <div class="sidebar-collapse menu-scroll">
+                  <ul id="side-menu" class="nav">
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-tachometer fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Dashboard</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="add-training-session.html">
+                           <i class="ico_program">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Create Program</span>
+                        </a>
+                     </li>
+                     <li class="active">
+                        <a href="course-builder.html">
+                           <i class="fa fa-book fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Course Builder</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="analytics.html">
+                           <i class="fa fa-bar-chart-o fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Analytics</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="news.html">
+                           <i class="fa fa-bullhorn fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">News and Events</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="settings.html">
+                           <i class="fa fa-cogs fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">System Settings</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <!--END SIDEBAR MENU-->
+            <!--BEGIN PAGE WRAPPER-->
+            <div id="page-wrapper">
+               <!--BEGIN TITLE & BREADCRUMB PAGE-->
+               <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+                  <div class="page-header pull-left">
+                     <div class="page-title">Course Builder</div>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <!--END TITLE & BREADCRUMB PAGE-->
+               <!--BEGIN CONTENT-->
+               <div class="page-content">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <h5 class="mbn">Content</h5>
+                        <h1 class="mtm mbm">Course Outline</h1>
+                        <p class="mbl">Course Start Date: <b>Oct 17, 2017 at 00:00 UTC</b></p>
+                     </div>
+                     <div class="col-md-12">
+                        <div class="panel">
+                           <div class="panel-body course-builder">
+                              <div class="tab-content tab-edit ptn pbn mbn">
+                                 <div id="syllabus" class="tab-pane fade in active">
+                                    <div class="row mbm">
+                                       <div class="col-md-12">
+                                          <div class="btn btn-primary"><i class="fa fa-plus"></i> Add New Course</div>
+                                       </div>
+                                    </div>
+                                    <div class="">
+                                       <div class="col-md-12 hl-block mbm dnd">
+                                          <div class="title">
+                                             <span class="fold-this"><i class="fa fa-angle-down"></i></span>
+                                             Online-Tutorials
+                                             <span class="pull-right">
+                                                <i class="fa fa-cog"></i>
+                                                <i class="fa fa-trash-o"></i>
+                                                <i class="fa fa-ellipsis-v"></i>
+                                             </span>
+                                             <span class="help-block">
+                                                <i class="fa fa-check-square-o"></i>
+                                                Released: Oct 16, 2017 at 00:00 UTC
+                                             </span>
+                                          </div>
+                                          <div class="foldable">
+                                             <div class="col-md-12 hl-block mbm child dnd">
+                                                <div class="title">
+                                                   <span class="fold-this"><i class="fa fa-angle-down"></i></span>
+                                                   Chapter 13 - Part 1
+                                                   <span class="pull-right">
+                                                      <i class="fa fa-cog"></i>
+                                                      <i class="fa fa-trash-o"></i>
+                                                   </span>
+                                                   <span class="help-block">
+                                                      <i class="fa fa-check-square-o"></i>
+                                                      Released: Oct 16, 2017 at 00:00 UTC
+                                                   </span>
+                                                </div>
+                                                <div class="col-md-12 hl-block" style="display:none">
+                                                   <div class="activity-blocks">
+                                                      <a href="#" class="activity-block">
+                                                         <i class="fa fa-times"></i>
+                                                         <h5>Quiz</h5>
+                                                      </a><!-- 
+                                                       --><a href="#" class="activity-block">
+                                                         <i class="fa fa-question"></i>
+                                                         <h5>File</h5>
+                                                      </a><!-- 
+                                                       --><a href="#" class="activity-block">
+                                                         <i class="fa fa-video-camera"></i>
+                                                         <h5>Video</h5>
+                                                      </a >
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-12 hl-block mbm child dnd">
+                                                <div class="title">
+                                                   <span class="fold-this"><i class="fa fa-angle-down"></i></span>
+                                                   Chapter 13 - Part 1
+                                                   <span class="pull-right">
+                                                      <i class="fa fa-cog"></i>
+                                                      <i class="fa fa-trash-o"></i>
+                                                   </span>
+                                                   <span class="help-block">
+                                                      <i class="fa fa-check-square-o"></i>
+                                                      Released: Oct 16, 2017 at 00:00 UTC
+                                                   </span>
+                                                </div>
+                                                <div class="col-md-12 hl-block" style="display:none">
+                                                   <div class="activity-blocks">
+                                                      <a href="#" class="activity-block">
+                                                         <i class="fa fa-times"></i>
+                                                         <h5>Quiz</h5>
+                                                      </a><!-- 
+                                                       --><a href="#" class="activity-block">
+                                                         <i class="fa fa-question"></i>
+                                                         <h5>File</h5>
+                                                      </a><!-- 
+                                                       --><a href="#" class="activity-block">
+                                                         <i class="fa fa-video-camera"></i>
+                                                         <h5>Video</h5>
+                                                      </a >
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-12 hl-block mbm child dnd">
+                                                <div class="title">
+                                                   <span class="fold-this"><i class="fa fa-angle-down"></i></span>
+                                                   Chapter 13 - Part 1
+                                                   <span class="pull-right">
+                                                      <i class="fa fa-cog"></i>
+                                                      <i class="fa fa-trash-o"></i>
+                                                   </span>
+                                                   <span class="help-block">
+                                                      <i class="fa fa-check-square-o"></i>
+                                                      Released: Oct 16, 2017 at 00:00 UTC
+                                                   </span>
+                                                </div>
+                                                <div class="col-md-12 hl-block" style="display:none">
+                                                   <div class="activity-blocks">
+                                                      <a href="#" class="activity-block">
+                                                         <i class="fa fa-times"></i>
+                                                         <h5>Quiz</h5>
+                                                      </a><!-- 
+                                                       --><a href="#" class="activity-block">
+                                                         <i class="fa fa-question"></i>
+                                                         <h5>File</h5>
+                                                      </a><!-- 
+                                                       --><a href="#" class="activity-block">
+                                                         <i class="fa fa-video-camera"></i>
+                                                         <h5>Video</h5>
+                                                      </a >
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <button class="btn btn-block btn-outlined btn-primary"><i class="fa fa-plus"></i> New Unit</button>
+                                       </div>
+                                       <button class="btn btn-outlined btn-default mbm"><i class="fa fa-plus"></i> New Activity</button>
+                                       <button class="btn btn-primary mbm"><i class="fa fa-plus"></i> New Unit</button>
+                                       
+                                       <div class="col-md-12 hl-block dnd">
+                                          <div class="title text-center mbm">
+                                             Add New Activity
+                                          </div>
+                                          <div class="activity-blocks mbm">
+                                             <a href="#" class="activity-block">
+                                                <i class="fa fa-times"></i>
+                                                <h5>Quiz</h5>
+                                             </a><!-- 
+                                              --><a href="#" class="activity-block">
+                                                <i class="fa fa-question"></i>
+                                                <h5>File</h5>
+                                             </a><!-- 
+                                              --><a href="#" class="activity-block">
+                                                <i class="fa fa-video-camera"></i>
+                                                <h5>Video</h5>
+                                             </a >
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div id="pdf-reference" class="tab-pane fade in">
+                                    <form action="#" class="horizontal-form">
+                                       <div class="col-md-12 uploadarea">
+                                          <h3>Upload certificate template</h3>
+                                          <input type="file" name="file-6[]" id="file-6" class="inputfile inputfile-5" data-multiple-caption="{count} files selected" multiple />
+                                          <label for="file-6"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span></span></label>
+                                       </div>
+                                    </form>
+                                    <form action="#" class="form-horizontal ">
+                                       <div class="row">
+                                          <div class="col-md-12 mtl">
+                                             <div class="form-group mbm">
+                                                <label class="col-md-3 control-label">References</label>
+                                                <div class="col-md-9">
+                                                   <textarea rows="3" class="form-control"></textarea>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--END CONTENT-->
+            </div>
+            <div class="menu-3"></div>
+            <div class="menu-items">
+               <ul role="tablist" class="menu-items">                       
+                  <li class="menu-item item1 active">
+                     <a href="#syllabus" role="tab" data-toggle="tab">
+                        <i class="fa fa-align-left"></i>
+                        <span>Syllabus</span>
+                     </a>
+                  </li>                        
+                  <li class="menu-item item2">
+                     <a href="#pdf-reference" role="tab" data-toggle="tab">
+                        <i class="fa fa-book"></i>
+                        <span>Upload PDF / References</span>
+                     </a>
+                  </li>                       
+               </ul>
+            </div>
+            <div class="form-settings">
+               <a href="#"><i class="fa fa-save"></i> Save</a>
+            </div>
+            <!--END PAGE WRAPPER-->
+         </div>
+      </div>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/jquery-migrate-1.2.1.min.js"></script>
+      <!-- <script src="js/jquery-ui.js"></script> -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <!--loading bootstrap js-->
+      <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="vendors/metisMenu/jquery.metisMenu.js"></script>
+      <script src="vendors/slimScroll/jquery.slimscroll.js"></script>
+      <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+      <script src="vendors/iCheck/icheck.min.js"></script>
+      <script src="vendors/iCheck/custom.min.js"></script>
+      <script src="vendors/jquery-notific8/jquery.notific8.min.js"></script>
+      <script src="vendors/jquery-highcharts/highcharts.js"></script>
+      <script src="js/jquery.menu.js"></script>
+      <script src="vendors/jquery-pace/pace.min.js"></script>
+      <script src="vendors/holder/holder.js"></script>
+      <script src="vendors/responsive-tabs/responsive-tabs.js"></script>
+      <script src="vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+      <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+      <!--CORE JAVASCRIPT-->
+      <script src="js/main.js"></script>
+      <!--LOADING SCRIPTS FOR JPGRID-->
+      <script src="vendors/jplist/html/js/jplist.min.js"></script>
+      <script src="js/jplist.js"></script>
+      <script>
+         $('.fold-this').click(function(){
+            $(this).parent().siblings('.hl-block, .foldable').slideToggle(400);
+            $(this).children('.fa').toggleClass('fa-angle-down fa-angle-up');
+         });
+         $( ".dnd" ).draggable();
+
+         // Tab edit hotfix
+         $('.ul-edit li').click(function() {
+            $('.menu-items .item1').removeClass('active');
+            $('.menu-3').removeClass('menu-3-active');
+            $('.menu-items').removeClass('menu-3-active');
+         });
+         // Scrolling opening menu
+         var menu = $('.menu-3');
+         menu.on('click', function() {
+           $(this).toggleClass('menu-3-active');
+           $('.menu-items').toggleClass('menu-3-active');
+         })
+      </script>
+   </body>
+</html>

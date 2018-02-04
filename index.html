@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard | Dashboard</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" href="images/icons/favicon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+      <!--Loading bootstrap css-->
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+      <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+      <!--Loading style vendors-->
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <!-- Calendar Style -->
+      <link type="text/css" rel="stylesheet" href="vendors/fullcalendar/fullcalendar.css">
+      <link type="text/css" rel="stylesheet" href="vendors/fullcalendar/fullcalendar.print.css">
+      <!-- Ask Expert  -->
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-markdown/css/bootstrap-markdown.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+      <!--LOADING STYLESHEET FOR jGrid-->
+      <link type="text/css" rel="stylesheet" href="vendors/jplist/html/css/jplist-custom.css">
+      <!--Loading style-->
+      <link type="text/css" rel="stylesheet" href="css/screen.css">
+      <link type="text/css" rel="stylesheet" href="css/custom.css">
+      <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+   </head>
+   <body class="sidebar-icons cbp-spmenu-push header-fixed shadow-panel">
+      <nav class="cbp-spmenu " id="cbp-spmenu-s2">
+         <h3 class="mbl"><i class="fa fa-user"></i> Ask the Expert <i id="showRightPush2" class="fa fa-times pull-right"></i></h3>
+         <div class="container-fluid">
+            <form action="#" class="row">
+               <div class="col-md-12">
+                  <div class="form-group"><label for="inputName" class="control-label">Question Title</label>
+
+                      <div class="input-icon right"><i class="fa fa-question"></i><input
+                              id="inputName" type="text" placeholder=""
+                              class="form-control"/></div>
+                  </div>
+              </div>
+               <div class="form-body">
+                  <h4 class="col-md-12">Ask your question here</<h4></h4>
+                  <div class="col-md-12"><textarea rows="6" class="wysihtml5 mbl form-control"></textarea></div>
+               </div>
+               <div class="col-md-12">
+                  <button type="submit" class="btn pull-right btn-primary">Send message</button>
+               </div>
+           </form>
+         </div>
+         
+      </nav>
+      <div class="fade-out-menu">
+         <!--BEGIN BACK TO TOP-->
+         <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+         <!--END BACK TO TOP-->
+         <!--BEGIN TOPBAR-->
+         <div class="page-header-topbar">
+            <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                  <img src="images/logo.png">
+                  </a>
+               </div>
+               <div class="topbar-main">
+                  <ul class="nav navbar navbar-top-links navbar-right mbn">
+                      <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i
+                            class="fa fa-bell fa-fw"></i><span class="badge badge-green">3</span></a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li><p>You have 14 new notifications</p></li>
+                            <li>
+                                <div class="dropdown-slimscroll">
+                                    <ul>
+                                        <li><a href="extra-user-list.html" target="_blank"><span
+                                                class="label label-blue"><i class="fa fa-comment"></i></span>New Comment<span
+                                                class="pull-right text-muted small">4 mins ago</span></a></li>
+                                        <li><a href="extra-user-list.html" target="_blank"><span
+                                                class="label label-violet"><i class="fa fa-twitter"></i></span>3 New
+                                            Followers<span class="pull-right text-muted small">12 mins ago</span></a>
+                                        </li>
+                                        <li><a href="extra-user-list.html" target="_blank"><span
+                                                class="label label-pink"><i class="fa fa-envelope"></i></span>Message
+                                            Sent<span class="pull-right text-muted small">15 mins ago</span></a></li>
+                                        <li><a href="extra-user-list.html" target="_blank"><span
+                                                class="label label-green"><i class="fa fa-tasks"></i></span>New
+                                            Task<span class="pull-right text-muted small">18 mins ago</span></a></li>
+                                        <li><a href="extra-user-list.html" target="_blank"><span
+                                                class="label label-yellow"><i class="fa fa-upload"></i></span>Server
+                                            Rebooted<span class="pull-right text-muted small">19 mins ago</span></a>
+                                        </li>
+                                        <li><a href="extra-user-list.html" target="_blank"><span
+                                                class="label label-green"><i class="fa fa-tasks"></i></span>New
+                                            Task<span class="pull-right text-muted small">2 days ago</span></a></li>
+                                        <li><a href="extra-user-list.html" target="_blank"><span
+                                                class="label label-pink"><i class="fa fa-envelope"></i></span>Message
+                                            Sent<span class="pull-right text-muted small">5 days ago</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="last"><a href="extra-user-list.html" class="text-right">See all alerts</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-envelope fa-fw"></i><span class="badge badge-orange">7</span></a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li><p>You have 14 new messages</p></li>
+                            <li>
+                                <div class="dropdown-slimscroll">
+                                    <ul>
+                                        <li><a href="email-view-mail.html" target="_blank"><span class="avatar"><img
+                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg"
+                                                alt="" class="img-responsive img-circle"/></span><span
+                                                class="info"><span class="name">Jessica Spencer</span><span
+                                                class="desc">Lorem ipsum dolor sit amet...</span></span></a></li>
+                                        <li><a href="email-view-mail.html" target="_blank"><span class="avatar"><img
+                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg"
+                                                alt="" class="img-responsive img-circle"/></span><span
+                                                class="info"><span class="name">John Smith<span
+                                                class="label label-blue pull-right">New</span></span><span class="desc">Lorem ipsum dolor sit amet...</span></span></a>
+                                        </li>
+                                        <li><a href="email-view-mail.html" target="_blank"><span class="avatar"><img
+                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg"
+                                                alt="" class="img-responsive img-circle"/></span><span
+                                                class="info"><span class="name">John Doe<span
+                                                class="label label-orange pull-right">10 min</span></span><span
+                                                class="desc">Lorem ipsum dolor sit amet...</span></span></a></li>
+                                        <li><a href="email-view-mail.html" target="_blank"><span class="avatar"><img
+                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg"
+                                                alt="" class="img-responsive img-circle"/></span><span
+                                                class="info"><span class="name">John Smith</span><span class="desc">Lorem ipsum dolor sit amet...</span></span></a>
+                                        </li>
+                                        <li><a href="email-view-mail.html" target="_blank"><span class="avatar"><img
+                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg"
+                                                alt="" class="img-responsive img-circle"/></span><span
+                                                class="info"><span class="name">John Smith</span><span class="desc">Lorem ipsum dolor sit amet...</span></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="last"><a href="email-view-mail.html" target="_blank">Read all messages</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a id="showRightPush" class="dropdown-toggle"><i class="fa fa-question-circle fa-fw"></i></a></li>
+                    <li class="dropdown topbar-user">
+                      <a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                        src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt=""
+                        class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span
+                        class="caret"></span></a>
+                      <ul class="dropdown-menu dropdown-user pull-right">
+                        <li><a href="extra-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                        <li><a href="page-calendar.html"><i class="fa fa-calendar"></i>My Calendar</a></li>
+                        <li><a href="email-inbox.html"><i class="fa fa-envelope"></i>My Inbox<span
+                          class="badge badge-danger">3</span></a></li>
+                        <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                          class="badge badge-success">7</span></a></li>
+                        <li class="divider"></li>
+                        <li><a href="extra-lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                        <li><a href="extra-signin.html"><i class="fa fa-key"></i>Log Out</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!--END TOPBAR-->
+         <div id="wrapper">
+            <!--BEGIN SIDEBAR MENU-->
+            <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+               <div class="sidebar-collapse menu-scroll">
+                  <ul id="side-menu" class="nav">
+                     <li  class="active">
+                        <a href="index.html">
+                           <i class="fa fa-tachometer fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Dashboard</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="add-training-session.html">
+                           <i class="ico_program">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Create Program</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="course-builder.html">
+                           <i class="fa fa-book fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Course Builder</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="analytics.html">
+                           <i class="fa fa-bar-chart-o fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Analytics</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="news.html">
+                           <i class="fa fa-bullhorn fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">News and Events</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="settings.html">
+                           <i class="fa fa-cogs fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">System Settings</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <!--END SIDEBAR MENU-->
+            <!--BEGIN PAGE WRAPPER-->
+            <div id="page-wrapper">
+               <!--BEGIN TITLE & BREADCRUMB PAGE-->
+               <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+                  <div class="page-header pull-left">
+                     <div class="page-title">Dashboard</div>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <!--END TITLE & BREADCRUMB PAGE-->
+               <!--BEGIN CONTENT-->
+               <div class="page-content">
+                  <div id="tab-general">
+                    <div class="row mbl">
+                      <div class="col-md-12">
+                        <div class="panel">
+                          <div class="panel-body">
+                            <div class="features">
+                              <h1 class="mbm mtm text-center">Basic Features of the System</h1>
+                              <h5 class="mbl text-center">Ready to start learning about the new system? We are excited.</h5>
+                              <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                  <div class="row features-list">
+                                    <div class="col-md-3">
+                                      <div class="panel">
+                                        <div class="panel-body features-block">
+                                          <div class="step-number">1</div>
+                                          <div class="step-icon">
+                                            <img src="images/settings.png" alt="">
+                                          </div>
+                                          <p class="step-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, consectetur.
+                                          </p>
+                                          <button class="step-button">Start</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <div class="panel">
+                                        <div class="panel-body features-block">
+                                          <div class="step-number">2</div>
+                                          <div class="step-icon">
+                                            <img src="images/courses.png" alt="">
+                                          </div>
+                                          <p class="step-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aliquam.
+                                          </p>
+                                          <button class="step-button">Start</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <div class="panel">
+                                        <div class="panel-body features-block">
+                                          <div class="step-number">3</div>
+                                          <div class="step-icon">
+                                            <img src="images/users.png" alt="">
+                                          </div>
+                                          <p class="step-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, maiores.
+                                          </p>
+                                          <button class="step-button">Start</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <div class="panel">
+                                        <div class="panel-body features-block">
+                                          <div class="step-number">4</div>
+                                          <div class="step-icon">
+                                            <img src="images/install.png" alt="">
+                                          </div>
+                                          <p class="step-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nisi?
+                                          </p>
+                                          <button class="step-button">Start</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="row mbl">
+                        <div class="col-md-12">
+                           <ul role="tablist" class="ul-edit nav nav-tabs">
+                              <li class="active"><a href="#Calendar" role="tab" data-toggle="tab"><i class="fa fa-calendar-o"></i> Calendar</a></li>
+                              <li><a href="#Sessions" role="tab" data-toggle="tab"><i class="fa fa-table"></i> Sessions</a></li>
+                           </ul>
+                           <div class="tab-content tab-edit">
+                              <div id="Calendar" class="tab-pane fade in active">
+                                 <div id="sum_box" class="row mbl">
+                                    <div class="col-sm-6 col-md-3">
+                                       <div class="panel profit db mbm">
+                                          <div class="panel-body">
+                                             <p class="icon"><i class="icon fa fa-shopping-cart"></i></p>
+                                             <h4
+                                                class="value"><span data-counter="" data-start="10" data-end="50" data-step="1"
+                                                data-duration="0"></span><span>$</span></h4>
+                                             <p class="description">Profit description</p>
+                                             <div class="progress progress-sm mbn">
+                                                <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                   style="width: 80%;" class="progress-bar progress-bar-success"><span
+                                                   class="sr-only">80% Complete (success)</span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                       <div class="panel income db mbm">
+                                          <div class="panel-body">
+                                             <p class="icon"><i class="icon fa fa-money"></i></p>
+                                             <h4
+                                                class="value"><span>215</span><span>$</span></h4>
+                                             <p class="description">Income detail</p>
+                                             <div class="progress progress-sm mbn">
+                                                <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                   style="width: 60%;" class="progress-bar progress-bar-info"><span
+                                                   class="sr-only">60% Complete (success)</span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                       <div class="panel task db mbm">
+                                          <div class="panel-body">
+                                             <p class="icon"><i class="icon fa fa-signal"></i></p>
+                                             <h4
+                                                class="value"><span>215</span></h4>
+                                             <p class="description">Task completed</p>
+                                             <div class="progress progress-sm mbn">
+                                                <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                   style="width: 50%;" class="progress-bar progress-bar-danger"><span
+                                                   class="sr-only">50% Complete (success)</span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                       <div class="panel visit db mbm">
+                                          <div class="panel-body">
+                                             <p class="icon"><i class="icon fa fa-group"></i></p>
+                                             <h4
+                                                class="value"><span>128</span></h4>
+                                             <p class="description">Visitor description</p>
+                                             <div class="progress progress-sm mbn">
+                                                <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                                   style="width: 70%;" class="progress-bar progress-bar-warning"><span
+                                                   class="sr-only">70% Complete (success)</span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row mbl">
+                                    <div class="col-lg-6">
+                                       <div class="panel">
+                                          <div class="panel-body full-color">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <div id="calendar"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                       <div class="timeline-centered timeline-sm">
+                                          <article class="timeline-entry">
+                                             <div class="timeline-entry-inner">
+                                                <time datetime="2014-01-10T03:45" class="timeline-time">
+                                                <span>12:45 AM</span><span>Today</span></time>
+                                                <div class="timeline-icon bg-violet"><i class="fa fa-exclamation"></i></div>
+                                                <div class="timeline-label">
+                                                   <h4 class="timeline-title">New Project</h4>
+                                                   <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add
+                                                      and offered prepare how cordial.
+                                                   </p>
+                                                </div>
+                                             </div>
+                                          </article>
+                                          <article class="timeline-entry left-aligned">
+                                             <div class="timeline-entry-inner">
+                                                <time datetime="2014-01-10T03:45" class="timeline-time">
+                                                <span>9:15 AM</span><span>Today</span></time>
+                                                <div class="timeline-icon bg-green"><i class="fa fa-group"></i></div>
+                                                <div class="timeline-label bg-green">
+                                                   <h4 class="timeline-title">Job Meeting</h4>
+                                                   <p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper
+                                                      water spinach kombu courgette.
+                                                   </p>
+                                                </div>
+                                             </div>
+                                          </article>
+                                          <article class="timeline-entry">
+                                             <div class="timeline-entry-inner">
+                                                <time datetime="2014-01-09T13:22" class="timeline-time">
+                                                <span>8:20 PM</span><span>04/03/2013</span></time>
+                                                <div class="timeline-icon bg-orange"><i class="fa fa-paper-plane"></i></div>
+                                                <div class="timeline-label bg-orange">
+                                                   <h4 class="timeline-title">Daily
+                                                      Feeds
+                                                   </h4>
+                                                   <p><img src="http://lorempixel.com/45/45/nature/3/" alt=""
+                                                      class="timeline-img pull-left"/>Parsley amaranth tigernut silver
+                                                      beet maize fennel spinach ricebean black-eyed. Tolerably earnestly
+                                                      middleton extremely distrusts she boy now not. Add and offered prepare
+                                                      how cordial.
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="timeline-entry-inner">
+                                                <div style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);"
+                                                   class="timeline-icon"><i class="fa fa-plus"></i></div>
+                                             </div>
+                                          </article>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="Sessions" class="tab-pane fade">
+                                 asdasdas
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--END CONTENT-->
+            </div>
+            <!--END PAGE WRAPPER-->
+         </div>
+      </div>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <!--loading bootstrap js-->
+      <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="vendors/metisMenu/jquery.metisMenu.js"></script>
+      <script src="vendors/slimScroll/jquery.slimscroll.js"></script>
+      <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+      <script src="vendors/iCheck/icheck.min.js"></script>
+      <script src="vendors/iCheck/custom.min.js"></script>
+      <script src="vendors/jquery-notific8/jquery.notific8.min.js"></script>
+      <script src="js/jquery.menu.js"></script>
+      <script src="vendors/jquery-pace/pace.min.js"></script>
+      <script src="vendors/holder/holder.js"></script>
+      <script src="vendors/responsive-tabs/responsive-tabs.js"></script>
+      <script src="vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+      <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+      <!--CORE JAVASCRIPT-->
+      <script src="js/main.js"></script>
+      <script src="js/index.js"></script>
+      <!--LOADING SCRIPTS FOR CALENDAR-->
+      <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+      <script src="js/page-calendar.js"></script>
+      <!--LOADING SCRIPTS FOR JPGRID-->
+      <script src="vendors/jplist/html/js/jplist.min.js"></script>
+      <script src="js/jplist.js"></script>
+      <!-- Ask Expert -->
+      <script src="vendors/bootstrap-markdown/js/bootstrap-markdown.js"></script>
+      <script src="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+      <script src="vendors/ckeditor/ckeditor.js"></script>
+      <script src="vendors/summernote/summernote.js"></script>
+      <script src="js/ui-editors.js"></script>
+      <script>// For Rendering Calendar
+         $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+             $('#calendar').fullCalendar('render');
+             if($('#wrapper').height() < $('#page-wrapper').height()){
+                 $('#wrapper').css('height', $('#page-wrapper').height());
+             } else {
+                 $('#wrapper').css('height', $('body').height());
+             }
+         });
+      </script>
+      
+      <!-- Toggle Ask Expert Menu -->
+      <script src="js/classie.js"></script>
+      <script>
+         var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+            showRightPush = document.getElementById( 'showRightPush' ),
+            showRightPush2 = document.getElementById( 'showRightPush2' ),
+            body = document.body;
+
+         showRightPush.onclick = function() {
+            classie.toggle( this, 'active' );
+            classie.toggle( body, 'cbp-spmenu-push-toleft' );
+            classie.toggle( menuRight, 'cbp-spmenu-open' );
+            disableOther( 'showRightPush' );
+         };
+         showRightPush2.onclick = function() {
+            classie.toggle( this, 'active' );
+            classie.toggle( body, 'cbp-spmenu-push-toleft' );
+            classie.toggle( menuRight, 'cbp-spmenu-open' );
+            disableOther( 'showRightPush2' );
+         };
+
+         function disableOther( button ) {
+            if( button !== 'showRightPush' ) {
+               classie.toggle( showRightPush, 'disabled' );
+            }
+         }
+      </script>
+   </body>
+</html>

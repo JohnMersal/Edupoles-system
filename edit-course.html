@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard | Dashboard</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" href="images/icons/favicon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+      <!--Loading bootstrap css-->
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+      <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+      <!--Loading style vendors-->
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <!--LOADING STYLESHEET FOR FORM_COMPONENTS-->
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-colorpicker/css/colorpicker.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-datepicker/css/datepicker.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-daterangepicker/daterangepicker-bs3.css">
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <link type="text/css" rel="stylesheet" href="vendors/iCheck/skins/all.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-clockface/css/clockface.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-switch/css/bootstrap-switch.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+      <!-- Calendar Multiple -->
+      <link type="text/css" rel="stylesheet" href="css/jquery-ui.multidatespicker.css">
+      <!--LOADING STYLESHEET FOR PAGE-->
+      <link type="text/css" rel="stylesheet" href="vendors/select2/select2-madmin.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap-select/bootstrap-select.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/multi-select/css/multi-select-madmin.css">
+      <!--Loading style-->
+      <link type="text/css" rel="stylesheet" href="css/screen.css">
+      <link type="text/css" rel="stylesheet" href="css/custom.css">
+      <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+   </head>
+   <body class="sidebar-icons header-fixed shadow-panel">
+      <div>
+      <!--BEGIN BACK TO TOP-->
+      <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+      <!--END BACK TO TOP-->
+      <!--BEGIN TOPBAR-->
+      <div class="page-header-topbar">
+         <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#">
+               <img src="images/logo.png">
+               </a>
+            </div>
+            <div class="topbar-main">
+               <ul class="nav navbar navbar-top-links navbar-right mbn">
+                  <li class="dropdown topbar-user">
+                     <a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                        src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt=""
+                        class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span
+                        class="caret"></span></a>
+                     <ul class="dropdown-menu dropdown-user pull-right">
+                        <li><a href="extra-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                        <li><a href="page-calendar.html"><i class="fa fa-calendar"></i>My Calendar</a></li>
+                        <li><a href="email-inbox.html"><i class="fa fa-envelope"></i>My Inbox<span
+                           class="badge badge-danger">3</span></a></li>
+                        <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                           class="badge badge-success">7</span></a></li>
+                        <li class="divider"></li>
+                        <li><a href="extra-lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                        <li><a href="extra-signin.html"><i class="fa fa-key"></i>Log Out</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <!--END TOPBAR-->
+      <div id="wrapper">
+         <!--BEGIN SIDEBAR MENU-->
+         <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+               <div class="sidebar-collapse menu-scroll">
+                  <ul id="side-menu" class="nav">
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-tachometer fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Dashboard</span>
+                        </a>
+                     </li>
+                     <li class="active">
+                        <a href="add-training-session.html">
+                           <i class="ico_program">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Create Program</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="course-builder.html">
+                           <i class="fa fa-book fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Course Builder</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="analytics.html">
+                           <i class="fa fa-bar-chart-o fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Analytics</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="news.html">
+                           <i class="fa fa-bullhorn fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">News and Events</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="settings.html">
+                           <i class="fa fa-cogs fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">System Settings</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         <!--END SIDEBAR MENU-->
+         <!--BEGIN PAGE WRAPPER-->
+         <div id="page-wrapper">
+            <!--BEGIN TITLE & BREADCRUMB PAGE-->
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+               <div class="page-header pull-left">
+                  <div class="page-title">New course</div>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+            <!--END TITLE & BREADCRUMB PAGE-->
+            <!--BEGIN CONTENT-->
+            <div class="page-content">
+               
+               <div class="row mbl">
+                  <div class="col-md-12">
+                     <ul role="tablist" class="ul-edit align-center nav nav-tabs mbl">
+                        <li class="settings-list  col-md-2 active">
+                           <a href="#details" role="tab" data-toggle="tab">
+                              <div class="panel mbm">
+                                 <div class="panel-body">
+                                    <i class="ico_details"></i>
+                                    <br /> Details
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="settings-list  col-md-2">
+                           <a href="#description" role="tab" data-toggle="tab">
+                              <div class="panel mbm">
+                                 <div class="panel-body">
+                                    <i class="ico_description"></i>
+                                    <br /> Description
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="settings-list  col-md-2">
+                           <a href="#price" role="tab" data-toggle="tab">
+                              <div class="panel mbm">
+                                 <div class="panel-body">
+                                    <i class="ico_price"></i>
+                                    <br /> Price
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="settings-list  col-md-2">
+                           <a href="#certificate" role="tab" data-toggle="tab">
+                              <div class="panel mbm">
+                                 <div class="panel-body">
+                                    <i class="ico_certificate"></i>
+                                    <br /> Certificate
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="settings-list  col-md-2">
+                           <a href="#attendees_management" role="tab" data-toggle="tab">
+                              <div class="panel mbm">
+                                 <div class="panel-body">
+                                    <i class="ico_grades"></i>
+                                    <br /> Grades
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="settings-list  col-md-2">
+                           <a href="#attendees_management" role="tab" data-toggle="tab">
+                              <div class="panel mbm">
+                                 <div class="panel-body">
+                                    <i class="ico_dependancies"></i>
+                                    <br /> Dependancies
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                     <div class="panel">
+                        <div class="panel-body">
+                           <div class="tab-content tab-edit ptn pbn mbn">
+                              
+                              <div id="details" class="tab-pane fade in active">
+                                 <form action="#" class="horizontal-form mbl">
+                                    <div class="row">
+                                       <div class="col-md-2">
+                                          <div id="image-preview" style="background-image:url('images/picture.png');">
+                                            <label for="image-upload" id="image-label">Choose Picture</label>
+                                            <input type="file" name="image" id="image-upload" />
+                                          </div>
+                                       </div>
+                                       <div class="col-md-10">
+                                          <div class="row">
+                                             <div class="col-md-6">
+                                                <div class="form-group"><label for="inputStreet" class="control-label">Course Name
+                                                   <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" value="Course Name Edit" class="course-name-input form-control" />
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row mbl">
+                                             <div class="col-md-12">
+                                                <div class="form-group mbn">
+                                                   <div class="radio">
+                                                      <label for="">Status: </label>
+                                                      <label>
+                                                         <input id="optionsRadios4" type="radio" name="optionsRadios" value="option1" checked="checked"/>&nbsp; Published
+                                                      </label>
+                                                      <label>
+                                                         <input id="optionsRadios5" type="radio" name="optionsRadios" value="option2"/>&nbsp; Draft
+                                                      </label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form-body">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <div class="form-group venue-place">
+                                                      <div class="radio">
+                                                         <label for="">Course Type </label>
+                                                         <label class="radio-inline"><input id="optionsVisa"
+                                                            type="radio"
+                                                            name="optionsRadios"
+                                                            value="Visa"
+                                                            checked="checked"/>&nbsp; <i class="icon fa fa-desktop"></i>
+                                                         e-Learning</label>
+                                                         <label class="radio-inline"><input id="optionsMasterCard"
+                                                            type="radio"
+                                                            name="optionsRadios"
+                                                            value="MasterCard"/>&nbsp; <i class="icon ico_webinar"></i>
+                                                         Webinar</label>
+                                                         <label class="radio-inline">
+                                                         <input id="optionsPayPal" type="radio" name="optionsRadios" value="PayPal"/>&nbsp; <i class="icon ico_class"></i> Classroom
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-6">
+                                                   <div class="form-group"><label for="inputStreet" class="control-label">Effort
+                                                      <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" value="Effort" class="form-control" />
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                   <div class="form-group"><label for="inputStreet" class="control-label">Promo Video
+                                                      <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" value="Promo Video" class=" form-control" />
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label for="" class="control-label">Languages
+                                                      <span class='require'>*</span></label>
+                                                      <select class="form-control" data-placeholder="Choose a Language...">
+                                                        <option value="AF">Afrikanns</option>
+                                                        <option value="SQ">Albanian</option>
+                                                        <option value="AR">Arabic</option>
+                                                        <option value="HY">Armenian</option>
+                                                        <option value="EU">Basque</option>
+                                                        <option value="BN">Bengali</option>
+                                                        <option value="BG">Bulgarian</option>
+                                                        <option value="CA">Catalan</option>
+                                                        <option value="KM">Cambodian</option>
+                                                        <option value="ZH">Chinese (Mandarin)</option>
+                                                        <option value="HR">Croation</option>
+                                                        <option value="CS">Czech</option>
+                                                        <option value="DA">Danish</option>
+                                                        <option value="NL">Dutch</option>
+                                                        <option value="EN">English</option>
+                                                        <option value="ET">Estonian</option>
+                                                        <option value="FJ">Fiji</option>
+                                                        <option value="FI">Finnish</option>
+                                                        <option value="FR">French</option>
+                                                        <option value="KA">Georgian</option>
+                                                        <option value="DE">German</option>
+                                                        <option value="EL">Greek</option>
+                                                        <option value="GU">Gujarati</option>
+                                                        <option value="HE">Hebrew</option>
+                                                        <option value="HI">Hindi</option>
+                                                        <option value="HU">Hungarian</option>
+                                                        <option value="IS">Icelandic</option>
+                                                        <option value="ID">Indonesian</option>
+                                                        <option value="GA">Irish</option>
+                                                        <option value="IT">Italian</option>
+                                                        <option value="JA">Japanese</option>
+                                                        <option value="JW">Javanese</option>
+                                                        <option value="KO">Korean</option>
+                                                        <option value="LA">Latin</option>
+                                                        <option value="LV">Latvian</option>
+                                                        <option value="LT">Lithuanian</option>
+                                                        <option value="MK">Macedonian</option>
+                                                        <option value="MS">Malay</option>
+                                                        <option value="ML">Malayalam</option>
+                                                        <option value="MT">Maltese</option>
+                                                        <option value="MI">Maori</option>
+                                                        <option value="MR">Marathi</option>
+                                                        <option value="MN">Mongolian</option>
+                                                        <option value="NE">Nepali</option>
+                                                        <option value="NO">Norwegian</option>
+                                                        <option value="FA">Persian</option>
+                                                        <option value="PL">Polish</option>
+                                                        <option value="PT">Portuguese</option>
+                                                        <option value="PA">Punjabi</option>
+                                                        <option value="QU">Quechua</option>
+                                                        <option value="RO">Romanian</option>
+                                                        <option value="RU">Russian</option>
+                                                        <option value="SM">Samoan</option>
+                                                        <option value="SR">Serbian</option>
+                                                        <option value="SK">Slovak</option>
+                                                        <option value="SL">Slovenian</option>
+                                                        <option value="ES">Spanish</option>
+                                                        <option value="SW">Swahili</option>
+                                                        <option value="SV">Swedish </option>
+                                                        <option value="TA">Tamil</option>
+                                                        <option value="TT">Tatar</option>
+                                                        <option value="TE">Telugu</option>
+                                                        <option value="TH">Thai</option>
+                                                        <option value="BO">Tibetan</option>
+                                                        <option value="TO">Tonga</option>
+                                                        <option value="TR">Turkish</option>
+                                                        <option value="UK">Ukranian</option>
+                                                        <option value="UR">Urdu</option>
+                                                        <option value="UZ">Uzbek</option>
+                                                        <option value="VI">Vietnamese</option>
+                                                        <option value="CY">Welsh</option>
+                                                        <option value="XH">Xhosa</option>
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label for="selGender" class="control-label">Module
+                                                      <span class='require'>*</span></label>
+                                                      <select name="ctl00$MainContent$drp_Modules" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$drp_Modules\',\'\')', 0)" id="MainContent_drp_Modules" class="form-control">
+                                                         <option selected="selected" value="">Select Module</option>
+                                                         <option value="67">Attitude and Mindset</option>
+                                                         <option value="60">Attractive Visual presentation skills</option>
+                                                         <option value="72">Change Management</option>
+                                                         <option value="70">Coaching</option>
+                                                         <option value="84">Cold Calling</option>
+                                                         <option value="58">Communication Skills and Feedback Techniques</option>
+                                                         <option value="71">Conflict Management</option>
+                                                         <option value="76">Creative Thinking</option>
+                                                         <option value="69">Delegation</option>
+                                                         <option value="80">Digital Marketing </option>
+                                                         <option value="62">Emotional Intelligence</option>
+                                                         <option value="75">Finance for Non-financials</option>
+                                                         <option value="66">Goal Setting and Performance Management</option>
+                                                         <option value="64">Introduction to Leadership</option>
+                                                         <option value="65">Know yourself -MBTI Situational Leadership</option>
+                                                         <option value="68">Motivation Skills</option>
+                                                         <option value="61">Persuasive Presentation skills</option>
+                                                         <option value="74">Planning and Time management</option>
+                                                         <option value="73">Problem Solving and Decision Making</option>
+                                                         <option value="79">Sales Sprint</option>
+                                                         <option value="78">Sales Square 1</option>
+                                                         <option value="82">SHIFT Business Training &amp; Consultation</option>
+                                                         <option value="77">Strategic Thinking</option>
+                                                         <option value="83">Streamline</option>
+                                                         <option value="63">Tactical Negotiation Skills</option>
+                                                         <option value="81">Who we are</option>
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label for="selGender" class="control-label">Provider
+                                                      <span class='require'>*</span></label>
+                                                      <select name="ctl00$MainContent$drp_Providers" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$drp_Providers\',\'\')', 0)" id="MainContent_drp_Providers" class="form-control">
+                                                         <option selected="selected" value="">Select Provider</option>
+                                                         <option value="2">BLUE Change</option>
+                                                         <option value="3">Global Knowledge </option>
+                                                         <option value="4">Global Knowledge </option>
+                                                         <option value="5">Global Knowledge </option>
+                                                         <option value="1">SHIFT Training</option>
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label for="selGender" class="control-label">Instructor
+                                                      <span class='require'>*</span></label>
+                                                      <select name="ctl00$MainContent$drp_Instructors" id="MainContent_drp_Instructors" class="form-control">
+                                                         <option value="">Select Instructor</option>
+                                                         <option value="7">Basma</option>
+                                                         <option value="3">Dina Samir</option>
+                                                         <option value="2">Hany El Refaee</option>
+                                                         <option value="4">Hesham Bahram</option>
+                                                         <option value="1">Mohamed Haroun</option>
+                                                         <option value="6">Online</option>
+                                                         <option value="5">Samer Bahaa</option>
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <div class="form-group"><label>Overview:</label><textarea rows="4" class="form-control">The module develops participants’ skills in carrying out effective coaching through increasing their ability to alter from one style to the other according to the need.
+                                                   </textarea>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div id="description" class="tab-pane fade ">
+                                 <form action="#" class="form-horizontal mbl">
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="form-group mbm">
+                                             <label class="col-md-3 control-label">Description</label>
+                                             <div class="col-md-9">
+                                                 <div class="compose-editor mbl">
+                                                   <textarea rows="6" class="wysihtml5 form-control">
+                                                      Description
+                                                   </textarea>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form-group mbm">
+                                             <label class="col-md-3 control-label">Prerequisit</label>
+                                             <div class="col-md-9">
+                                                <div class="compose-editor mbl">
+                                                   <textarea rows="6" class="wysihtml5 form-control">
+                                                      Prerequisit
+                                                   </textarea>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form-group mbm">
+                                             <label class="col-md-3 control-label">What will I learn:</label>
+                                             <div class="col-md-9">
+                                                <div class="compose-editor mbl">
+                                                   <textarea rows="6" class="wysihtml5 form-control">
+                                                      What will I learn:
+                                                   </textarea>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form-group mbm">
+                                             <label class="col-md-3 control-label">Who is the target audiance:</label>
+                                             <div class="col-md-9">
+                                                <div class="compose-editor mbl">
+                                                   <textarea rows="6" class="wysihtml5 form-control">
+                                                      Who is the target audiance:
+                                                   </textarea>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+
+                              <div id="time" class="tab-pane fade">
+                                 <form action="#" class="horizontal-form">
+                                    <div class="form-body">
+                                       <h3>Select your attendees</h3>
+                                       <div class="row mbl">
+                                          <div class="col-md-3">
+                                             <h5>Select Groups</h5>
+                                             <div class="checkbox_Cover" style="height: 145px;">
+                                                <table id="MainContent_chk_Groups" class="checkbox">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_0" type="checkbox" name="ctl00$MainContent$chk_Groups$0" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$0\',\'\')', 0)" value="11"><label for="MainContent_chk_Groups_0">123</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_1" type="checkbox" name="ctl00$MainContent$chk_Groups$1" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$1\',\'\')', 0)" value="3"><label for="MainContent_chk_Groups_1">Administration</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_2" type="checkbox" name="ctl00$MainContent$chk_Groups$2" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$2\',\'\')', 0)" value="7"><label for="MainContent_chk_Groups_2">Hr group</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_3" type="checkbox" name="ctl00$MainContent$chk_Groups$3" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$3\',\'\')', 0)" value="4"><label for="MainContent_chk_Groups_3">IT Department</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_4" type="checkbox" name="ctl00$MainContent$chk_Groups$4" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$4\',\'\')', 0)" value="8"><label for="MainContent_chk_Groups_4">Leadership</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_5" type="checkbox" name="ctl00$MainContent$chk_Groups$5" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$5\',\'\')', 0)" value="1"><label for="MainContent_chk_Groups_5">Marketing</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_6" type="checkbox" name="ctl00$MainContent$chk_Groups$6" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$6\',\'\')', 0)" value="13"><label for="MainContent_chk_Groups_6">online courses</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_7" type="checkbox" name="ctl00$MainContent$chk_Groups$7" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$7\',\'\')', 0)" value="5"><label for="MainContent_chk_Groups_7">Online Sessions</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_8" type="checkbox" name="ctl00$MainContent$chk_Groups$8" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$8\',\'\')', 0)" value="6"><label for="MainContent_chk_Groups_8">Online Trial</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_9" type="checkbox" name="ctl00$MainContent$chk_Groups$9" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$9\',\'\')', 0)" value="2"><label for="MainContent_chk_Groups_9">Sales Management</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_10" type="checkbox" name="ctl00$MainContent$chk_Groups$10" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$10\',\'\')', 0)" value="10"><label for="MainContent_chk_Groups_10">TOT Leadership</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_11" type="checkbox" name="ctl00$MainContent$chk_Groups$11" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$11\',\'\')', 0)" value="12"><label for="MainContent_chk_Groups_11">TOT Leadership 1</label></td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td><input id="MainContent_chk_Groups_12" type="checkbox" name="ctl00$MainContent$chk_Groups$12" onclick="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$chk_Groups$12\',\'\')', 0)" value="9"><label for="MainContent_chk_Groups_12">TOT presentation</label></td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <h5>Session Attendees</h5>
+                                             <div class="checkbox_Cover" style="height: 145px">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                             <div class="row">
+                                                <h5>&nbsp;</h5>
+                                                <div class="col-md-12">
+                                                   <span class="checkbox"><input id="MainContent_chk_Requested" type="checkbox" name="ctl00$MainContent$chk_Requested" checked="checked"><label for="MainContent_chk_Requested">Mark All Requested</label></span>
+                                                </div>
+                                                <div class="col-md-12">
+                                                   <span class="checkbox"><input id="MainContent_chk_Approved" type="checkbox" name="ctl00$MainContent$chk_Approved" checked="checked"><label for="MainContent_chk_Approved">Mark All Approved</label></span>
+                                                </div>
+                                                <div class="col-md-12" style="display: none;">
+                                                   <span class="checkbox"><input id="MainContent_chk_Expired" type="checkbox" name="ctl00$MainContent$chk_Expired"><label for="MainContent_chk_Expired">Check Expiry For Attendees</label></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </form>
+                                 <div class="row">
+                                    <div class="col-md-3">
+                                       <div id="mdp-demo"></div>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <h3><span>1</span> Date, Nov 15 <div class="pull-right">1 Time</div></h3>
+                                       <hr>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <h4>Wed Nov 15, 2017 <span class="pull-right" style="cursor: pointer;"><i class="fa fa-trash-o"></i></span></h4>
+                                          </div>
+                                          <div class="col-md-12 mbm">
+                                             <div class="date_highlight">
+                                                <a href="#">4:00 PM - 5:15 PM</a>
+                                                <a href="#"><i class="fa fa-edit"></i></a>
+                                                <div class="pull-right" style="cursor: pointer;"><i class="fa fa-times"></i></div>
+                                             </div>
+                                             <div class="date_highlight">
+                                                <a href="#">4:00 PM - 5:15 PM</a>
+                                                <a href="#"><i class="fa fa-edit"></i></a>
+                                                <div class="pull-right" style="cursor: pointer;"><i class="fa fa-times"></i></div>
+                                             </div>
+                                             <div class="date_highlight">
+                                                <a href="#">4:00 PM - 5:15 PM</a>
+                                                <a href="#"><i class="fa fa-edit"></i></a>
+                                                <div class="pull-right" style="cursor: pointer;"><i class="fa fa-times"></i></div>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <a href="#" class="add_new_time"><i class="fa fa-plus"></i> Add Time</a>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <form action="">
+                                                <div class="input-time">
+                                                   <div class="col-md-3">
+                                                      <select data-style="btn-white" class="selectpicker form-control mbn">
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                      </select>
+                                                      <span class="help-block">Start time</span>
+                                                   </div>
+                                                   <div class="col-md-3">
+                                                      <select data-style="btn-white" class="selectpicker form-control mbn">
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                         <option value="">4:00 - 5:15</option>
+                                                      </select>
+                                                      <span class="help-block">End time</span>
+                                                   </div>
+                                                   <div class="col-md-4 pull-right">
+                                                      <div class="row">
+                                                         <div class="col-md-6">
+                                                            <button type="button" class="btn btn-block btn-default">Cancel</button>
+                                                         </div>
+                                                         <div class="col-md-6">
+                                                            <button type="button" class="btn btn-block btn-primary">Add</button>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </form>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div id="price" class="tab-pane fade">
+                                 <form action="#" class="horizontal-form">
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                          <div class="form-group"><label for="inputStreet" class="control-label">Price
+                                             <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" value="700" class="form-control" />
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label for="selGender" class="control-label">Currency
+                                             <span class='require'>*</span></label>
+                                             <select name="ctl00$MainContent$drp_Providers" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$drp_Providers\',\'\')', 0)" id="MainContent_drp_Providers" class="form-control">
+                                                <option selected="selected" value="">Select Provider</option>
+                                                <option value="2">BLUE Change</option>
+                                                <option value="3">Global Knowledge </option>
+                                                <option value="4">Global Knowledge </option>
+                                                <option value="5">Global Knowledge </option>
+                                                <option value="1">SHIFT Training</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label for="selGender" class="control-label">Price Type
+                                             <span class='require'>*</span></label>
+                                             <select name="ctl00$MainContent$drp_Providers" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$drp_Providers\',\'\')', 0)" id="MainContent_drp_Providers" class="form-control">
+                                                <option selected="selected" value="">Select Provider</option>
+                                                <option value="2">BLUE Change</option>
+                                                <option value="3">Global Knowledge </option>
+                                                <option value="4">Global Knowledge </option>
+                                                <option value="5">Global Knowledge </option>
+                                                <option value="1">SHIFT Training</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+
+                              <div id="certificate" class="tab-pane fade">
+                                 <form action="#" class="horizontal-form">
+                                    <div class="col-md-12 uploadarea">
+                                       <h3>Upload certificate template</h3>
+                                       <input type="file" name="file-6[]" id="file-6" class="inputfile inputfile-5" data-multiple-caption="{count} files selected" multiple />
+                                       <label for="file-6"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span></span></label>
+                                    </div>
+                                 </form>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--END CONTENT-->
+            </div>
+            <div class="menu-3"></div>
+            <div class="menu-items">
+               <ul role="tablist" class="menu-items">                       
+                  <li class="menu-item item1">
+                     <a href="#time" role="tab" data-toggle="tab">
+                        <i class="ico_time"></i>
+                        <span>Users and Time</span>
+                     </a>
+                  </li>                       
+                  <!-- <li class="menu-item item2">
+                     <a href="#time" role="tab" data-toggle="tab">
+                        <i class="ico_time"></i>
+                     </a>
+                  </li>                       
+                  <li class="menu-item item3">
+                     <a href="#time" role="tab" data-toggle="tab">
+                        <i class="ico_time"></i>
+                     </a>
+                  </li>                       
+                  <li class="menu-item item4">
+                     <a href="#time" role="tab" data-toggle="tab">
+                        <i class="ico_time"></i>
+                     </a>
+                  </li> -->
+               </ul>
+            </div>
+            <div class="form-settings">
+               <a href="#"><i class="fa fa-save"></i> Save</a>
+            </div>
+
+            <!--END PAGE WRAPPER-->
+         </div>
+      </div>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/jquery-ui.multidatespicker.js"></script>
+      <script>
+         var today = new Date();
+         var y = today.getFullYear();
+         $('#mdp-demo').multiDatesPicker({
+            addDates: ['10/14/'+y, '02/19/'+y, '01/14/'+y, '11/16/'+y],
+            numberOfMonths: [3,1],
+            defaultDate: '1/1/'+y
+         });
+      </script>
+      <!--loading bootstrap js-->
+      <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="vendors/metisMenu/jquery.metisMenu.js"></script>
+      <script src="vendors/slimScroll/jquery.slimscroll.js"></script>
+      <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+      <script src="vendors/iCheck/icheck.min.js"></script>
+      <script src="vendors/iCheck/custom.min.js"></script>
+      <script src="vendors/jquery-notific8/jquery.notific8.min.js"></script>
+      <script src="vendors/jquery-highcharts/highcharts.js"></script>
+      <script src="js/jquery.menu.js"></script>
+      <script src="vendors/jquery-pace/pace.min.js"></script>
+      <script src="vendors/holder/holder.js"></script>
+      <script src="vendors/responsive-tabs/responsive-tabs.js"></script>
+      <script src="vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+      <!--CORE JAVASCRIPT-->
+      <script src="js/main.js"></script>
+      <!--LOADING STYLESHEET FOR FORM_COMPONENTS-->
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+      <script src="vendors/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+      <script src="vendors/bootstrap-clockface/js/clockface.js"></script>
+      <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+      <script src="vendors/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+      <script src="vendors/jquery-maskedinput/jquery-maskedinput.js"></script>
+      <script src="vendors/charCount.js"></script>
+      <script src="js/form-components.js"></script>
+      <script src="vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+      <script src="js/email-compose-mail.js"></script>    
+      <!--LOADING SCRIPTS FOR PAGE-->
+      <script src="vendors/bootstrap-select/bootstrap-select.min.js"></script>
+      <script type="text/javascript" src="js/jquery.uploadPreview.min.js"></script>
+      <script src="js/jquery.custom-file-input.js"></script>
+
+      <script>
+         $(function () {
+             //BEGIN PLUGINS BOOTSTRAP SELECT
+             $('.selectpicker').selectpicker();
+             //END PLUGINS BOOTSTRAP SELECT
+         });
+         $(document).ready(function() {
+           $.uploadPreview({
+             input_field: "#image-upload",   // Default: .image-upload
+             preview_box: "#image-preview",  // Default: .image-preview
+             label_field: "#image-label",    // Default: .image-label
+             label_default: "Choose File",   // Default: Choose File
+             label_selected: "Change File",  // Default: Change File
+             no_label: false                 // Default: false
+           });
+         });
+
+
+
+         
+         $('input.course-name-input').on('change paste keyup', function(){
+             // Store the text field as a variable, get it's value
+             var thiis = $(this),
+                 value = thiis.val();
+             // replace the paragraph's content with the textrea's value
+             $('.page-title').html(value);
+         });
+
+         // Tab edit hotfix
+         $('.ul-edit li').click(function() {
+            $('.menu-items .item1').removeClass('active');
+            $('.menu-3').removeClass('menu-3-active');
+            $('.menu-items').removeClass('menu-3-active');
+         });
+         // Scrolling opening menu
+         var menu = $('.menu-3');
+         menu.on('click', function() {
+           $(this).toggleClass('menu-3-active');
+           $('.menu-items').toggleClass('menu-3-active');
+         })
+      </script>
+   </body>
+</html>

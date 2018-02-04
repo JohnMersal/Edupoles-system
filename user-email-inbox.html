@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard | Dashboard</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" href="images/icons/favicon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+      <!--Loading bootstrap css-->
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+      <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+      <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+      <!--Loading style vendors-->
+      <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">
+      <!-- email checks Style -->
+      <link type="text/css" rel="stylesheet" href="vendors/iCheck/skins/all.css">
+      <!--Loading style-->
+      <link type="text/css" rel="stylesheet" href="css/screen.css">
+      <link type="text/css" rel="stylesheet" href="css/custom.css">
+      <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+   </head>
+   <body class="sidebar-icons header-fixed shadow-panel">
+      <div>
+         <!--BEGIN BACK TO TOP-->
+         <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+         <!--END BACK TO TOP-->
+         <!--BEGIN TOPBAR-->
+         <div class="page-header-topbar">
+            <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;" class="navbar navbar-default navbar-static-top">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                  <img src="images/logo.png">
+                  </a>
+               </div>
+               <div class="topbar-main">
+                  <ul class="nav navbar navbar-top-links navbar-right mbn">
+                     <li class="dropdown topbar-user">
+                        <a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                           src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg" alt=""
+                           class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span
+                           class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-user pull-right">
+                           <li><a href="extra-profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                           <li><a href="page-calendar.html"><i class="fa fa-calendar"></i>My Calendar</a></li>
+                           <li><a href="email-inbox.html"><i class="fa fa-envelope"></i>My Inbox<span
+                              class="badge badge-danger">3</span></a></li>
+                           <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                              class="badge badge-success">7</span></a></li>
+                           <li class="divider"></li>
+                           <li><a href="extra-lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                           <li><a href="extra-signin.html"><i class="fa fa-key"></i>Log Out</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!--END TOPBAR-->
+         <div id="wrapper">
+            <!--BEGIN SIDEBAR MENU-->
+            <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+               <div class="sidebar-collapse menu-scroll">
+                  <ul id="side-menu" class="nav">
+                     <li class="active">
+                        <a href="index.html">
+                           <i class="fa fa-home fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Home</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-book fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">My Courses</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-bar-chart-o fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">My Progress</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="index.html">
+                           <i class="fa fa-shopping-cart fa-fw">
+                              <div class="icon-bg bg-orange"></div>
+                           </i>
+                           <span class="menu-title">Course Market Place</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <!--END SIDEBAR MENU-->
+            <!--BEGIN PAGE WRAPPER-->
+            <div id="page-wrapper">
+               <!--BEGIN TITLE & BREADCRUMB PAGE-->
+               <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+                  <div class="page-header pull-left">
+                     <div class="page-title">Inbox</div>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <!--END TITLE & BREADCRUMB PAGE-->
+               <!--BEGIN CONTENT-->
+               <div class="page-content">
+                  <div id="tab-general">
+                     <div class="row mbl">
+                        <div class="col-md-12">
+                           <div class="row">
+                              <div class="col-sm-3 col-md-2">
+                                 &nbsp;
+                              </div>
+                              <div class="col-sm-9 col-md-10">
+                                 <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><input type="checkbox"
+                                       style="margin: 0; vertical-align: middle;"
+                                       class="checkall"/></button>
+                                    <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span
+                                       class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                                    <ul role="menu" class="dropdown-menu">
+                                       <li><a href="#">All</a></li>
+                                       <li><a href="#">None</a></li>
+                                       <li><a href="#">Read</a></li>
+                                       <li><a href="#">Unread</a></li>
+                                       <li><a href="#">Starred</a></li>
+                                       <li><a href="#">Unstarred</a></li>
+                                    </ul>
+                                 </div>
+                                 <button type="button" data-toggle="tooltip" title="Refresh" class="btn btn-default mls mrs">
+                                 <span class="glyphicon glyphicon-refresh"></span></button>
+                                 <div class="btn-group">
+                                    <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">More
+                                    &nbsp;<span class="caret"></span></button>
+                                    <ul role="menu" class="dropdown-menu">
+                                       <li><a href="#">Mark all as read</a></li>
+                                       <li class="divider"></li>
+                                       <li class="text-center pbm">
+                                          <small class="text-muted">Select messages to see more actions</small>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="pull-right">
+                                    <span class="text-muted"><b>1</b>&nbsp; – &nbsp;<b>50</b>&nbsp; of &nbsp;<b>277</b></span>
+                                    <div class="btn-group mlm">
+                                       <button type="button" class="btn btn-default"><span
+                                          class="glyphicon glyphicon-chevron-left"></span></button>
+                                       <button type="button" class="btn btn-default"><span
+                                          class="glyphicon glyphicon-chevron-right"></span></button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mtl mbl"></div>
+                           <div class="row">
+                              <div class="col-sm-3 col-md-2">
+                                 <a href="#" role="button" class="btn btn-danger btn-sm btn-block">COMPOSE</a>
+                                 <div class="mtm mbm"></div>
+                                 <ul style="background: #fff" class="nav nav-pills nav-stacked">
+                                    <li class="active"><a href="#"><span class="badge pull-right">42</span><i
+                                       class="fa fa-inbox fa-fw mrs"></i>Inbox</a></li>
+                                    <li><a href="#"><i class="fa fa-star-o fa-fw mrs"></i>Starred</a></li>
+                                    <li><a href="#"><i class="fa fa-info-circle fa-fw mrs"></i>Important</a></li>
+                                    <li><a href="#"><i class="fa fa-plane fa-fw mrs"></i>Sent Mail</a></li>
+                                    <li><a href="#"><span class="badge badge-orange pull-right">3</span><i
+                                       class="fa fa-edit fa-fw mrs"></i>Drafts</a></li>
+                                 </ul>
+                                 <hr/>
+                                 <ul style="background: #fff" class="nav nav-pills nav-stacked">
+                                    <li class="active"><a href="#">Buddy Online</a></li>
+                                    <li><a href="#"><i class="fa fa-circle text-yellow pull-right"></i>Home</a></li>
+                                    <li><a href="#"><i class="fa fa-circle text-success pull-right"></i>Work</a></li>
+                                    <li><a href="#"><i class="fa fa-circle text-red pull-right"></i>Family</a></li>
+                                    <li><a href="#"><i class="fa fa-circle text-muted pull-right"></i>Other</a></li>
+                                 </ul>
+                              </div>
+                              <div class="col-sm-9 col-md-10">
+                                 <div class="compose-mail">
+                                    <div class="portlet box portlet-white">
+                                       <div class="portlet-header">
+                                          <div class="caption">Excepteur sint occaecat cupidatat non proident</div>
+                                          <div class="tools"><a href="#" class="btn btn-default btn-xs"><i
+                                             class="fa fa-mail-reply mln"></i>&nbsp;
+                                             Reply</a>&nbsp;<a href="#" data-hover="tooltip" title="Print"
+                                                class="btn btn-default btn-xs"><i class="fa fa-print mln"></i></a>&nbsp;<a
+                                                href="#" data-hover="tooltip" title="Trash"
+                                                class="btn btn-default btn-xs"><i class="fa fa-trash-o mln"></i></a>
+                                          </div>
+                                       </div>
+                                       <div class="portlet-body">
+                                          <div class="mail-content">
+                                             <div class="mail-sender">
+                                                <div class="row">
+                                                   <div class="col-md-8"><img
+                                                      src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/48.jpg"
+                                                      alt="" width="30px" class="img-circle mrm"/><strong>John
+                                                      Doe</strong> <span>[example@gmail.com]</span>&nbsp;
+                                                      to
+                                                      &nbsp;<strong>me</strong>
+                                                   </div>
+                                                   <div class="col-md-4">
+                                                      <p class="date"> 4:15AM 04 April 2014</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="mail-view">
+                                                <p>Donec ultrices faucibus rutrum. Phasellus sodales
+                                                   vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem
+                                                   lobortis porttitor eu consequat risus. <a href='#'>Mauris sed congue</a>
+                                                   orci. Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel
+                                                   accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu
+                                                   consequat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum.
+                                                   Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae
+                                                   leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci.
+                                                </p>
+                                                <blockquote><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                   enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                   aliquip ex ea commodo consequat.<br/>At vero eos et accusamus et iusto
+                                                   odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                                                   atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                                                   cupiditate non provident<br/>Sed ut perspiciatis unde omnis iste natus
+                                                   error sit voluptatem accusantium doloremque laudantium, totam rem
+                                                   aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                                   beatae vitae dicta sunt explicabo.</em>
+                                                </blockquote>
+                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                   consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                   incidunt ut labore et dolore magnam <a href='#'>aliquam quaerat</a>
+                                                   voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                                   corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                   Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+                                                   quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                                                   voluptas nulla pariatur.Neque porro quisquam est, qui dolorem ipsum quia
+                                                   dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                   modi tempora incidunt ut labore et dolore magnam <a href='#'>aliquam
+                                                   quaerat</a> voluptatem. Ut enim ad minima veniam, quis nostrum
+                                                   exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                                                   commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                                                   voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                                                   dolorem eum fugiat quo voluptas nulla pariatur.
+                                                </p>
+                                             </div>
+                                             <div class="mail-attachment">
+                                                <p><span><i class="fa fa-paperclip mrs"></i>3 attachments ---<a
+                                                   href="#" class="mrm mls">Download all attachments</a>|<a href="#"
+                                                   class="mlm">View
+                                                   all images</a></span>
+                                                </p>
+                                                <ul>
+                                                   <li><a href="#" class="thumb-attach"><img
+                                                      src="images/gallery/1.jpg"/></a><a href="#" class="name">IMG_001.jpg</a><br/><a
+                                                      href="#" class="link">
+                                                      <small>Download</small>
+                                                      </a>
+                                                   </li>
+                                                   <li><a href="#" class="thumb-attach"><img
+                                                      src="images/gallery/2.jpg"/></a><a href="#" class="name">IMG_002.jpg</a><br/><a
+                                                      href="#" class="link">
+                                                      <small>Download</small>
+                                                      </a>
+                                                   </li>
+                                                   <li><a href="#" class="thumb-attach"><img
+                                                      src="images/gallery/3.jpg"/></a><a href="#" class="name">IMG_003.jpg</a><br/><a
+                                                      href="#" class="link">
+                                                      <small>Download</small>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                             <div class="clearfix"></div>
+                                             <hr/>
+                                             <p><a href="#" class="btn btn-default btn-xs"><i
+                                                class="fa fa-mail-reply mln"></i>&nbsp;
+                                                Reply</a>&nbsp;<a href="#" data-hover="tooltip" title="Print"
+                                                   class="btn btn-default btn-xs"><i
+                                                   class="fa fa-print mln"></i></a>&nbsp;<a href="#" data-hover="tooltip"
+                                                   title="Trash"
+                                                   class="btn btn-default btn-xs"><i
+                                                   class="fa fa-trash-o mln"></i></a>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--END CONTENT-->
+            </div>
+            <!--END PAGE WRAPPER-->
+         </div>
+      </div>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <!--loading bootstrap js-->
+      <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="vendors/metisMenu/jquery.metisMenu.js"></script>
+      <script src="vendors/slimScroll/jquery.slimscroll.js"></script>
+      <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+      <script src="vendors/iCheck/icheck.min.js"></script>
+      <script src="vendors/iCheck/custom.min.js"></script>
+      <script src="vendors/jquery-notific8/jquery.notific8.min.js"></script>
+      <script src="vendors/jquery-highcharts/highcharts.js"></script>
+      <script src="js/jquery.menu.js"></script>
+      <script src="vendors/jquery-pace/pace.min.js"></script>
+      <script src="vendors/holder/holder.js"></script>
+      <script src="vendors/responsive-tabs/responsive-tabs.js"></script>
+      <script src="vendors/jquery-news-ticker/jquery.newsTicker.min.js"></script>
+      <script src="vendors/moment/moment.js"></script>
+      <script src="vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+      <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+      <!--CORE JAVASCRIPT-->
+      <script src="js/main.js"></script>
+      <script src="js/email-inbox.js"></script>
+   </body>
+</html>
