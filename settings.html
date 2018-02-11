@@ -831,6 +831,12 @@
                                              <li>
                                                 <a href="#access-rights" role="tab" data-toggle="tab">Access Rights</a>
                                              </li>
+                                             <li>
+                                                <a href="#branches" role="tab" data-toggle="tab">Branches</a>
+                                             </li>
+                                             <li>
+                                                <a href="#sub-approvals" role="tab" data-toggle="tab">Approval</a>
+                                             </li>
                                           </ul>
                                           <div class="tab-content tab-edit">
                                              <div id="user-management" class="tab-pane fade in active">
@@ -839,7 +845,7 @@
                                                       <div class="btn-group btn-edit-group pull-right">
                                                          <a href="#"><i class="fa fa-plus "></i> Import</a>
                                                          <a href="#"><i class="fa fa-plus "></i> Export</a>
-                                                         <a href="#"><i class="fa fa-plus "></i><i class="fa fa-user "></i> New User</a>
+                                                         <a href="#" data-target="#Newuser-Modal" data-toggle="modal"><i class="fa fa-plus "></i><i class="fa fa-user "></i> New User</a>
                                                       </div>
                                                    </div>
 
@@ -1303,10 +1309,11 @@
                                                       <tr>
                                                          <th>Group Name</th>
                                                          <th> 
-                                                            <button type="button" class="btn btn-yellow pull-right"><i
-                                                               class="fa fa-plus"></i> <i
-                                                               class="fa fa-group"></i>&nbsp;New group
-                                                            </button>
+                                                            <div class="pull-right">
+                                                               <div class="btn-group btn-edit-group pull-right">
+                                                                  <a href="#"><i class="fa fa-plus "></i><i class="fa fa-group "></i> New group</a>
+                                                               </div>
+                                                            </div>
                                                          </th>
                                                       </tr>
                                                    </thead>
@@ -1314,7 +1321,7 @@
                                                       <tr>
                                                          <td>Marketing</td>
                                                          <td>
-                                                            <button type="button" class="btn btn-default pull-right"><i
+                                                            <button type="button" class="btn btn-default pull-right btn-xs"><i
                                                                class="fa fa-edit"></i>&nbsp;
                                                             Edit
                                                             </button>
@@ -1323,7 +1330,7 @@
                                                       <tr>
                                                          <td>Sales</td>
                                                          <td>
-                                                            <button type="button" class="btn btn-default pull-right"><i
+                                                            <button type="button" class="btn btn-default pull-right btn-xs"><i
                                                                class="fa fa-edit"></i>&nbsp;
                                                             Edit
                                                             </button>
@@ -1344,7 +1351,7 @@
                                                       <tr>
                                                          <td>Admin</td>
                                                          <td>
-                                                            <button type="button" class="btn btn-default pull-right"><i
+                                                            <button type="button" class="btn btn-default btn-xs pull-right"><i
                                                                class="fa fa-key"></i>&nbsp;
                                                             </button>
                                                          </td>
@@ -1352,12 +1359,37 @@
                                                       <tr>
                                                          <td>Member</td>
                                                          <td>
-                                                            <button type="button" class="btn btn-default pull-right"><i
+                                                            <button type="button" class="btn btn-default btn-xs pull-right"><i
                                                                class="fa fa-key"></i>&nbsp;
                                                             </button>
                                                          </td>
                                                       </tr>
                                                    </tbody>
+                                                </table>
+                                             </div>
+                                             <div id="branches" class="tab-pane fade">
+                                                <table class="table table-hover">
+                                                   <thead>
+                                                      <tr>
+                                                         <th>Branches</th>
+                                                         <th> 
+                                                            <div class="pull-right">
+                                                               <div class="btn-group btn-edit-group pull-right">
+                                                                  <a href="#"><i class="fa fa-plus "></i><i class="fa fa-building-o "></i> New Branch</a>
+                                                               </div>
+                                                            </div>
+                                                         </th>
+                                                      </tr>
+                                                   </thead>
+                                                </table>
+                                             </div>
+                                             <div id="sub-approvals" class="tab-pane fade">
+                                                <table class="table table-hover">
+                                                   <thead>
+                                                      <tr>
+                                                         <th>Leave it Empty</th>
+                                                      </tr>
+                                                   </thead>
                                                 </table>
                                              </div>
                                           </div>
@@ -1665,19 +1697,29 @@
                                     <div class="panel-body">
                                        <div class="row">
                                           <div class="col-md-4 pull-right mbl mtm">
+
                                              <div class="btn-group btn-edit-group pull-right">
-                                                <a href="#"><i class="fa fa-plus "></i> New </a>
+
+                                                <a href="#" data-target="#Newexpert-Modal" data-toggle="modal"><i class="fa fa-plus "></i><i class="fa fa-male fa-fw"></i> New Export</a>
                                              </div>
                                           </div>
                                           <div class="col-md-12">
                                              <table class="table table-hover" cellspacing="0" id="MainContent_grid_trainers" style="border-collapse:collapse;">
                                                 <tbody>
                                                    <tr style="background-color:WhiteSmoke;">
-                                                      <th scope="col">Instructor Name</th>
+                                                      <th scope="col">User Name</th>
+                                                      <th scope="col">First Name</th>
+                                                      <th scope="col">Last Name</th>
+                                                      <th scope="col">Area of expertise</th>
+                                                      <th scope="col">Profile</th>
                                                       <th scope="col">&nbsp;</th>
                                                    </tr>
                                                    <tr>
-                                                      <td>Mohamed Haroun</td>
+                                                      <td>Mohamed_Haroun1</td>
+                                                      <td>Mohamed</td>
+                                                      <td>Haroun</td>
+                                                      <td>HR</td>
+                                                      <td>Profile?</td>
                                                       <td>
                                                          <div class="transparent-btns">
                                                             <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
@@ -1685,51 +1727,51 @@
                                                       </td>
                                                    </tr>
                                                    <tr>
-                                                      <td>Hany El Refaee</td>
+                                                      <td>Mohamed_Haroun1</td>
+                                                      <td>Mohamed</td>
+                                                      <td>Haroun</td>
+                                                      <td>HR</td>
+                                                      <td>Profile?</td>
                                                       <td>
                                                          <div class="transparent-btns">
                                                             <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
-                                                         </div>                                                                
+                                                         </div>
                                                       </td>
                                                    </tr>
                                                    <tr>
-                                                      <td>Dina Samir</td>
+                                                      <td>Mohamed_Haroun1</td>
+                                                      <td>Mohamed</td>
+                                                      <td>Haroun</td>
+                                                      <td>HR</td>
+                                                      <td>Profile?</td>
                                                       <td>
                                                          <div class="transparent-btns">
                                                             <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
-                                                         </div>                                                                
+                                                         </div>
                                                       </td>
                                                    </tr>
                                                    <tr>
-                                                      <td>Hesham Bahram</td>
+                                                      <td>Mohamed_Haroun1</td>
+                                                      <td>Mohamed</td>
+                                                      <td>Haroun</td>
+                                                      <td>HR</td>
+                                                      <td>Profile?</td>
                                                       <td>
                                                          <div class="transparent-btns">
                                                             <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
-                                                         </div>                                                                
+                                                         </div>
                                                       </td>
                                                    </tr>
                                                    <tr>
-                                                      <td>Samer Bahaa</td>
+                                                      <td>Mohamed_Haroun1</td>
+                                                      <td>Mohamed</td>
+                                                      <td>Haroun</td>
+                                                      <td>HR</td>
+                                                      <td>Profile?</td>
                                                       <td>
                                                          <div class="transparent-btns">
                                                             <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
-                                                         </div>                                                                
-                                                      </td>
-                                                   </tr>
-                                                   <tr>
-                                                      <td>Online</td>
-                                                      <td>
-                                                         <div class="transparent-btns">
-                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
-                                                         </div>                                                                
-                                                      </td>
-                                                   </tr>
-                                                   <tr>
-                                                      <td>Basma</td>
-                                                      <td>
-                                                         <div class="transparent-btns">
-                                                            <a href="#" class="btn pull-right" onclick="UpdateCourses('2','no_image.png')"><i class="fa fa-edit"></i> </a>
-                                                         </div>                                                                
+                                                         </div>
                                                       </td>
                                                    </tr>
                                                 </tbody>
@@ -1785,19 +1827,136 @@
                   </div>
                </div>
                <!--END CONTENT-->
-               <div id="modal-header-primary" tabindex="-1" role="dialog" aria-labelledby="modal-header-primary-label"
+               <div id="Newuser-Modal" tabindex="-1" role="dialog" aria-labelledby="modal-header-primary-label"
                   aria-hidden="true" class="modal fade">
                   <div class="modal-dialog">
                      <div class="modal-content">
-                        <div class="modal-header modal-header-primary">
+                        <div class="modal-header">
                            <button type="button" data-dismiss="modal" aria-hidden="true"
                               class="close">&times;</button>
-                           <h4 id="modal-header-primary-label" class="modal-title">Modal Header Primary</h4>
+                           <h4 id="modal-header-primary-label" class="modal-title">New User</h4>
                         </div>
-                        <div class="modal-body">Modal body goes here</div>
+                        <div class="modal-body">
+                           <form action="#" class="horizontal-form">
+                              <div class="form-body">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="form-group"><label for="inputStreet" class="control-label">First Name
+                                          <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group"><label for="inputStreet" class="control-label">Last Name
+                                          <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="selGender" class="control-label">Branch
+                                          <span class='require'>*</span></label>
+                                          <select class="form-control">
+                                             <option selected="selected" value="">Select Branch</option>
+                                             <option value="67">Branch1</option>
+                                             <option value="60">Branch2</option>
+                                             <option value="72">Branch3</option>
+                                             <option value="70">Branch4</option>
+                                             <option value="84">Branch5</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="selGender" class="control-label">Group
+                                          <span class='require'>*</span></label>
+                                          <select class="form-control">
+                                             <option selected="selected" value="">Select Branch</option>
+                                             <option value="67">Branch1</option>
+                                             <option value="60">Branch2</option>
+                                             <option value="72">Branch3</option>
+                                             <option value="70">Branch4</option>
+                                             <option value="84">Branch5</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group"><label for="inputStreet" class="control-label">Position
+                                          <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
                         <div class="modal-footer">
                            <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
-                           <button type="button" class="btn btn-primary">Save changes</button>
+                           <button type="button" class="btn btn-primary">Add User</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="Newexpert-Modal" tabindex="-1" role="dialog" aria-labelledby="modal-header-primary-label"
+                  aria-hidden="true" class="modal fade">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" data-dismiss="modal" aria-hidden="true"
+                              class="close">&times;</button>
+                           <h4 id="modal-header-primary-label" class="modal-title">New User</h4>
+                        </div>
+                        <div class="modal-body">
+                           <form action="#" class="horizontal-form">
+                              <div class="form-body">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="form-group"><label for="inputStreet" class="control-label">First Name
+                                          <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group"><label for="inputStreet" class="control-label">Last Name
+                                          <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="selGender" class="control-label">Branch
+                                          <span class='require'>*</span></label>
+                                          <select class="form-control">
+                                             <option selected="selected" value="">Select Branch</option>
+                                             <option value="67">Branch1</option>
+                                             <option value="60">Branch2</option>
+                                             <option value="72">Branch3</option>
+                                             <option value="70">Branch4</option>
+                                             <option value="84">Branch5</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="selGender" class="control-label">Group
+                                          <span class='require'>*</span></label>
+                                          <select class="form-control">
+                                             <option selected="selected" value="">Select Branch</option>
+                                             <option value="67">Branch1</option>
+                                             <option value="60">Branch2</option>
+                                             <option value="72">Branch3</option>
+                                             <option value="70">Branch4</option>
+                                             <option value="84">Branch5</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group"><label for="inputStreet" class="control-label">Position
+                                          <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                           <button type="button" class="btn btn-primary">Add User</button>
                         </div>
                      </div>
                   </div>
