@@ -76,6 +76,16 @@ $('document').ready(function(){
         ,storage: 'localstorage' //'', 'cookies', 'localstorage'
         ,storageName: 'drop-down-filters-ul-li'
     });
+    $('#grid-filter-with-ul-li2').jplist({
+
+        itemsBox: '.list'
+        ,itemPath: '.list-item'
+        ,panelPath: '.jplist-panel'
+
+        //save plugin state
+        ,storage: 'localstorage' //'', 'cookies', 'localstorage'
+        ,storageName: 'drop-down-filters-ul-li'
+    });
 
     $('#grid-filter-with-select').jplist({
 

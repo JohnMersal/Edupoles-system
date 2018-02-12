@@ -17,6 +17,13 @@
       <link type="text/css" rel="stylesheet" href="vendors/animate.css/animate.css">   
       <!--LOADING STYLESHEET FOR jGrid-->
       <link type="text/css" rel="stylesheet" href="vendors/jplist/html/css/jplist-custom.css">
+          <link type="text/css" rel="stylesheet" href="vendors/iCheck/skins/all.css">
+    <!--LOADING STYLESHEET FOR PAGE-->
+    <link type="text/css" rel="stylesheet" href="vendors/DataTables/media/css/jquery.dataTables.css">
+    <link type="text/css" rel="stylesheet"
+          href="vendors/DataTables/extensions/TableTools/css/dataTables.tableTools.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/DataTables/media/css/dataTables.bootstrap.css">
+
       <!--Loading style-->
       <link type="text/css" rel="stylesheet" href="css/screen.css">
       <link type="text/css" rel="stylesheet" href="css/custom.css">
@@ -132,16 +139,17 @@
                      <div class="row mbl">
                         <div class="col-md-12">
                            <ul role="tablist" class="ul-edit nav nav-tabs">
-                              <li class="active"><a href="#home" role="tab" data-toggle="tab"><i class="fa fa-home"></i> Course Builder</a></li>
+                              <li class="active"><a href="#course" role="tab" data-toggle="tab"><i class="fa fa-home"></i> Courses</a></li>
+                              <li><a href="#program" role="tab" data-toggle="tab"><i class="fa fa-home"></i> Programs</a></li>
                            </ul>
                            <div class="tab-content tab-edit">
-                              <div id="home" class="tab-pane fade in active">
+                              <div id="course" class="tab-pane fade in active">
                                  <div class="row mbl">
                                     <div class="col-lg-12">
                                        <div class="panel">
                                           <div class="panel-body">
                                              <div class="col-md-12">
-                                                <div class="btn btn-primary pull-right"><i class="fa fa-plus"></i> New Course</div>
+                                                <a href="course-builder.html" class="btn btn-xs pull-right"><i class="fa fa-plus"></i> New Course</a>
                                              </div>
                                              <div id="grid-filter-with-ul-li" class="box jplist">
                                                 <div class="jplist-ios-button"><i class="fa fa-sort"></i>jPList Actions</div>
@@ -312,8 +320,251 @@
                                     </div>
                                  </div>
                               </div>
-                              <div id="this-month-training" class="tab-pane fade">
-                                 asdasdas
+                              <div id="program" class="tab-pane fade in">
+                                 <div class="row mbl">
+                                    <div class="col-lg-12">
+                                       <div class="panel">
+                                          <div class="panel-body">
+                                             <div class="col-md-12">
+                                                <a data-target="#Newprogram-Modal" data-toggle="modal" href="program-builder.html" class="btn btn-xs pull-right"><i class="fa fa-plus"></i> New Program</a>
+                                             </div>
+                                             <div id="grid-filter-with-ul-li2" class="box jplist">
+                                                <div class="jplist-ios-button"><i class="fa fa-sort"></i>jPList Actions</div>
+                                                <div class="jplist-panel box panel-top">
+                                                   <button type="button" data-control-type="reset" data-control-name="reset" data-control-action="reset" class="jplist-reset-btn btn btn-default">
+                                                   Reset<i class="fa fa-share mls"></i></button>
+                                                   <div data-control-type="drop-down" data-control-name="paging" data-control-action="paging" class="jplist-drop-down form-control">
+                                                      <ul class="dropdown-menu">
+                                                         <li><span data-number="5"> 5 per page</span></li>
+                                                         <li><span data-number="10"> 10 per page</span></li>
+                                                         <li><span data-number="all"> view all</span></li>
+                                                      </ul>
+                                                   </div>
+                                                   <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" class="jplist-drop-down form-control">
+                                                      <ul class="dropdown-menu">
+                                                         <li><span data-path="default">Sort by</span></li>
+                                                         <li><span data-path=".title" data-order="asc" data-type="text">Title A-Z</span></li>
+                                                         <li><span data-path=".title" data-order="desc" data-type="text">Title Z-A</span>
+                                                         </li>
+                                                         <li><span data-path=".desc" data-order="asc" data-type="text">Description A-Z</span>
+                                                         </li>
+                                                         <li><span data-path=".desc" data-order="desc" data-type="text">Description Z-A</span>
+                                                         </li>
+                                                         <li><span data-path=".like" data-order="asc" data-type="number">Likes asc</span>
+                                                         </li>
+                                                         <li><span data-path=".like" data-order="desc" data-type="number">Likes desc</span>
+                                                         </li>
+                                                         <li><span data-path=".date" data-order="asc" data-type="datetime">Date asc</span>
+                                                         </li>
+                                                         <li><span data-path=".date" data-order="desc" data-type="datetime">Date desc</span>
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                   <div data-control-type="drop-down" data-control-name="category-filter" data-control-action="filter" class="jplist-drop-down form-control">
+                                                      <ul class="dropdown-menu">
+                                                         <li><span data-path="default">Category</span></li>
+                                                         <li><span data-path=".architecture">Architecture</span></li>
+                                                         <li><span data-path=".christmas">Christmas</span></li>
+                                                         <li><span data-path=".food">Food</span></li>
+                                                         <li><span data-path=".nature">Nature</span></li>
+                                                         <li><span data-path=".other">Other</span></li>
+                                                      </ul>
+                                                   </div>
+                                                   <div data-control-type="drop-down" data-control-name="group-filter" data-control-action="filter" class="jplist-drop-down form-control">
+                                                      <ul class="dropdown-menu">
+                                                         <li><span data-path="default">Group</span></li>
+                                                         <li><span data-path=".group1">Group 1</span></li>
+                                                         <li><span data-path=".group2">Group 2</span></li>
+                                                         <li><span data-path=".group3">Group 3</span></li>
+                                                      </ul>
+                                                   </div>
+                                                   <div class="text-filter-box">
+                                                      <div class="input-group"><span class="input-group-addon"><i
+                                                         class="fa fa-search"></i></span><input data-path=".title" type="text" value="" placeholder="Filter by Title" data-control-type="textbox" data-control-name="title-filter" data-control-action="filter" class="form-control" /></div>
+                                                   </div>
+                                                   <div class="text-filter-box">
+                                                      <div class="input-group"><span class="input-group-addon"><i
+                                                         class="fa fa-search"></i></span><input data-path=".desc" type="text" value="" placeholder="Filter by Description" data-control-type="textbox" data-control-name="desc-filter" data-control-action="filter" class="form-control input-medium" />
+                                                      </div>
+                                                   </div>
+                                                   <div data-type="Page {current} of {pages}" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging" class="jplist-label btn btn-default"></div>
+                                                   <div data-control-type="pagination" data-control-name="paging" data-control-action="paging" class="jplist-pagination"></div>
+                                                </div>
+                                                <div class="list box text-shadow list-with-icon">
+                                                   <!--<item>1</item>-->
+                                                   <div class="list-item box">
+                                                      <!--<img/>-->
+                                                      <div class="img"><img src="vendors/jplist/html/img/thumbs/calendar-1.jpg" alt="" title="" /></div>
+                                                      <!--<data></data>-->
+                                                      <div class="block">
+                                                         <div class="transparent-btns pull-right">
+                                                            <a class="btn" href="#" onclick="ViewCourseInfo('1', '636272601527718750.pdf')">
+                                                               <i class="fa fa-edit" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
+                                                               <i class="fa fa-book" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
+                                                               <i class="fa fa-user" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                         </div>
+                                                         <p class="date">05/08/2003</p>
+                                                         <div class="title">
+                                                            <div class="dropdown">
+                                                              <button class="dropdown-toggle" type="button" data-toggle="dropdown">Calendar Program
+                                                              <span class="caret"></span></button>
+                                                              <ul class="dropdown-menu">
+                                                                <li><a href="#">HTML</a></li>
+                                                                <li><a href="#">CSS</a></li>
+                                                                <li class="dropdown-submenu">
+                                                                 <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                                                                 <ul class="dropdown-menu">
+                                                                   <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                                   <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                                   <li class="dropdown-submenu">
+                                                                     <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                                                     <ul class="dropdown-menu">
+                                                                       <li><a href="#">3rd level dropdown</a></li>
+                                                                       <li><a href="#">3rd level dropdown</a></li>
+                                                                     </ul>
+                                                                   </li>
+                                                                 </ul>
+                                                               </li>
+                                                              </ul>
+                                                            </div>
+                                                         </div>
+                                                         <p class="desc">A calendar is a system of organizing days for social, religious, commercial, or administrative purposes. This is done by giving names to periods of time, typically days, weeks, months, and years. The name given to each day is known as a date. Periods in a calendar (such as years and months) are usually, though not necessarily, synchronized with the cycle of the sun or the moon.</p>
+                                                         <p class="theme"><span class="other">Other</span><span class="group1">Group 1</span>
+                                                         </p>
+
+                                                      </div>
+                                                   </div>
+                                                   <!--<item>2</item>-->
+                                                   <div class="list-item box">
+                                                      <!--<img/>-->
+                                                      <div class="img"><img src="vendors/jplist/html/img/thumbs/arch-2.jpg" alt="" title="" /></div>
+                                                      <!--<data></data>-->
+                                                      <div class="block">
+                                                         <div class="transparent-btns pull-right">
+                                                            <a class="btn" href="#" onclick="ViewCourseInfo('1', '636272601527718750.pdf')">
+                                                               <i class="fa fa-edit" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
+                                                               <i class="fa fa-book" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
+                                                               <i class="fa fa-user" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                         </div>
+                                                         <p class="date">03/18/2012</p>
+                                                         <div class="title">
+                                                            <div class="dropdown">
+                                                              <button class="dropdown-toggle" type="button" data-toggle="dropdown">architecture Program
+                                                              <span class="caret"></span></button>
+                                                              <ul class="dropdown-menu">
+                                                                <li><a href="#">HTML</a></li>
+                                                                <li><a href="#">CSS</a></li>
+                                                                <li class="dropdown-submenu">
+                                                                 <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                                                                 <ul class="dropdown-menu">
+                                                                   <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                                   <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                                   <li class="dropdown-submenu">
+                                                                     <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                                                     <ul class="dropdown-menu">
+                                                                       <li><a href="#">3rd level dropdown</a></li>
+                                                                       <li><a href="#">3rd level dropdown</a></li>
+                                                                     </ul>
+                                                                   </li>
+                                                                 </ul>
+                                                               </li>
+                                                              </ul>
+                                                            </div>
+                                                         </div>
+                                                         <p class="desc">Architecture is both the process and product of planning, designing and construction. Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art. Historical civilizations are often identified with their surviving architectural achievements.</p>
+                                                         <p class="theme"><span class="architecture">Architecture</span><span class="group2">Group 2</span></p>
+                                                         
+                                                      </div>
+                                                   </div>
+                                                   <!--<item>3</item>-->
+                                                   <div class="list-item box">
+                                                      <!--<img/>-->
+                                                      <div class="img"><img src="vendors/jplist/html/img/thumbs/autumn-1.jpg" alt="" title="" /></div>
+                                                      <!--<data></data>-->
+                                                      <div class="block">
+                                                         <div class="transparent-btns pull-right">
+                                                            <a class="btn" href="#" onclick="ViewCourseInfo('1', '636272601527718750.pdf')">
+                                                               <i class="fa fa-edit" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
+                                                               <i class="fa fa-book" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
+                                                               <i class="fa fa-user" style="margin-right: 5px;"></i>
+                                                            </a>
+                                                         </div>
+                                                         <p class="date">01/16/2011</p>
+                                                         <div class="title">
+                                                            <div class="dropdown">
+                                                              <button class="dropdown-toggle" type="button" data-toggle="dropdown">Autumn Program
+                                                              <span class="caret"></span></button>
+                                                              <ul class="dropdown-menu">
+                                                                <li><a href="#">HTML</a></li>
+                                                                <li><a href="#">CSS</a></li>
+                                                                <li class="dropdown-submenu">
+                                                                 <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                                                                 <ul class="dropdown-menu">
+                                                                   <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                                   <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                                   <li class="dropdown-submenu">
+                                                                     <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                                                     <ul class="dropdown-menu">
+                                                                       <li><a href="#">3rd level dropdown</a></li>
+                                                                       <li><a href="#">3rd level dropdown</a></li>
+                                                                     </ul>
+                                                                   </li>
+                                                                 </ul>
+                                                               </li>
+                                                              </ul>
+                                                            </div>
+                                                         </div>
+                                                         <p class="desc">Autumn or Fall is one of the four temperate seasons. Autumn marks the transition from summer into winter, in September (Northern Hemisphere) or March (Southern Hemisphere) when the arrival of night becomes noticeably earlier. The equinoxes might be expected to be in the middle of their respective seasons, but temperature lag (caused by the thermal latency of the ground and sea) means that seasons appear later than dates calculated from a purely astronomical perspective.</p>
+                                                         <p class="theme"><span class="nature">Nature</span><span class="group3">Group 3</span>
+                                                         </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="jplist-ios-button"><i class="fa fa-sort"></i>jPList Actions</div>
+                                                <div class="jplist-panel box panel-bottom">
+                                                   <div data-control-type="drop-down" data-control-name="paging" data-control-action="paging" data-control-animate-to-top="true" class="jplist-drop-down form-control">
+                                                      <ul class="dropdown-menu">
+                                                         <li><span data-number="5"> 5 per page</span></li>
+                                                         <li><span data-number="10"> 10 per page</span></li>
+                                                         <li><span data-number="all"> view all</span></li>
+                                                      </ul>
+                                                   </div>
+                                                   <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" data-control-animate-to-top="true" class="jplist-drop-down form-control">
+                                                      <ul class="dropdown-menu">
+                                                         <li><span data-path="default">Sort by</span></li>
+                                                         <li><span data-path=".title" data-order="asc" data-type="text">Title A-Z</span></li>
+                                                         <li><span data-path=".title" data-order="desc" data-type="text">Title Z-A</span></li>
+                                                         <li><span data-path=".desc" data-order="asc" data-type="text">Description A-Z</span></li>
+                                                         <li><span data-path=".desc" data-order="desc" data-type="text">Description Z-A</span></li>
+                                                         <li><span data-path=".date" data-order="asc" data-type="datetime">Date asc</span></li>
+                                                         <li><span data-path=".date" data-order="desc" data-type="datetime">Date desc</span></li>
+                                                      </ul>
+                                                   </div>
+                                                   <div data-type="{start} - {end} of {all}" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging" class="jplist-label btn btn-default"></div>
+                                                   <div data-control-type="pagination" data-control-name="paging" data-control-action="paging" data-control-animate-to-top="true" class="jplist-pagination"></div>
+                                                </div>
+                                                <div class="box jplist-no-results text-shadow align-center">
+                                                   <p>No results found</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -321,6 +572,113 @@
                   </div>
                </div>
                <!--END CONTENT-->
+               <div id="Newprogram-Modal" tabindex="-1" role="dialog" aria-labelledby="modal-header-primary-label"
+                  aria-hidden="true" class="modal fade">
+                  <div class="modal-dialog modal-wide-width">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" data-dismiss="modal" aria-hidden="true"
+                              class="close">&times;</button>
+                           <h4 id="modal-header-primary-label" class="modal-title">New Program</h4>
+                        </div>
+                        <div class="modal-body">
+                           <form action="#" class="horizontal-form">
+                              <div class="form-body">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="form-group"><label for="inputStreet" class="control-label">Program Name
+                                          <span class='require'>*</span></label><input id="inputStreet" type="text" placeholder="" class="form-control" />
+                                       </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                       <div class="form-group"><label for="inputStreet" class="control-label">Details
+                                          <span class='require'>*</span></label>
+                                          <textarea id="inputStreet" class="form-control"></textarea>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-12 courses-table">
+                                      <div class="table-responsive">
+                                            <table id="table_id" class="table table-hover table-striped table-bordered table-advanced tablesorter display">
+                                                <thead>
+                                                   <tr>
+                                                       <th width="3%" style="padding: 10px;"><input
+                                                               type="checkbox" class="checkall"/></th>
+                                                       <th width="100%">Username</th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name2</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name3</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name4</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name5</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name6 uiluy jd f[qoiwhfjqw e;rjmwsd fsa[</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name7</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name8</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td><input type="checkbox"/></td>
+                                                       <td>Course Name</td>
+                                                   </tr>
+                                                </tbody>
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                           <button type="button" class="btn btn-primary">Create Program</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
             <!--END PAGE WRAPPER-->
          </div>
@@ -353,5 +711,10 @@
       <!--LOADING SCRIPTS FOR JPGRID-->
       <script src="vendors/jplist/html/js/jplist.min.js"></script>
       <script src="js/jplist.js"></script>
+      <script src="vendors/DataTables/media/js/jquery.dataTables.js"></script>
+      <script src="vendors/DataTables/media/js/dataTables.bootstrap.js"></script>
+      <script src="vendors/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+      <script src="js/table-datatables.js"></script>
+
    </body>
 </html>

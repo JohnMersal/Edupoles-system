@@ -531,6 +531,23 @@
     margin: 0;
     padding: 0 15px 5px 0
 }
+.list .block p.title {
+     padding: 5px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.list .block div.title {
+    margin-bottom: 10px;
+}
+.list .block div.title button {
+    background-color: transparent;
+    border: 0px solid transparent;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .list .list-item {
     *margin-top: 15px;
