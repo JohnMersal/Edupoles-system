@@ -1243,3 +1243,35 @@ table.tablesorter .badge-info {
   bottom: 0;
   right: 0;
 }
+
+.sorted-courses #sortable {
+  list-style: none;
+  padding: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+.sorted-courses #sortable .course-sorter {
+  list-style: none;
+  padding: 0;
+  background-color: white;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.sorted-courses #sortable .course-sorter p {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  width: auto;
+  margin-bottom: 0;
+}
+.sorted-courses #sortable .course-sorter .delete {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  font-size: inherit;
+  line-height: inherit;
+}
