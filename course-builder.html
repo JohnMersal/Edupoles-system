@@ -149,7 +149,7 @@
                                        <div class="panel">
                                           <div class="panel-body">
                                              <div class="col-md-12">
-                                                <a href="course-builder.html" class="btn btn-xs pull-right"><i class="fa fa-plus"></i> New Course</a>
+                                                <a href="course-builder.html" class="btn btn-primary btn-xs pull-right"><i class="fa fa-plus"></i> New Course</a>
                                              </div>
                                              <div id="grid-filter-with-ul-li" class="box jplist">
                                                 <div class="jplist-ios-button"><i class="fa fa-sort"></i>jPList Actions</div>
@@ -326,7 +326,7 @@
                                        <div class="panel">
                                           <div class="panel-body">
                                              <div class="col-md-12">
-                                                <a data-target="#Newprogram-Modal" data-toggle="modal" href="program-builder.html" class="btn btn-xs pull-right"><i class="fa fa-plus"></i> New Program</a>
+                                                <a data-target="#Newprogram-Modal" data-toggle="modal" href="program-builder.html" class="btn btn-primary btn-xs pull-right"><i class="fa fa-plus"></i> New Program</a>
                                              </div>
                                              <div id="grid-filter-with-ul-li2" class="box jplist">
                                                 <div class="jplist-ios-button"><i class="fa fa-sort"></i>jPList Actions</div>
@@ -402,9 +402,6 @@
                                                                <i class="fa fa-edit" style="margin-right: 5px;"></i>
                                                             </a>
                                                             <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
-                                                               <i class="fa fa-book" style="margin-right: 5px;"></i>
-                                                            </a>
-                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
                                                                <i class="fa fa-user" style="margin-right: 5px;"></i>
                                                             </a>
                                                          </div>
@@ -449,9 +446,7 @@
                                                             <a class="btn" href="#" onclick="ViewCourseInfo('1', '636272601527718750.pdf')">
                                                                <i class="fa fa-edit" style="margin-right: 5px;"></i>
                                                             </a>
-                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
-                                                               <i class="fa fa-book" style="margin-right: 5px;"></i>
-                                                            </a>
+                                                            
                                                             <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
                                                                <i class="fa fa-user" style="margin-right: 5px;"></i>
                                                             </a>
@@ -495,9 +490,6 @@
                                                          <div class="transparent-btns pull-right">
                                                             <a class="btn" href="#" onclick="ViewCourseInfo('1', '636272601527718750.pdf')">
                                                                <i class="fa fa-edit" style="margin-right: 5px;"></i>
-                                                            </a>
-                                                            <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
-                                                               <i class="fa fa-book" style="margin-right: 5px;"></i>
                                                             </a>
                                                             <a href="/Application/Administration/Content/NewCourseBuilder.aspx?courseId=1" class="btn" title="Manage Course Content">
                                                                <i class="fa fa-user" style="margin-right: 5px;"></i>
@@ -668,6 +660,18 @@
                                             </table>
                                         </div>
                                     </div>
+                                    <div class="col-md-12 sorted-courses">
+                                       <h1>Added courses</h1>
+                                       <ul id="sortable">
+                                         <li class="course-sorter"><p>course name 1 </p><i class="delete fa fa-trash-o pull-right"></i></li>
+                                         <li class="course-sorter"><p>course name 2 </p><i class="delete fa fa-trash-o pull-right"></i></li>
+                                         <li class="course-sorter"><p>course name 3 </p><i class="delete fa fa-trash-o pull-right"></i></li>
+                                         <li class="course-sorter"><p>course name 4 </p><i class="delete fa fa-trash-o pull-right"></i></li>
+                                         <li class="course-sorter"><p>course name 5 </p><i class="delete fa fa-trash-o pull-right"></i></li>
+                                         <li class="course-sorter"><p>course name 6 </p><i class="delete fa fa-trash-o pull-right"></i></li>
+                                         <li class="course-sorter"><p>course name 7 </p><i class="delete fa fa-trash-o pull-right"></i></li>
+                                       </ul>
+                                    </div>
                                  </div>
                               </div>
                            </form>
@@ -715,6 +719,12 @@
       <script src="vendors/DataTables/media/js/dataTables.bootstrap.js"></script>
       <script src="vendors/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
       <script src="js/table-datatables.js"></script>
+      <script>
+        $( function() {
+          $( "#sortable" ).sortable();
+          $( "#sortable" ).disableSelection();
+        } );
+        </script>
 
    </body>
 </html>

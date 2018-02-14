@@ -64,6 +64,16 @@ $('document').ready(function(){
         ,storage: 'localstorage' //'', 'cookies', 'localstorage'
         ,storageName: 'jplist-ul-li'
     });
+    $('#grid-layout-ul-li-2').jplist({
+
+        itemsBox: '.ul-li-list'
+        ,itemPath: '.list-item'
+        ,panelPath: '.jplist-panel'
+
+        //save plugin state
+        ,storage: 'localstorage' //'', 'cookies', 'localstorage'
+        ,storageName: 'jplist-ul-li'
+    });
 
 
     $('#grid-filter-with-ul-li').jplist({

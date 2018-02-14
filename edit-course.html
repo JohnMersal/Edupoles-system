@@ -147,65 +147,35 @@
                
                <div class="row mbl">
                   <div class="col-md-12">
-                     <ul role="tablist" class="ul-edit align-center nav nav-tabs mbl">
-                        <li class="settings-list  col-md-2 active">
+                     <ul role="tablist" class="ul-edit nav nav-tabs mbl custom-extended">
+                        <li class="active">
                            <a href="#details" role="tab" data-toggle="tab">
-                              <div class="panel mbm">
-                                 <div class="panel-body">
-                                    <i class="ico_details"></i>
-                                    <br /> Details
-                                 </div>
-                              </div>
+                              <i class="ico_details"></i> Details
                            </a>
                         </li>
-                        <li class="settings-list  col-md-2">
+                        <li>
                            <a href="#description" role="tab" data-toggle="tab">
-                              <div class="panel mbm">
-                                 <div class="panel-body">
-                                    <i class="ico_description"></i>
-                                    <br /> Description
-                                 </div>
-                              </div>
+                              <i class="ico_description"></i> Description
                            </a>
                         </li>
-                        <li class="settings-list  col-md-2">
+                        <li>
                            <a href="#price" role="tab" data-toggle="tab">
-                              <div class="panel mbm">
-                                 <div class="panel-body">
-                                    <i class="ico_price"></i>
-                                    <br /> Price
-                                 </div>
-                              </div>
+                              <i class="ico_price"></i> Price
                            </a>
                         </li>
-                        <li class="settings-list  col-md-2">
+                        <li>
                            <a href="#certificate" role="tab" data-toggle="tab">
-                              <div class="panel mbm">
-                                 <div class="panel-body">
-                                    <i class="ico_certificate"></i>
-                                    <br /> Certificate
-                                 </div>
-                              </div>
+                              <i class="ico_certificate"></i> Certificate
                            </a>
                         </li>
-                        <li class="settings-list  col-md-2">
-                           <a href="#attendees_management" role="tab" data-toggle="tab">
-                              <div class="panel mbm">
-                                 <div class="panel-body">
-                                    <i class="ico_grades"></i>
-                                    <br /> Grades
-                                 </div>
-                              </div>
+                        <li>
+                           <a href="#grades" role="tab" data-toggle="tab">
+                              <i class="ico_grades"></i> Grades
                            </a>
                         </li>
-                        <li class="settings-list  col-md-2">
-                           <a href="#attendees_management" role="tab" data-toggle="tab">
-                              <div class="panel mbm">
-                                 <div class="panel-body">
-                                    <i class="ico_dependancies"></i>
-                                    <br /> Dependancies
-                                 </div>
-                              </div>
+                        <li>
+                           <a href="#Dependancies" role="tab" data-toggle="tab">
+                              <i class="ico_dependancies"></i> Dependancies
                            </a>
                         </li>
                      </ul>
@@ -714,12 +684,12 @@
                         <span>Users and Time</span>
                      </a>
                   </li>                       
-                  <!-- <li class="menu-item item2">
-                     <a href="#time" role="tab" data-toggle="tab">
-                        <i class="ico_time"></i>
+                  <li class="menu-item item2">
+                     <a href="#syllabus" role="tab" data-toggle="tab">
+                        <i class="fa fa-align-left"></i>
                      </a>
                   </li>                       
-                  <li class="menu-item item3">
+                 <!--  <li class="menu-item item3">
                      <a href="#time" role="tab" data-toggle="tab">
                         <i class="ico_time"></i>
                      </a>
@@ -819,7 +789,7 @@
 
          // Tab edit hotfix
          $('.ul-edit li').click(function() {
-            $('.menu-items .item1').removeClass('active');
+            $('.menu-items .item1, .menu-items .item2').removeClass('active');
             $('.menu-3').removeClass('menu-3-active');
             $('.menu-items').removeClass('menu-3-active');
          });

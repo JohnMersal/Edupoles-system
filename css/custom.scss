@@ -1143,8 +1143,11 @@ table.tablesorter{
     font-size:15px;
     margin-bottom:0;
     a{
-    	float:left;
-    	width:100%;
+    	display: inline-block;
+    	vertical-align: middle;
+    	zoom: 1;
+    	*display: inline;
+    	width:auto;
     	padding:0 20px;
 	    box-shadow: -5px 27px 49px rgba(0, 0, 0, 0.1);
     	// border-radius:50px;
@@ -1288,7 +1291,8 @@ table.tablesorter{
     padding: 0 0 10px 0;
     margin: 0;
     max-height:200px;
-    overflow-x:scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     li:last-child{
     	a{
     		border-bottom:0px solid;
@@ -1308,4 +1312,65 @@ table.tablesorter{
 
 #myUL li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+
+.v-course{
+	padding:5px 20px 5px 40px;
+	border-radius:50px 0px 0px 0px;
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
+
+.promo-vid {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    float: left;
+	.video {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+}
+
+
+
+.sorted-courses{
+	#sortable{
+		list-style:none;
+		padding:0;
+		background-color:#f9f9f9;
+		border:1px solid #dddddd;
+		padding:10px;
+		.course-sorter{
+			list-style:none;
+			padding:0;
+			background-color:white;
+			border:1px solid #dddddd;
+			padding:10px;
+			margin-bottom:5px;
+			p{
+				display: inline-block;
+				vertical-align: middle;
+				zoom: 1;
+				*display: inline;
+				width: auto;
+				margin-bottom:0;
+			}
+			.delete{
+				display: inline-block;
+				vertical-align: middle;
+				zoom: 1;
+				*display: inline;
+				font-size:inherit;
+				line-height:inherit;
+			}
+		}
+	}
 }
